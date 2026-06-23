@@ -96,6 +96,11 @@ SysML/Cameo tooling. To keep it trustworthy:
 - **A superior competing tool is listed above a JGS one.** Neutrality is enforced by
   this rule, not by tone.
 
+> **Table of Contents:** the `## Contents` ToC is hand-maintained and lists only the
+> top-level sections (a flat ToC keeps awesome-lint happy). If you add or rename a
+> **top-level** section, update the ToC by hand; sub-sections are not listed. CI validates
+> every ToC anchor resolves (lychee `--include-fragments anchor-only`).
+
 ## 8. Cross-listing (Model Gallery)
 
 Each `has-model` entry has **exactly one canonical home** — its section under *Magic Grid

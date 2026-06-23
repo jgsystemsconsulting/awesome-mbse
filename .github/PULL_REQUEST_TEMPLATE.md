@@ -27,5 +27,5 @@
 
 ## Housekeeping
 
-- [ ] Ran `npx doctoc README.md --title '## Contents'` so the ToC is current
+- [ ] If a **top-level** section was added/renamed, updated the hand-maintained `## Contents` ToC
 - [ ] (If a JGS product) it sits next to ≥1 competing/alternative entry (CONTRIBUTING.md §7)
