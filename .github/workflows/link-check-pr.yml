@@ -23,14 +23,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check links and in-doc anchors
-        uses: lycheeverse/lychee-action@v2
+        uses: lycheeverse/lychee-action@v2.8.0
         with:
           # --include-fragments anchor-only validates the ToC and the Model
           # Gallery's #slug back-links against the <a id> anchors (spec §5.1, §7.7).
           # token is passed so the many github.com links are checked authenticated,
           # avoiding the 60 req/hr anonymous rate limit that reports live links as dead.
+          lycheeVersion: v0.24.2
           args: >-
             --include-fragments anchor-only
+            --max-concurrency 4
             --accept 200..=299,429
             --no-progress
             README.md
