@@ -23,9 +23,7 @@ Cameo section as the standout-deep part no other list covers.
 - [Model Gallery](#model-gallery)
 - [Broader SysML / MBSE Context](#broader-sysml--mbse-context)
 - [The competitive landscape](#the-competitive-landscape)
-- [Contributing](#contributing)
 - [Support & security](#support--security)
-- [License](#license)
 
 ## Magic Grid & Cameo / CATIA Magic
 
@@ -258,9 +256,9 @@ Questions or a problem with a linked resource? Open an issue using the suggest-a
 form (linked in the Contributing section above). To report a malicious or compromised link
 privately, email **support@jgsystemsconsulting.com** — see [SECURITY.md](SECURITY.md).
 
-## License
+---
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, the maintainers have waived all copyright and related
-or neighboring rights to this work. See [LICENSE](LICENSE).
+or neighboring rights to this work — released under CC0 1.0 Universal. See [LICENSE](LICENSE).
