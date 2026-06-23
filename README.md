@@ -1,16 +1,16 @@
-# Awesome Magic Grid &amp; SysML MBSE [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome MBSE [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated, vetted, dated index of **Magic Grid / Cameo / CATIA Magic** Model-Based
-> Systems Engineering resources — with the broader SysML v1/v2 and MBSE ecosystem around
-> it.
+> A curated, vetted, dated index of **Model-Based Systems Engineering** — SysML v1/v2,
+> methods, tools, and openable models — with the deepest **Magic Grid / Cameo / CATIA
+> Magic** coverage anywhere.
 
 ![Last full sweep: 2026-06](https://img.shields.io/badge/last%20full%20sweep-2026--06-brightgreen)
 
 Built for the **practitioner hunting a real, openable model to learn from or copy**, and
 for anyone who wants one trustworthy starting point for SysML/MBSE. Every link is
-checked; dead links are pruned; each entry is dated and tagged. The Magic Grid / Cameo
-section is the deepest part — the rest of the SysML/MBSE world is curated, not
-exhaustive.
+checked; dead links are pruned; each entry is dated and tagged. Coverage spans the whole
+MBSE ecosystem — language, method, tooling, and reusable libraries — with the Magic Grid /
+Cameo section as the standout-deep part no other list covers.
 
 > **Maintained by [JG Systems Consulting Ltd.](https://github.com/jgsystemsconsulting), a
 > commercial vendor of SysML/Cameo tooling.** JGS products are listed below by the same
@@ -141,17 +141,17 @@ Curated, not exhaustive — the wider ecosystem a Magic Grid practitioner runs i
 ## The competitive landscape
 
 Why this list exists, with evidence (gathered 2026-06-23). Existing SysML/SE awesome-lists
-are either abandoned or do not cover Cameo / Magic Grid:
+are either abandoned, narrow, or carry no Cameo / Magic Grid coverage at all:
 
-| List | Stars | Last update | Cameo / Magic Grid coverage |
-|------|-------|-------------|-----------------------------|
-| [mycr0ft/awesome-sysml](https://github.com/mycr0ft/awesome-sysml) | ~2 | 2026-06 (active) | Narrow: SysML v2 textual tooling only; ~3 Cameo mentions, **0 MagicDraw / Magic Grid** |
-| [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering) | ~11 | 2021 (abandoned) | **None** |
+| List | Stars | Last update | MBSE coverage |
+|------|-------|-------------|---------------|
+| [mycr0ft/awesome-sysml](https://github.com/mycr0ft/awesome-sysml) | ~2 | 2026-06 (active) | Narrow: SysML v2 textual tooling only; ~3 Cameo mentions, **0 MagicDraw / Magic Grid**, no methods/libraries |
+| [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering) | ~11 | 2021 (abandoned) | Broad SE links, **no MBSE depth**, stale |
 | [rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering) | ~1 | 2024 (stagnant) | **None** |
 
-No `awesome-cameo`, `awesome-mbse`, or `awesome-magic-grid` existed before this list. The
-differentiator is **scope** (Magic Grid / Cameo + SysML v1/v2 + methodology), not just
-freshness.
+No actively-maintained `awesome-mbse` with this breadth existed before this list. The
+differentiator is **scope** — SysML v1/v2 + methods + tooling + reusable libraries +
+openable models, with **Magic Grid / Cameo** depth no other list has — plus freshness.
 
 ## Contributing
 
