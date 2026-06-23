@@ -12,3 +12,6 @@ https://trimech\.com/intro-to-mbse-and-sysml-v2-training-course/
 https://incose\.onlinelibrary\.wiley\.com/
 # ResearchGate — blocks automated access
 https://www\.researchgate\.net/
+# GitHub issue-form link: written as the conventional relative ../../issues/new/choose
+# (correct for browsers); lychee resolves it to a nonexistent local file path.
+issues/new/choose
