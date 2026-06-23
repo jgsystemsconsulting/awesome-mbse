@@ -23,7 +23,7 @@ jobs:
         with:
           lycheeVersion: v0.24.2
           args: >-
-            --include-fragments anchor-only
+            --include-fragments=anchor-only
             --max-concurrency 4
             --accept 200..=299,429
             --no-progress
