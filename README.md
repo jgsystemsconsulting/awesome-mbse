@@ -159,6 +159,12 @@ Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for the inclusi
 entry format, and tag vocabulary. Suggest a resource via the
 [issue form](../../issues/new/choose) or open a pull request.
 
+## Support & security
+
+Questions or a problem with a linked resource? Open an
+[issue](../../issues/new/choose). To report a malicious or compromised link privately,
+email **support@jgsystemsconsulting.com** — see [SECURITY.md](SECURITY.md).
+
 ## License
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
