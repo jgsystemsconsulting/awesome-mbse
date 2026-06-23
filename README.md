@@ -101,7 +101,6 @@ Listed by merit, JGS products alongside alternatives (see
 - [Open-MBEE MBSEPlugin](https://github.com/Open-MBEE/MBSEPlugin) - Open-source MagicDraw/Cameo plugin (DocGen document generation, Cameo Simulation Toolkit integration) `SysMLv1` `Cameo` `plugin` (2024).
 - [cameo-mcp-bridge](https://github.com/ajhcs/cameo-mcp-bridge) - Independent MIT-licensed MCP server bridging AI assistants to Cameo/CATIA Magic for SysML/UML create and query `SysMLv1` `Cameo` `mcp` (2026).
 - [jgs-magic-sysmlv1-mcp](https://github.com/jgsystemsconsulting/jgs-magic-sysmlv1-mcp) - JG Systems SysML v1 MCP bridge (~115 tools) over a local link to CATIA Magic; FREE/PRO/ENTERPRISE `SysMLv1` `CATIA-Magic` `mcp` `paid` (2026).
-- [jgs-magic-sysmlv2-mcp](https://github.com/jgsystemsconsulting/jgs-magic-sysmlv2-mcp) - JG Systems SysML v2 MCP bridge (free tier) connecting AI agents to live CATIA Magic / MSOSA models `SysMLv2` `CATIA-Magic` `mcp` (2026).
 - [jgs-magic-sysmlv1-read-skills](https://github.com/jgsystemsconsulting/jgs-magic-sysmlv1-read-skills) - Free read-only SysML v1 analysis skills for CATIA Magic (navigate, inspect, audit, report) `SysMLv1` `CATIA-Magic` `plugin` (2026).
 
 ### Communities & blogs
