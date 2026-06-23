@@ -1,7 +1,8 @@
 # Contributing
 
-Thanks for helping keep this the best-curated Magic Grid / Cameo / SysML MBSE index
-anywhere. Read this before opening a PR — the CI gates enforce most of it.
+Thanks for helping keep this the best-curated MBSE / SysML index anywhere — with the
+deepest Magic Grid / Cameo coverage around. Read this before opening a PR — the CI gates
+enforce most of it.
 
 The fastest path: open an [issue using the "Suggest a resource" form](../../issues/new/choose),
 or open a pull request that edits `README.md` directly.
@@ -16,8 +17,8 @@ or open a pull request that edits `README.md` directly.
 
 An entry is accepted only if **all** hold:
 
-1. **On-topic** — genuinely about SysML v1/v2 or MBSE practice (Magic Grid / Cameo or
-   the broader-context section).
+1. **On-topic** — genuinely about MBSE practice or SysML v1/v2 (the Magic Grid / Cameo
+   section or the broader-context section).
 2. **Substantive** — it teaches, demonstrates, specifies, or provides something usable.
    Not a stub. Not pure vendor marketing.
 3. **Live** — the link resolves right now.

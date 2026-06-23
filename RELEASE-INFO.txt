@@ -1,4 +1,4 @@
-Product:   awesome-magic-grid
+Product:   awesome-mbse
 Version:    1.0.0
 Build:      2026-06-23 (UTC)
 Tag:        v1.0.0
