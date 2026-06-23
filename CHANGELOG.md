@@ -3,6 +3,19 @@
 Maintenance sweeps and notable changes. The "Last full sweep" badge in the README
 tracks the most recent dated entry here.
 
+## 2026-06 — Architecture frameworks + section orientation
+
+- **New `### Architecture frameworks` sub-section** — the defence/enterprise frameworks
+  SysML models are built against: OMG UAF (spec hub + program page + Cameo plugin docs),
+  OMG UPDM, NATO NAF v4, US DoDAF 2.02, UK MODAF. 7 entries.
+- **Orientation blurbs** added to the Magic Grid and Broader Context section intros so each
+  reads as a short "what this is / where to start", per the type-organized structure
+  (deliberately did **not** split the list into v1/v2/Magic Grid sections — version is
+  already a tag on every entry, and splitting would scatter the cross-version resources).
+- Link note: the official DoDAF page (dodcio.defense.gov) is live in a browser but returns
+  403 to automated clients (DoD WAF). When CI link-checking is enabled, add it to the
+  lychee exclude list rather than treating it as a dead link.
+
 ## 2026-06 — Rebrand to Awesome MBSE + domain libraries
 
 - **Rebranded** from "Awesome Magic Grid & SysML MBSE" to **Awesome MBSE** — broadened the

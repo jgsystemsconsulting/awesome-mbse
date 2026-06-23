@@ -29,7 +29,12 @@ Cameo section as the standout-deep part no other list covers.
 ## Magic Grid & Cameo / CATIA Magic
 
 The flagship. Magic Grid is the SysML modeling method developed at No Magic (now
-Dassault Systèmes) and applied in Cameo Systems Modeler / CATIA Magic.
+Dassault Systèmes) and applied in Cameo Systems Modeler / CATIA Magic — a grid of
+problem/solution domains × structure/behaviour/requirements/parametrics that tells you
+*what to model next*. **New here?** Start with the [MagicGrid Book of
+Knowledge](#methodology--guides), then open a real model from the
+[Model Gallery](#model-gallery). This is the deepest part of the list and the one no other
+awesome-list covers.
 
 ### Methodology & guides
 
@@ -140,7 +145,10 @@ Implementation). Cameo entries link back to [Example models](#example-models).
 
 ## Broader SysML / MBSE Context
 
-Curated, not exhaustive — the wider ecosystem a Magic Grid practitioner runs into.
+Curated, not exhaustive — the wider ecosystem any MBSE practitioner runs into: the
+**language** (SysML v1, the stable incumbent; SysML v2, the textual successor now in
+release), the **methods** to apply it, the **architecture frameworks** to structure it,
+the **tools** to run it, and **reusable libraries** to build from.
 
 ### Specifications & standards
 
@@ -168,6 +176,20 @@ Cross-tool MBSE methods — the "how to model", not the language itself.
 - [JPL State Analysis](https://mds.jpl.nasa.gov/public/sa/) - NASA/JPL's primary state-based MBSE method for control-system and mission modeling `SysML-general` `blog` (2023).
 - [Object-Process Methodology (Dori, Technion)](https://esml.technion.ac.il/opm/overview/) - Authoritative overview of OPM (ISO 19450), a self-contained graphical-plus-textual modeling method `SysML-general` `blog` (2022).
 - [SpesML — Open Methodology Docs (TUM/fortiss)](https://spesml.github.io/) - Full open documentation of the SPES-based SpesML method: viewpoints, concepts, case studies, Cameo plugin `SysML-general` `Cameo` `blog` (2024).
+
+### Architecture frameworks
+
+The defence/enterprise architecture frameworks SysML models get built against. **UAF** is
+the modern OMG framework — it supersedes UPDM/DoDAF/MODAF and runs natively in Cameo; start
+there unless a specific programme mandates DoDAF or NAF.
+
+- [OMG UAF Specification](https://www.omg.org/spec/UAF) - The Unified Architecture Framework spec hub: Domain Metamodel (DMM) and the UAFML profile Cameo implements `SysML-general` `spec` (2022).
+- [OMG UAF Program Page](https://www.omg.org/uaf/) - OMG's UAF overview and community page: concepts, videos, certification, and adoption guidance `SysML-general` `blog` (2024).
+- [UAF Plugin Documentation (Cameo/No Magic)](https://docs.nomagic.com/spaces/UAFP190SP3/pages/47112606/UAF+Plugin+Documentation) - Official Dassault/No Magic docs for the UAF plugin in Cameo/MagicDraw, with sample models `SysMLv1` `Cameo` `tutorial` (2024).
+- [OMG UPDM Specification](https://www.omg.org/spec/UPDM/) - The Unified Profile for DoDAF/MODAF — UAF's predecessor profile, still referenced by legacy programmes `SysML-general` `spec` (2013).
+- [NATO Architecture Framework v4](https://www.nato.int/en/about-us/organization/nato-structure/digital-policy-committee-dpc/nato-architecture-framework-version) - Official NATO landing page for NAF v4.1, the current NATO architecture framework `SysML-general` `standard` (2020).
+- [DoD Architecture Framework (DoDAF 2.02)](https://dodcio.defense.gov/library/dod-architecture-framework/) - Official US DoD CIO page for DoDAF 2.02, the US defence architecture framework `SysML-general` `standard` (2010).
+- [MOD Architecture Framework (MODAF)](https://www.gov.uk/guidance/mod-architecture-framework) - Official UK gov.uk MODAF page; now withdrawn in favour of NAF/UAF but still widely referenced `SysML-general` `standard` (2016).
 
 ### SysML v2 tooling
 
