@@ -1,6 +1,14 @@
-# Hosts that are alive but rate-limit / block automated checkers (false positives).
-# Add a line (regex) here only after confirming the link is genuinely live in a browser.
-# Keep this list short — every entry is a hole in the freshness guarantee.
+# URLs that are live in a browser but return 403/anti-scrape to automated
+# checkers (CDN/WAF bot-blocks). Add a line (regex) only after confirming the
+# link is genuinely live in a browser. Keep this list short — every entry is a
+# hole in the freshness guarantee. Re-verify during the quarterly sweep.
 
-# Example (uncomment / adjust as needed):
-# ^https://www\.linkedin\.com/
+# US DoD WAF blocks all non-browser clients (canonical DoDAF page)
+https://dodcio\.defense\.gov/library/dod-architecture-framework/
+# TriMech training pages — Cloudflare bot challenge
+https://enterprise\.trimech\.com/training-course/intro-to-mbse-and-sysml-with-cameo/
+https://trimech\.com/intro-to-mbse-and-sysml-v2-training-course/
+# Wiley / INCOSE Online Library — 403 to bots, live for readers
+https://incose\.onlinelibrary\.wiley\.com/
+# ResearchGate — blocks automated access
+https://www\.researchgate\.net/
