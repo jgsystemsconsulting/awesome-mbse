@@ -21,6 +21,7 @@ jobs:
       - name: Check links (report only, never fail)
         uses: lycheeverse/lychee-action@v2.8.0
         with:
+          lycheeVersion: v0.24.2
           args: >-
             --include-fragments anchor-only
             --max-concurrency 4
