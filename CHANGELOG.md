@@ -3,6 +3,19 @@
 Maintenance sweeps and notable changes. The "Last full sweep" badge in the README
 tracks the most recent dated entry here.
 
+## 2026-06 — Enable CI link-checking
+
+- **Activated the link-check + awesome-lint workflows** (previously untracked, pending a
+  workflow-scope token): `link-check-pr.yml` gates PRs, `link-check-schedule.yml` runs a
+  weekly link-rot report.
+- **Added `.lycheeignore`** for URLs that are live in a browser but return 403 to automated
+  checkers (DoD WAF, TriMech/Cloudflare, Wiley/INCOSE Online Library, ResearchGate).
+  Verified live manually; re-checked each quarterly sweep.
+- **Removed `jgs-magic-sysmlv2-mcp`** — the repo is private, so the link 404s publicly and
+  failed the inclusion bar's "publicly accessible" rule (§2.5). Re-add when it ships
+  public. Editorial neutrality preserved: the independent `cameo-mcp-bridge` and
+  `jgs-magic-sysmlv1-mcp` entries remain side by side.
+
 ## 2026-06 — Architecture frameworks + section orientation
 
 - **New `### Architecture frameworks` sub-section** — the defence/enterprise frameworks
