@@ -1,0 +1,6 @@
+# Hosts that are alive but rate-limit / block automated checkers (false positives).
+# Add a line (regex) here only after confirming the link is genuinely live in a browser.
+# Keep this list short — every entry is a hole in the freshness guarantee.
+
+# Example (uncomment / adjust as needed):
+# ^https://www\.linkedin\.com/
