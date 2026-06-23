@@ -29,6 +29,7 @@ jobs:
           # Gallery's #slug back-links against the <a id> anchors (spec §5.1, §7.7).
           # token is passed so the many github.com links are checked authenticated,
           # avoiding the 60 req/hr anonymous rate limit that reports live links as dead.
+          lycheeVersion: v0.24.2
           args: >-
             --include-fragments anchor-only
             --max-concurrency 4
