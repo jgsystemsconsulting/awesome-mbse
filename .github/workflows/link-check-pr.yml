@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check links and in-doc anchors
-        uses: lycheeverse/lychee-action@v2.8.0
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # master w/ nested-tarball install fix (>v2.8.0)
         with:
           # --include-fragments anchor-only validates the ToC and the Model
           # Gallery's #slug back-links against the <a id> anchors (spec §5.1, §7.7).
