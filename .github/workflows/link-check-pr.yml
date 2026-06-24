@@ -33,17 +33,17 @@ jobs:
           args: >-
             --include-fragments=anchor-only
             --max-concurrency 4
+            --timeout 30
             --accept 200..=299,429
             --no-progress
             README.md
+            docs/find-it-your-way.md
           fail: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
-  # ToC is hand-maintained (flat, top-level only) to stay awesome-lint clean — doctoc's
-  # generated ToC includes the title/self-reference which awesome-lint rejects. ToC
-  # anchor integrity is enforced by lychee --include-fragments=anchor-only (the lychee
-  # job above), plus the PR-template checklist. See spec §7.8 fallback option (b).
-
+  # awesome-lint runs on README.md only. The cross-views (which re-link spine resources,
+  # tripping remark-lint:double-link) live in docs/find-it-your-way.md, which awesome-lint
+  # does not lint — so the README stays conformant while the views still exist.
   awesome-lint:
     runs-on: ubuntu-latest
     steps:
@@ -51,5 +51,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Awesome-list manifest conformance
+      - name: Awesome-list manifest conformance (README.md)
         run: npx -y awesome-lint

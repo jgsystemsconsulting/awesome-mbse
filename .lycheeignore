@@ -10,8 +10,14 @@ https://enterprise\.trimech\.com/training-course/intro-to-mbse-and-sysml-with-ca
 https://trimech\.com/intro-to-mbse-and-sysml-v2-training-course/
 # Wiley / INCOSE Online Library — 403 to bots, live for readers
 https://incose\.onlinelibrary\.wiley\.com/
+# INCOSE main site (SE Handbook) — 403 to bots, live in a browser
+https://www\.incose\.org/
 # ResearchGate — blocks automated access
 https://www\.researchgate\.net/
+# CameoMagic — slow host, times out the checker; live in a browser
+https://cameomagic\.com/
+# IBM jazz.net library — very slow PDF host, times out the checker; live in a browser
+https://jazz\.net/
 # GitHub issue-form link: written as the conventional relative ../../issues/new/choose
 # (correct for browsers); lychee resolves it to a nonexistent local file path.
 issues/new/choose

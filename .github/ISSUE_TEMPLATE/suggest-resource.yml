@@ -3,36 +3,73 @@ description: Suggest a SysML / Magic Grid / Cameo MBSE resource to add to the li
 title: "[Suggestion] <resource name>"
 labels: ["suggestion"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        The list is generated from `data/entries.yaml`. You don't need to edit anything —
+        fill this in and a maintainer will add the record and regenerate the README.
   - type: input
     id: name
     attributes:
-      label: Resource name
+      label: Resource name (becomes the entry title)
       placeholder: e.g. MagicGrid Book of Knowledge
     validations:
       required: true
   - type: input
     id: url
     attributes:
-      label: URL
+      label: URL (must be http/https)
       placeholder: https://...
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
-      label: One-line description (≤ 140 characters, factual, no hype)
+      label: One-line description (factual, no hype)
     validations:
       required: true
   - type: dropdown
-    id: section
+    id: lang
     attributes:
-      label: Which section does it belong in?
+      label: Modelling language / notation
       options:
-        - Magic Grid & Cameo / CATIA Magic
-        - Model Gallery (it's a real, openable model)
-        - Broader SysML / MBSE Context
+        - sysml-v1 (SysML v1 — incl. Magic Grid / Cameo)
+        - sysml-v2 (SysML v2)
+        - uaf (UAF / architecture frameworks)
+        - arcadia (Arcadia / Capella)
+        - opm (Object-Process Methodology)
+        - oml (openCAESAR / OML)
+        - cross-cutting (language-general — method, standard, community)
     validations:
       required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Resource type
+      options:
+        - methodology
+        - tutorial
+        - course
+        - book-paper
+        - model (a real, openable model)
+        - tool
+        - community
+        - spec
+        - api
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year of the most recent author-published version
+      placeholder: e.g. 2024
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Suggested tags (comma-separated; see data/tags.yaml)
+      placeholder: e.g. SysMLv2, Cameo, has-model
   - type: checkboxes
     id: bar
     attributes:

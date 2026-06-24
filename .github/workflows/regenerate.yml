@@ -1,0 +1,52 @@
+name: regenerate (maintainer rescue)
+
+# Maintainer-gated rescue for a PR that edited data/entries.yaml but left README.md stale
+# (e.g. a web-UI contributor who can't run Python). SECURITY: this job holds a write token,
+# so it must run the BASE-branch generator code, never the PR head's. Only the PR's data/
+# files are pulled in; the generator + template stay at the base-branch versions.
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: "PR number to regenerate"
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout = BASE branch (this repo's default). generator code comes from here only.
+      - uses: actions/checkout@v4
+      - name: Confirm the PR allows maintainer edits, then pull ONLY its data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          can=$(gh pr view "${{ inputs.pr }}" --json maintainerCanModify -q .maintainerCanModify)
+          if [ "$can" != "true" ]; then
+            gh pr comment "${{ inputs.pr }}" --body "I can't push the regenerated README: enable **Allow edits by maintainers** on this PR, or run \`python scripts/generate.py\` locally and commit the result."
+            exit 1
+          fi
+          gh pr checkout "${{ inputs.pr }}" -- data/   # data only; scripts/ + template stay at base
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+      - run: pip install -r requirements.txt
+      - name: Regenerate with base-branch generator + PR data
+        run: python scripts/generate.py
+      - name: Commit regenerated README to the PR branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr checkout "${{ inputs.pr }}"
+          cp README.md /tmp/readme-regenerated.md
+          git checkout -- README.md 2>/dev/null || true
+          cp /tmp/readme-regenerated.md README.md
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: regenerate README.md from data" || { echo "nothing to regenerate"; exit 0; }
+          git push
