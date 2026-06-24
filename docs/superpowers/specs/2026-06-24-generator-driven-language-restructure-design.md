@@ -108,9 +108,13 @@ entry has **exactly one** `lang` home; multi-axis discoverability comes from the
 Anchors are generated deterministically from the title via a single slug function; the
 generator emits the Contents and every view back-link using that same function — which
 also resolves the ToC/anchor slug mismatches CI has previously fought (single- vs
-double-hyphen slugs). **Slug algorithm (matches GitHub's):** lowercase; drop every
-character that is not alphanumeric, space, or hyphen; replace runs of spaces with single
-hyphens; collapse multiple hyphens; strip leading/trailing hyphens. This is the single
+double-hyphen slugs). **Slug algorithm (matches GitHub's exactly — do NOT "tidy" it):** lowercase; strip every
+character that is not a letter, number, underscore, hyphen, or space; replace each space
+with a hyphen. Critically it does **not** collapse consecutive hyphens and does **not**
+strip leading/trailing hyphens — so `Magic Grid & Cameo / CATIA Magic` →
+`magic-grid--cameo--catia-magic` (double hyphens where `&`/`/` were removed between spaces).
+Matching this byte-for-byte is what makes the generated ToC links resolve against GitHub's
+own heading anchors; "tidying" the slug is the exact historical bug. This is the single
 authoritative definition; the validator's slug-uniqueness check and the renderer both call
 it.
 
