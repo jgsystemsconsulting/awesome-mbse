@@ -189,13 +189,16 @@ def render_spine(entries: list[dict], legend: dict) -> dict[str, str]:
 def render_views(entries: list[dict], legend: dict) -> dict[str, str]:
     v: dict[str, str] = {}
 
+    # Views link straight to the resource URL. The only in-doc anchors used anywhere are
+    # section headings (the Home column + ToC + chooser), which always resolve; per-entry
+    # list items are not headings, so we never link to #title.
     models = order([e for e in entries if e["type"] == "model"])
     rows = ["| Model | Home | Tags |", "| --- | --- | --- |"]
     for e in models:
         home_title = LANG_TITLES[e["lang"]]
         home = f"[{home_title}](#{slug(home_title)})"
         tags = " ".join(f"`{t}`" for t in e.get("tags", []))
-        rows.append(f"| [{esc(e['title'])}](#{slug(e['title'])}) | {home} | {tags} |")
+        rows.append(f"| [{esc(e['title'])}]({e['url']}) | {home} | {tags} |")
     v["view-openable-models"] = "\n".join(rows) + "\n"
 
     parts: list[str] = []
@@ -204,7 +207,7 @@ def render_views(entries: list[dict], legend: dict) -> dict[str, str]:
         if not group:
             continue
         parts.append(f"### {tok}\n")
-        parts.extend(f"- [{esc(e['title'])}](#{slug(e['title'])})" for e in group)
+        parts.extend(f"- [{esc(e['title'])}]({e['url']})" for e in group)
         parts.append("")
     v["view-by-tool"] = ("\n".join(parts).rstrip() + "\n") if parts else "\n"
 
@@ -214,7 +217,7 @@ def render_views(entries: list[dict], legend: dict) -> dict[str, str]:
         if not group:
             continue
         parts.append(f"### {TYPE_TITLES[t]}\n")
-        parts.extend(f"- [{esc(e['title'])}](#{slug(e['title'])})" for e in group)
+        parts.extend(f"- [{esc(e['title'])}]({e['url']})" for e in group)
         parts.append("")
     v["view-by-type"] = ("\n".join(parts).rstrip() + "\n") if parts else "\n"
 

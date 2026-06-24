@@ -1,0 +1,30 @@
+name: generate-check
+
+# The README is generated from data/*.yaml. This job proves the committed README.md
+# matches the data and that the data is valid. It runs contributor-supplied code, so it
+# holds NO token and needs no secrets. Runs on every PR (no paths filter) so a required
+# status check is never "skipped" and blocking by branch protection. See spec CI section.
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: generate-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+      - run: pip install -r requirements.txt
+      - name: Generator self-check
+        run: python scripts/generate.py --self-check
+      - name: README matches data (fail on drift / invalid data)
+        run: python scripts/generate.py --check

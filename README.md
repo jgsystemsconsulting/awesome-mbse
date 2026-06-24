@@ -294,30 +294,30 @@ just want a real model to open and learn from.
 <!-- AUTOGEN:START section=view-openable-models -->
 | Model | Home | Tags |
 | --- | --- | --- |
-| [Airbus Apollo-11 SysML v2](#airbus-apollo-11-sysml-v2) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [DLR-FT STPA Library](#dlr-ft-stpa-library) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [fusion-tea](#fusion-tea) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [GfSE SAF — Fire-Fighting Drone System \(Cameo\)](#gfse-saf--fire-fighting-drone-system-cameo) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `tool` |
-| [GfSE SAF-SysMLV2](#gfse-saf-sysmlv2) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [jhaws1982 OOSEM Reference](#jhaws1982-oosem-reference) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [MBSE4U — The SysML v2 Book Examples](#mbse4u--the-sysml-v2-book-examples) | [SysML v2](#sysml-v2) | `SysMLv2` `Cameo` `has-model` `paper` |
-| [MOSA Implementation \(CUSA 2026, Cameo\)](#mosa-implementation-cusa-2026-cameo) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
-| [OMG SysML v2 Release examples](#omg-sysml-v2-release-examples) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [Robot Vacuum Cleaner \(SysML v2\)](#robot-vacuum-cleaner-sysml-v2) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [sensmetry Advent of SysML v2](#sensmetry-advent-of-sysml-v2) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [sensmetry DETECT](#sensmetry-detect) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [SysML v2 Astronomy Reference](#sysml-v2-astronomy-reference) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [Don't Panic Batmobile](#dont-panic-batmobile) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [GaloisInc — VERSE-OpenSUT](#galoisinc--verse-opensut) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
-| [GfSE SysML v2 Models](#gfse-sysml-v2-models) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [Open-MBEE DesertKite \(OOSEM\)](#open-mbee-desertkite-oosem) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [TU Ilmenau CMBSE](#tu-ilmenau-cmbse) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [Open-MBEE MDK DocGen Sample Model](#open-mbee-mdk-docgen-sample-model) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `tool` |
-| [EOSS — Earth Observation Satellite System \(Cameo\)](#eoss--earth-observation-satellite-system-cameo) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
-| [GTRI INGRID Rapid-Modeling Demo Models](#gtri-ingrid-rapid-modeling-demo-models) | [SysML v1](#sysml-v1) | `SysMLv1` `CATIA-Magic` `has-model` `tool` |
-| [Package Delivery Drone \(Cameo\)](#package-delivery-drone-cameo) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
-| [yutaro-ito Sample SysML v2 Project](#yutaro-ito-sample-sysml-v2-project) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [Multiagent Warehouse \(MaaS\)](#multiagent-warehouse-maas) | [SysML v1](#sysml-v1) | `SysMLv1` `CATIA-Magic` `has-model` `paper` |
+| [Airbus Apollo-11 SysML v2](https://github.com/airbus/apollo-11-sysml-v2) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [DLR-FT STPA Library](https://github.com/DLR-FT/SysMLv2LibrarySTPA) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [fusion-tea](https://github.com/1cFE/fusion-tea) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [GfSE SAF — Fire-Fighting Drone System \(Cameo\)](https://github.com/GfSE/SAF-Cameo-Profile/tree/main/SAF_Plugin/samples/SAF) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `tool` |
+| [GfSE SAF-SysMLV2](https://github.com/GfSE/SAF-SysMLV2) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [jhaws1982 OOSEM Reference](https://github.com/jhaws1982/sysmlv2-mbse-reference) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [MBSE4U — The SysML v2 Book Examples](https://github.com/MBSE4U/the-sysmlv2-book-examples) | [SysML v2](#sysml-v2) | `SysMLv2` `Cameo` `has-model` `paper` |
+| [MOSA Implementation \(CUSA 2026, Cameo\)](https://github.com/EnolaTechnologies/cusa26) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
+| [OMG SysML v2 Release examples](https://github.com/Systems-Modeling/SysML-v2-Release/tree/master/sysml/src/examples) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [Robot Vacuum Cleaner \(SysML v2\)](https://github.com/elan8/sysml-robot-vacuum-cleaner) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [sensmetry Advent of SysML v2](https://github.com/sensmetry/advent-of-sysml-v2) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [sensmetry DETECT](https://github.com/sensmetry/detect) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [SysML v2 Astronomy Reference](https://github.com/elan8/sysml-v2-astronomy-reference) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [Don't Panic Batmobile](https://github.com/MBSE4U/dont-panic-batmobile) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [GaloisInc — VERSE-OpenSUT](https://github.com/GaloisInc/VERSE-OpenSUT/tree/main/models/SysMLv1) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
+| [GfSE SysML v2 Models](https://github.com/GfSE/SysML-v2-Models) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [Open-MBEE DesertKite \(OOSEM\)](https://github.com/Open-MBEE/DesertKite.sysml) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [TU Ilmenau CMBSE](https://github.com/ziruili-tu-ilmenau/CMBSE) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [Open-MBEE MDK DocGen Sample Model](https://github.com/Open-MBEE/exec-cameo-mdk/tree/develop/src/main/dist/samples/MDK) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `tool` |
+| [EOSS — Earth Observation Satellite System \(Cameo\)](https://github.com/seakers/cameo-LLM-plugin/tree/main/cameo/examples) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
+| [GTRI INGRID Rapid-Modeling Demo Models](https://github.com/gtri/rapid-modeling-tools/tree/master/ingrid-quick-start) | [SysML v1](#sysml-v1) | `SysMLv1` `CATIA-Magic` `has-model` `tool` |
+| [Package Delivery Drone \(Cameo\)](https://github.com/jmgogo/Package-Delivery-Drone/blob/main/model/Package%20Delivery%20Drone.mdzip) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
+| [yutaro-ito Sample SysML v2 Project](https://github.com/yutaro-ito/sample-sysml-v2-project) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| [Multiagent Warehouse \(MaaS\)](https://github.com/autarchprinceps/Multiagent-Warehouse/blob/master/Documentation/maas-warehouse.mdzip) | [SysML v1](#sysml-v1) | `SysMLv1` `CATIA-Magic` `has-model` `paper` |
 <!-- AUTOGEN:END section=view-openable-models -->
 
 ### By tool
@@ -327,71 +327,71 @@ just want a real model to open and learn from.
 <!-- AUTOGEN:START section=view-by-tool -->
 ### Cameo
 
-- [cameo-mcp-bridge](#cameo-mcp-bridge)
-- [Colorado State University — Cameo Tutorial Script](#colorado-state-university--cameo-tutorial-script)
-- [GfSE SAF Cameo Profile](#gfse-saf-cameo-profile)
-- [GfSE SAF — Fire-Fighting Drone System \(Cameo\)](#gfse-saf--fire-fighting-drone-system-cameo)
-- [MBSE4U — The SysML v2 Book Examples](#mbse4u--the-sysml-v2-book-examples)
-- [MOSA Implementation \(CUSA 2026, Cameo\)](#mosa-implementation-cusa-2026-cameo)
-- [GaloisInc — VERSE-OpenSUT](#galoisinc--verse-opensut)
-- [SCRE Cameo Profiles](#scre-cameo-profiles)
-- [Cameo Simulation Toolkit — Tutorial](#cameo-simulation-toolkit--tutorial)
-- [Cameo Systems Modeler / CATIA Magic](#cameo-systems-modeler--catia-magic)
-- [CameoMagic](#cameomagic)
-- [CameoMagic — Free MBSE & SysML Resources](#cameomagic--free-mbse--sysml-resources)
-- [Intro to MBSE and SysML v2 with Cameo \(TriMech\)](#intro-to-mbse-and-sysml-v2-with-cameo-trimech)
-- [Intro to MBSE and SysML with Cameo \(TriMech\)](#intro-to-mbse-and-sysml-with-cameo-trimech)
-- [Open-MBEE MBSEPlugin](#open-mbee-mbseplugin)
-- [Open-MBEE MDK DocGen Sample Model](#open-mbee-mdk-docgen-sample-model)
-- [SpesML — Open Methodology Docs \(TUM/fortiss\)](#spesml--open-methodology-docs-tumfortiss)
-- [SysML Intensive with MBSE Using Cameo Systems Modeler](#sysml-intensive-with-mbse-using-cameo-systems-modeler)
-- [SysML v2 Workshop on Cameo / CATIA Magic \(Webel\)](#sysml-v2-workshop-on-cameo--catia-magic-webel)
-- [Transitioning Models to SysML v2 with MBSE \(Caltech CTME\)](#transitioning-models-to-sysml-v2-with-mbse-caltech-ctme)
-- [UAF Plugin Documentation \(Cameo/No Magic\)](#uaf-plugin-documentation-cameono-magic)
-- [EOSS — Earth Observation Satellite System \(Cameo\)](#eoss--earth-observation-satellite-system-cameo)
-- [Package Delivery Drone \(Cameo\)](#package-delivery-drone-cameo)
-- [Webel MBSE/SysML Video Tutorials](#webel-mbsesysml-video-tutorials)
-- [Cameo Systems Modeler — Product Documentation](#cameo-systems-modeler--product-documentation)
-- [MagicGrid Book of Knowledge](#magicgrid-book-of-knowledge)
+- [cameo-mcp-bridge](https://github.com/ajhcs/cameo-mcp-bridge)
+- [Colorado State University — Cameo Tutorial Script](https://www.engr.colostate.edu/se/wp-content/uploads/2026/01/CAMEO-TUTORIAL-SCRIPT.pdf)
+- [GfSE SAF Cameo Profile](https://github.com/GfSE/SAF-Cameo-Profile)
+- [GfSE SAF — Fire-Fighting Drone System \(Cameo\)](https://github.com/GfSE/SAF-Cameo-Profile/tree/main/SAF_Plugin/samples/SAF)
+- [MBSE4U — The SysML v2 Book Examples](https://github.com/MBSE4U/the-sysmlv2-book-examples)
+- [MOSA Implementation \(CUSA 2026, Cameo\)](https://github.com/EnolaTechnologies/cusa26)
+- [GaloisInc — VERSE-OpenSUT](https://github.com/GaloisInc/VERSE-OpenSUT/tree/main/models/SysMLv1)
+- [SCRE Cameo Profiles](https://github.com/tsherburne/scre-profile)
+- [Cameo Simulation Toolkit — Tutorial](https://docs.nomagic.com/spaces/CST2024x/pages/136730007/Tutorial)
+- [Cameo Systems Modeler / CATIA Magic](https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler)
+- [CameoMagic](https://cameomagic.com/)
+- [CameoMagic — Free MBSE & SysML Resources](https://cameomagic.com/free-resources/)
+- [Intro to MBSE and SysML v2 with Cameo \(TriMech\)](https://trimech.com/intro-to-mbse-and-sysml-v2-training-course/)
+- [Intro to MBSE and SysML with Cameo \(TriMech\)](https://enterprise.trimech.com/training-course/intro-to-mbse-and-sysml-with-cameo/)
+- [Open-MBEE MBSEPlugin](https://github.com/Open-MBEE/MBSEPlugin)
+- [Open-MBEE MDK DocGen Sample Model](https://github.com/Open-MBEE/exec-cameo-mdk/tree/develop/src/main/dist/samples/MDK)
+- [SpesML — Open Methodology Docs \(TUM/fortiss\)](https://spesml.github.io/)
+- [SysML Intensive with MBSE Using Cameo Systems Modeler](https://www.3ds.com/edu/catia-magic-training/sysml-intensive-mbse-using-cameo-systems-modeler)
+- [SysML v2 Workshop on Cameo / CATIA Magic \(Webel\)](https://webel.com.au/node/4399)
+- [Transitioning Models to SysML v2 with MBSE \(Caltech CTME\)](https://ctme.caltech.edu/transitioning-models-to-sysml-v2-with-mbse.html)
+- [UAF Plugin Documentation \(Cameo/No Magic\)](https://docs.nomagic.com/spaces/UAFP190SP3/pages/47112606/UAF+Plugin+Documentation)
+- [EOSS — Earth Observation Satellite System \(Cameo\)](https://github.com/seakers/cameo-LLM-plugin/tree/main/cameo/examples)
+- [Package Delivery Drone \(Cameo\)](https://github.com/jmgogo/Package-Delivery-Drone/blob/main/model/Package%20Delivery%20Drone.mdzip)
+- [Webel MBSE/SysML Video Tutorials](https://vimeopro.com/webel/mbse)
+- [Cameo Systems Modeler — Product Documentation](https://docs.nomagic.com/spaces/CSM2022xR1/pages/106636564/Cameo+Systems+Modeler+Home+Page)
+- [MagicGrid Book of Knowledge](https://discover.3ds.com/magicgrid-book-of-knowledge)
 
 ### CATIA-Magic
 
-- [jgs-magic-sysmlv1-mcp](#jgs-magic-sysmlv1-mcp)
-- [jgs-magic-sysmlv1-read-skills](#jgs-magic-sysmlv1-read-skills)
-- [GTRI INGRID Rapid-Modeling Demo Models](#gtri-ingrid-rapid-modeling-demo-models)
-- [Multiagent Warehouse \(MaaS\)](#multiagent-warehouse-maas)
+- [jgs-magic-sysmlv1-mcp](https://github.com/jgsystemsconsulting/jgs-magic-sysmlv1-mcp)
+- [jgs-magic-sysmlv1-read-skills](https://github.com/jgsystemsconsulting/jgs-magic-sysmlv1-read-skills)
+- [GTRI INGRID Rapid-Modeling Demo Models](https://github.com/gtri/rapid-modeling-tools/tree/master/ingrid-quick-start)
+- [Multiagent Warehouse \(MaaS\)](https://github.com/autarchprinceps/Multiagent-Warehouse/blob/master/Documentation/maas-warehouse.mdzip)
 
 ### Papyrus
 
-- [Eclipse Papyrus](#eclipse-papyrus)
-- [UAF for Papyrus \(Adocus\)](#uaf-for-papyrus-adocus)
+- [Eclipse Papyrus](https://eclipse.dev/papyrus/)
+- [UAF for Papyrus \(Adocus\)](https://github.com/Adocus/UAF-for-Papyrus)
 
 ### Rhapsody
 
-- [IBM Engineering Systems Design Rhapsody](#ibm-engineering-systems-design-rhapsody)
-- [Harmony aMBSE Deskbook \(IBM\)](#harmony-ambse-deskbook-ibm)
+- [IBM Engineering Systems Design Rhapsody](https://www.ibm.com/products/engineering-rhapsody)
+- [Harmony aMBSE Deskbook \(IBM\)](https://jazz.net/library-content/wp-content/uploads/2020/11/Harmony-aMBSE-Deskbook-Version-1.pdf)
 
 ### SysON
 
-- [Eclipse SysON](#eclipse-syson)
-- [Eclipse SysON — Tutorials \(YouTube\)](#eclipse-syson--tutorials-youtube)
+- [Eclipse SysON](https://github.com/eclipse-syson/syson)
+- [Eclipse SysON — Tutorials \(YouTube\)](https://www.youtube.com/@EclipseSysON)
 
 ### SysIDE
 
-- [SysIDE Editor \(Sensmetry\)](#syside-editor-sensmetry)
+- [SysIDE Editor \(Sensmetry\)](https://github.com/sensmetry/sysml-2ls)
 
 ### Capella
 
-- [py-capellambse](#py-capellambse)
-- [Eclipse Capella](#eclipse-capella)
+- [py-capellambse](https://github.com/DSD-DBS/py-capellambse)
+- [Eclipse Capella](https://mbse-capella.org/)
 
 ### Modelio
 
-- [Modelio](#modelio)
+- [Modelio](https://github.com/ModelioOpenSource/Modelio)
 
 ### Gaphor
 
-- [Gaphor](#gaphor)
+- [Gaphor](https://github.com/gaphor/gaphor)
 <!-- AUTOGEN:END section=view-by-tool -->
 
 ### By resource type
@@ -401,131 +401,131 @@ just want a real model to open and learn from.
 <!-- AUTOGEN:START section=view-by-type -->
 ### Methodology & guides
 
-- [Arcadia Method \(official\)](#arcadia-method-official)
-- [FAS Method](#fas-method)
-- [OMG MBSE Wiki — Methodology Directory](#omg-mbse-wiki--methodology-directory)
-- [SpesML — Open Methodology Docs \(TUM/fortiss\)](#spesml--open-methodology-docs-tumfortiss)
-- [Systems Architecture Meta-Model for the MagicGrid Framework](#systems-architecture-meta-model-for-the-magicgrid-framework)
-- [JPL State Analysis](#jpl-state-analysis)
-- [OOSEM \(OMG MBSE Wiki\)](#oosem-omg-mbse-wiki)
-- [System Verification and Validation Using the MagicGrid Framework](#system-verification-and-validation-using-the-magicgrid-framework)
-- [Object-Process Methodology \(Dori, Technion\)](#object-process-methodology-dori-technion)
-- [SYSMOD \(Tim Weilkiens\)](#sysmod-tim-weilkiens)
-- [MagicGrid Book of Knowledge](#magicgrid-book-of-knowledge)
-- [Harmony aMBSE Deskbook \(IBM\)](#harmony-ambse-deskbook-ibm)
-- [MBSE Grid: A Simplified SysML-Based Approach for Modeling Complex Systems](#mbse-grid-a-simplified-sysml-based-approach-for-modeling-complex-systems)
-- [An Introduction to Arcadia \(Voirin\)](#an-introduction-to-arcadia-voirin)
-- [Survey of MBSE Methodologies \(Estefan, INCOSE/OMG\)](#survey-of-mbse-methodologies-estefan-incoseomg)
+- [Arcadia Method \(official\)](https://mbse-capella.org/arcadia.html)
+- [FAS Method](https://fas-method.org/)
+- [OMG MBSE Wiki — Methodology Directory](https://www.omgwiki.org/MBSE/doku.php?id=mbse:methodology)
+- [SpesML — Open Methodology Docs \(TUM/fortiss\)](https://spesml.github.io/)
+- [Systems Architecture Meta-Model for the MagicGrid Framework](https://incose.onlinelibrary.wiley.com/doi/abs/10.1002/iis2.13284)
+- [JPL State Analysis](https://mds.jpl.nasa.gov/public/sa/)
+- [OOSEM \(OMG MBSE Wiki\)](https://www.omgwiki.org/MBSE/doku.php?id=mbse:incoseoosem)
+- [System Verification and Validation Using the MagicGrid Framework](https://incose.onlinelibrary.wiley.com/doi/full/10.1002/inst.12429)
+- [Object-Process Methodology \(Dori, Technion\)](https://esml.technion.ac.il/opm/overview/)
+- [SYSMOD \(Tim Weilkiens\)](https://mbse4u.com/sysmod/)
+- [MagicGrid Book of Knowledge](https://discover.3ds.com/magicgrid-book-of-knowledge)
+- [Harmony aMBSE Deskbook \(IBM\)](https://jazz.net/library-content/wp-content/uploads/2020/11/Harmony-aMBSE-Deskbook-Version-1.pdf)
+- [MBSE Grid: A Simplified SysML-Based Approach for Modeling Complex Systems](https://epubl.ktu.edu/object/elaba:31768092/31768092.pdf)
+- [An Introduction to Arcadia \(Voirin\)](https://download.eclipse.org/capella/publis/An_Introduction_to_Arcadia_20150115.pdf)
+- [Survey of MBSE Methodologies \(Estefan, INCOSE/OMG\)](https://www.omg.org/sysml/MBSE_Methodology_Survey_RevB.pdf)
 
 ### Tutorials
 
-- [Colorado State University — Cameo Tutorial Script](#colorado-state-university--cameo-tutorial-script)
-- [Eclipse SysON — Tutorials \(YouTube\)](#eclipse-syson--tutorials-youtube)
-- [Cameo Simulation Toolkit — Tutorial](#cameo-simulation-toolkit--tutorial)
-- [CameoMagic — Free MBSE & SysML Resources](#cameomagic--free-mbse--sysml-resources)
-- [UAF Plugin Documentation \(Cameo/No Magic\)](#uaf-plugin-documentation-cameono-magic)
-- [Webel MBSE/SysML Video Tutorials](#webel-mbsesysml-video-tutorials)
-- [Cameo Systems Modeler — Product Documentation](#cameo-systems-modeler--product-documentation)
+- [Colorado State University — Cameo Tutorial Script](https://www.engr.colostate.edu/se/wp-content/uploads/2026/01/CAMEO-TUTORIAL-SCRIPT.pdf)
+- [Eclipse SysON — Tutorials \(YouTube\)](https://www.youtube.com/@EclipseSysON)
+- [Cameo Simulation Toolkit — Tutorial](https://docs.nomagic.com/spaces/CST2024x/pages/136730007/Tutorial)
+- [CameoMagic — Free MBSE & SysML Resources](https://cameomagic.com/free-resources/)
+- [UAF Plugin Documentation \(Cameo/No Magic\)](https://docs.nomagic.com/spaces/UAFP190SP3/pages/47112606/UAF+Plugin+Documentation)
+- [Webel MBSE/SysML Video Tutorials](https://vimeopro.com/webel/mbse)
+- [Cameo Systems Modeler — Product Documentation](https://docs.nomagic.com/spaces/CSM2022xR1/pages/106636564/Cameo+Systems+Modeler+Home+Page)
 
 ### Courses & learning paths
 
-- [Intro to MBSE and SysML v2 with Cameo \(TriMech\)](#intro-to-mbse-and-sysml-v2-with-cameo-trimech)
-- [Intro to MBSE and SysML with Cameo \(TriMech\)](#intro-to-mbse-and-sysml-with-cameo-trimech)
-- [NASA NESC Academy — Systems Engineering Catalog](#nasa-nesc-academy--systems-engineering-catalog)
-- [SysML Intensive with MBSE Using Cameo Systems Modeler](#sysml-intensive-with-mbse-using-cameo-systems-modeler)
-- [SysML v2 Workshop on Cameo / CATIA Magic \(Webel\)](#sysml-v2-workshop-on-cameo--catia-magic-webel)
-- [Transitioning Models to SysML v2 with MBSE \(Caltech CTME\)](#transitioning-models-to-sysml-v2-with-mbse-caltech-ctme)
-- [Modeling with SysML Tutorial \(Friedenthal & Oster, JHU/APL\)](#modeling-with-sysml-tutorial-friedenthal--oster-jhuapl)
-- [MIT OCW 16.842 — Fundamentals of Systems Engineering](#mit-ocw-16842--fundamentals-of-systems-engineering)
-- [OMG/INCOSE SysML Tutorial \(Friedenthal et al.\)](#omgincose-sysml-tutorial-friedenthal-et-al)
+- [Intro to MBSE and SysML v2 with Cameo \(TriMech\)](https://trimech.com/intro-to-mbse-and-sysml-v2-training-course/)
+- [Intro to MBSE and SysML with Cameo \(TriMech\)](https://enterprise.trimech.com/training-course/intro-to-mbse-and-sysml-with-cameo/)
+- [NASA NESC Academy — Systems Engineering Catalog](https://nescacademy.nasa.gov/catalogs/systemseng)
+- [SysML Intensive with MBSE Using Cameo Systems Modeler](https://www.3ds.com/edu/catia-magic-training/sysml-intensive-mbse-using-cameo-systems-modeler)
+- [SysML v2 Workshop on Cameo / CATIA Magic \(Webel\)](https://webel.com.au/node/4399)
+- [Transitioning Models to SysML v2 with MBSE \(Caltech CTME\)](https://ctme.caltech.edu/transitioning-models-to-sysml-v2-with-mbse.html)
+- [Modeling with SysML Tutorial \(Friedenthal & Oster, JHU/APL\)](https://www.jhuapl.edu/sites/default/files/2023-03/ModelingwithSysMLTutorial.pdf)
+- [MIT OCW 16.842 — Fundamentals of Systems Engineering](https://ocw.mit.edu/courses/16-842-fundamentals-of-systems-engineering-fall-2015/)
+- [OMG/INCOSE SysML Tutorial \(Friedenthal et al.\)](https://www.omg.org/sysml/INCOSE-OMGSysML-Tutorial-Final-090901.pdf)
 
 ### Books & papers
 
-- [Analysis of the Mainstream MBSE Methodologies from the Modeling Practice View](#analysis-of-the-mainstream-mbse-methodologies-from-the-modeling-practice-view)
+- [Analysis of the Mainstream MBSE Methodologies from the Modeling Practice View](https://www.researchgate.net/publication/366507453_Analysis_of_the_Mainstream_MBSE_Methodologies_from_the_Modeling_Practice_View)
 
 ### Example models
 
-- [Airbus Apollo-11 SysML v2](#airbus-apollo-11-sysml-v2)
-- [DLR-FT STPA Library](#dlr-ft-stpa-library)
-- [fusion-tea](#fusion-tea)
-- [GfSE SAF — Fire-Fighting Drone System \(Cameo\)](#gfse-saf--fire-fighting-drone-system-cameo)
-- [GfSE SAF-SysMLV2](#gfse-saf-sysmlv2)
-- [jhaws1982 OOSEM Reference](#jhaws1982-oosem-reference)
-- [MBSE4U — The SysML v2 Book Examples](#mbse4u--the-sysml-v2-book-examples)
-- [MOSA Implementation \(CUSA 2026, Cameo\)](#mosa-implementation-cusa-2026-cameo)
-- [OMG SysML v2 Release examples](#omg-sysml-v2-release-examples)
-- [Robot Vacuum Cleaner \(SysML v2\)](#robot-vacuum-cleaner-sysml-v2)
-- [sensmetry Advent of SysML v2](#sensmetry-advent-of-sysml-v2)
-- [sensmetry DETECT](#sensmetry-detect)
-- [SysML v2 Astronomy Reference](#sysml-v2-astronomy-reference)
-- [Don't Panic Batmobile](#dont-panic-batmobile)
-- [GaloisInc — VERSE-OpenSUT](#galoisinc--verse-opensut)
-- [GfSE SysML v2 Models](#gfse-sysml-v2-models)
-- [Open-MBEE DesertKite \(OOSEM\)](#open-mbee-desertkite-oosem)
-- [TU Ilmenau CMBSE](#tu-ilmenau-cmbse)
-- [Open-MBEE MDK DocGen Sample Model](#open-mbee-mdk-docgen-sample-model)
-- [EOSS — Earth Observation Satellite System \(Cameo\)](#eoss--earth-observation-satellite-system-cameo)
-- [GTRI INGRID Rapid-Modeling Demo Models](#gtri-ingrid-rapid-modeling-demo-models)
-- [Package Delivery Drone \(Cameo\)](#package-delivery-drone-cameo)
-- [yutaro-ito Sample SysML v2 Project](#yutaro-ito-sample-sysml-v2-project)
-- [Multiagent Warehouse \(MaaS\)](#multiagent-warehouse-maas)
+- [Airbus Apollo-11 SysML v2](https://github.com/airbus/apollo-11-sysml-v2)
+- [DLR-FT STPA Library](https://github.com/DLR-FT/SysMLv2LibrarySTPA)
+- [fusion-tea](https://github.com/1cFE/fusion-tea)
+- [GfSE SAF — Fire-Fighting Drone System \(Cameo\)](https://github.com/GfSE/SAF-Cameo-Profile/tree/main/SAF_Plugin/samples/SAF)
+- [GfSE SAF-SysMLV2](https://github.com/GfSE/SAF-SysMLV2)
+- [jhaws1982 OOSEM Reference](https://github.com/jhaws1982/sysmlv2-mbse-reference)
+- [MBSE4U — The SysML v2 Book Examples](https://github.com/MBSE4U/the-sysmlv2-book-examples)
+- [MOSA Implementation \(CUSA 2026, Cameo\)](https://github.com/EnolaTechnologies/cusa26)
+- [OMG SysML v2 Release examples](https://github.com/Systems-Modeling/SysML-v2-Release/tree/master/sysml/src/examples)
+- [Robot Vacuum Cleaner \(SysML v2\)](https://github.com/elan8/sysml-robot-vacuum-cleaner)
+- [sensmetry Advent of SysML v2](https://github.com/sensmetry/advent-of-sysml-v2)
+- [sensmetry DETECT](https://github.com/sensmetry/detect)
+- [SysML v2 Astronomy Reference](https://github.com/elan8/sysml-v2-astronomy-reference)
+- [Don't Panic Batmobile](https://github.com/MBSE4U/dont-panic-batmobile)
+- [GaloisInc — VERSE-OpenSUT](https://github.com/GaloisInc/VERSE-OpenSUT/tree/main/models/SysMLv1)
+- [GfSE SysML v2 Models](https://github.com/GfSE/SysML-v2-Models)
+- [Open-MBEE DesertKite \(OOSEM\)](https://github.com/Open-MBEE/DesertKite.sysml)
+- [TU Ilmenau CMBSE](https://github.com/ziruili-tu-ilmenau/CMBSE)
+- [Open-MBEE MDK DocGen Sample Model](https://github.com/Open-MBEE/exec-cameo-mdk/tree/develop/src/main/dist/samples/MDK)
+- [EOSS — Earth Observation Satellite System \(Cameo\)](https://github.com/seakers/cameo-LLM-plugin/tree/main/cameo/examples)
+- [GTRI INGRID Rapid-Modeling Demo Models](https://github.com/gtri/rapid-modeling-tools/tree/master/ingrid-quick-start)
+- [Package Delivery Drone \(Cameo\)](https://github.com/jmgogo/Package-Delivery-Drone/blob/main/model/Package%20Delivery%20Drone.mdzip)
+- [yutaro-ito Sample SysML v2 Project](https://github.com/yutaro-ito/sample-sysml-v2-project)
+- [Multiagent Warehouse \(MaaS\)](https://github.com/autarchprinceps/Multiagent-Warehouse/blob/master/Documentation/maas-warehouse.mdzip)
 
 ### Tools, plugins & automation
 
-- [cameo-mcp-bridge](#cameo-mcp-bridge)
-- [Eclipse SysON](#eclipse-syson)
-- [elan8 SysML v2 Domain Libraries](#elan8-sysml-v2-domain-libraries)
-- [Gaphor](#gaphor)
-- [GfSE SAF Cameo Profile](#gfse-saf-cameo-profile)
-- [jgs-magic-sysmlv1-mcp](#jgs-magic-sysmlv1-mcp)
-- [jgs-magic-sysmlv1-read-skills](#jgs-magic-sysmlv1-read-skills)
-- [openCAESAR Metrology Vocabularies](#opencaesar-metrology-vocabularies)
-- [py-capellambse](#py-capellambse)
-- [Sysand \(Sensmetry\)](#sysand-sensmetry)
-- [SysML v2 Library for AADL](#sysml-v2-library-for-aadl)
-- [SysML v2 Pilot Implementation](#sysml-v2-pilot-implementation)
-- [SysML v2 Standard Library](#sysml-v2-standard-library)
-- [SYSMOD for SysML v2](#sysmod-for-sysml-v2)
-- [openCAESAR / OML](#opencaesar--oml)
-- [SCRE Cameo Profiles](#scre-cameo-profiles)
-- [SysIDE Editor \(Sensmetry\)](#syside-editor-sensmetry)
-- [Cameo Systems Modeler / CATIA Magic](#cameo-systems-modeler--catia-magic)
-- [Eclipse Capella](#eclipse-capella)
-- [Eclipse Papyrus](#eclipse-papyrus)
-- [IBM Engineering Systems Design Rhapsody](#ibm-engineering-systems-design-rhapsody)
-- [Modelio](#modelio)
-- [Open-MBEE MBSEPlugin](#open-mbee-mbseplugin)
-- [QUDT — Quantities, Units, Dimensions & Types](#qudt--quantities-units-dimensions--types)
-- [UAF for Papyrus \(Adocus\)](#uaf-for-papyrus-adocus)
+- [cameo-mcp-bridge](https://github.com/ajhcs/cameo-mcp-bridge)
+- [Eclipse SysON](https://github.com/eclipse-syson/syson)
+- [elan8 SysML v2 Domain Libraries](https://github.com/elan8/sysml-domain-libraries)
+- [Gaphor](https://github.com/gaphor/gaphor)
+- [GfSE SAF Cameo Profile](https://github.com/GfSE/SAF-Cameo-Profile)
+- [jgs-magic-sysmlv1-mcp](https://github.com/jgsystemsconsulting/jgs-magic-sysmlv1-mcp)
+- [jgs-magic-sysmlv1-read-skills](https://github.com/jgsystemsconsulting/jgs-magic-sysmlv1-read-skills)
+- [openCAESAR Metrology Vocabularies](https://github.com/opencaesar/metrology-vocabularies)
+- [py-capellambse](https://github.com/DSD-DBS/py-capellambse)
+- [Sysand \(Sensmetry\)](https://github.com/sensmetry/sysand)
+- [SysML v2 Library for AADL](https://github.com/Systems-Modeling/SysML-v2-AADL-Release)
+- [SysML v2 Pilot Implementation](https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation)
+- [SysML v2 Standard Library](https://github.com/Systems-Modeling/SysML-v2-Release/tree/master/sysml.library)
+- [SYSMOD for SysML v2](https://github.com/MBSE4U/sysmod-sysmlv2)
+- [openCAESAR / OML](https://github.com/opencaesar/oml)
+- [SCRE Cameo Profiles](https://github.com/tsherburne/scre-profile)
+- [SysIDE Editor \(Sensmetry\)](https://github.com/sensmetry/sysml-2ls)
+- [Cameo Systems Modeler / CATIA Magic](https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler)
+- [Eclipse Capella](https://mbse-capella.org/)
+- [Eclipse Papyrus](https://eclipse.dev/papyrus/)
+- [IBM Engineering Systems Design Rhapsody](https://www.ibm.com/products/engineering-rhapsody)
+- [Modelio](https://github.com/ModelioOpenSource/Modelio)
+- [Open-MBEE MBSEPlugin](https://github.com/Open-MBEE/MBSEPlugin)
+- [QUDT — Quantities, Units, Dimensions & Types](https://github.com/qudt/qudt-public-repo)
+- [UAF for Papyrus \(Adocus\)](https://github.com/Adocus/UAF-for-Papyrus)
 
 ### Communities & blogs
 
-- [MBSE4U \(Tim Weilkiens\)](#mbse4u-tim-weilkiens)
-- [CameoMagic](#cameomagic)
-- [OMG UAF Program Page](#omg-uaf-program-page)
+- [MBSE4U \(Tim Weilkiens\)](https://mbse4u.com/)
+- [CameoMagic](https://cameomagic.com/)
+- [OMG UAF Program Page](https://www.omg.org/uaf/)
 
 ### Specifications & standards
 
-- [Systems-Modeling/SysML-v2-Release](#systems-modelingsysml-v2-release)
-- [OMG KerML Specification](#omg-kerml-specification)
-- [OMG SysML Specification](#omg-sysml-specification)
-- [OMG SysML v2.0 Specification](#omg-sysml-v20-specification)
-- [OMG Systems Modeling API & Services](#omg-systems-modeling-api--services)
-- [OMG SysML v1.7](#omg-sysml-v17)
-- [INCOSE Systems Engineering Handbook](#incose-systems-engineering-handbook)
-- [NASA Systems Modeling Handbook \(NASA-HDBK-1009\)](#nasa-systems-modeling-handbook-nasa-hdbk-1009)
-- [OMG UAF Specification](#omg-uaf-specification)
-- [NATO Architecture Framework v4](#nato-architecture-framework-v4)
-- [MOD Architecture Framework \(MODAF\)](#mod-architecture-framework-modaf)
-- [OMG UPDM Specification](#omg-updm-specification)
-- [DoD Architecture Framework \(DoDAF 2.02\)](#dod-architecture-framework-dodaf-202)
+- [Systems-Modeling/SysML-v2-Release](https://github.com/Systems-Modeling/SysML-v2-Release)
+- [OMG KerML Specification](https://www.omg.org/spec/KerML/)
+- [OMG SysML Specification](https://www.omg.org/spec/SysML/)
+- [OMG SysML v2.0 Specification](https://www.omg.org/spec/SysML/2.0/)
+- [OMG Systems Modeling API & Services](https://www.omg.org/spec/SystemsModelingAPI/)
+- [OMG SysML v1.7](https://www.omg.org/spec/SysML/1.7/)
+- [INCOSE Systems Engineering Handbook](https://www.incose.org/resources-publications/technical-publications/se-handbook/)
+- [NASA Systems Modeling Handbook \(NASA-HDBK-1009\)](https://standards.nasa.gov/standard/NASA/NASA-HDBK-1009)
+- [OMG UAF Specification](https://www.omg.org/spec/UAF)
+- [NATO Architecture Framework v4](https://www.nato.int/en/about-us/organization/nato-structure/digital-policy-committee-dpc/nato-architecture-framework-version)
+- [MOD Architecture Framework \(MODAF\)](https://www.gov.uk/guidance/mod-architecture-framework)
+- [OMG UPDM Specification](https://www.omg.org/spec/UPDM/)
+- [DoD Architecture Framework \(DoDAF 2.02\)](https://dodcio.defense.gov/library/dod-architecture-framework/)
 
 ### APIs & automation
 
-- [Open-MBEE Flexo-MMS for SysML v2](#open-mbee-flexo-mms-for-sysml-v2)
-- [SysML v2 API Services](#sysml-v2-api-services)
-- [SysML v2 API Cookbook](#sysml-v2-api-cookbook)
-- [SysML v2 API Python Client](#sysml-v2-api-python-client)
+- [Open-MBEE Flexo-MMS for SysML v2](https://github.com/Open-MBEE/flexo-mms-sysmlv2)
+- [SysML v2 API Services](https://github.com/Systems-Modeling/SysML-v2-API-Services)
+- [SysML v2 API Cookbook](https://github.com/Systems-Modeling/SysML-v2-API-Cookbook)
+- [SysML v2 API Python Client](https://github.com/Systems-Modeling/SysML-v2-API-Python-Client)
 <!-- AUTOGEN:END section=view-by-type -->
 
 ### Tag legend

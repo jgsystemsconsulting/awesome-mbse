@@ -1,0 +1,11 @@
+# Enable once:  pip install pre-commit && pre-commit install
+# Regenerates README.md from data/ before each commit so it never goes stale.
+repos:
+  - repo: local
+    hooks:
+      - id: generate-readme
+        name: regenerate README.md from data
+        entry: python scripts/generate.py
+        language: system
+        pass_filenames: false
+        files: ^(data/.*\.yaml|README\.template\.md|scripts/generate\.py)$

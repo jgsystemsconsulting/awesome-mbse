@@ -4,21 +4,29 @@ Thanks for helping keep this the best-curated MBSE / SysML index anywhere — wi
 deepest Magic Grid / Cameo coverage around. Read this before opening a PR — the CI gates
 enforce most of it.
 
-The fastest path: open an [issue using the "Suggest a resource" form](../../issues/new/choose),
-or open a pull request that edits `README.md` directly.
+> **`README.md` is generated — never edit it directly.** The list lives in
+> [`data/entries.yaml`](data/entries.yaml) (the links) and [`data/tags.yaml`](data/tags.yaml)
+> (the tag vocabulary). [`scripts/generate.py`](scripts/generate.py) renders `README.md`
+> from them. Edit the data, regenerate, and commit both.
+
+The fastest path: open an [issue using the "Suggest a resource" form](../../issues/new/choose)
+— a maintainer adds the record for you, no tooling required. Or open a pull request that
+edits `data/entries.yaml` (see below).
 
 ## 1. How to suggest a resource
 
-- **Issue:** use the *Suggest a resource* form. Good for "I found this, you decide."
-- **PR:** edit `README.md`, follow the entry format below, tick the PR checklist. CI
-  link-checks your entry and lints the list.
+- **Issue (no tools needed):** use the *Suggest a resource* form. Best if you can't run
+  Python — a maintainer transcribes it into the data and regenerates.
+- **PR:** add a record to `data/entries.yaml` (format in §3), run `python scripts/generate.py`,
+  and commit both `data/entries.yaml` and the regenerated `README.md`. CI re-checks the
+  data, link-checks, and lints the list.
 
 ## 2. Inclusion bar
 
 An entry is accepted only if **all** hold:
 
-1. **On-topic** — genuinely about MBSE practice or SysML v1/v2 (the Magic Grid / Cameo
-   section or the broader-context section).
+1. **On-topic** — genuinely about MBSE practice or SysML v1/v2 (or an adjacent notation /
+   language-general resource the list already covers).
 2. **Substantive** — it teaches, demonstrates, specifies, or provides something usable.
    Not a stub. Not pure vendor marketing.
 3. **Live** — the link resolves right now.
@@ -26,60 +34,67 @@ An entry is accepted only if **all** hold:
 5. **Legally linkable** — publicly accessible. We **link**, we never re-host model files,
    PDFs, or proprietary content.
 
-Tie-breakers (nice-to-have, not gates): has a real openable model (`has-model`), recently
+Tie-breakers (nice-to-have, not gates): ships an openable model (`type: model`), recently
 updated, from a recognized source (OMG, INCOSE, Eclipse, Dassault, a university, an
 established practitioner).
 
-## 3. Entry format
+## 3. Entry format (`data/entries.yaml`)
 
-One line per entry, **hyphen separator** (` - `, never an en/em-dash — awesome-lint
-rejects those), tags as **inline code spans inside the sentence before the terminal
-period**, year parenthesized as the last token:
+One YAML record per resource:
 
+```yaml
+- title: MagicGrid Book of Knowledge
+  url: https://discover.3ds.com/magicgrid-book-of-knowledge
+  desc: The definitive practitioner guide to the MagicGrid method
+  date: 2021
+  lang: sysml-v1          # spine section — see vocabulary below
+  type: methodology       # resource type — see vocabulary below
+  flagship: true          # OPTIONAL, sysml-v1 only — places it in the Magic Grid/Cameo marquee
+  tags: [SysML-general, MagicGrid, Cameo, book]
 ```
-- [Resource Name](https://example.com) - One-line factual description `SysMLv2` `Cameo` `has-model` `tutorial` (2024).
+
+- **`title`** doubles as the heading anchor — it must be **unique** (the generator errors
+  on a slug collision; disambiguate the title rather than working around it).
+- **`url`** must be `http(s)` — any other scheme is rejected.
+- **`desc`** factual, one line, no hype. Don't end it with a period — the generator adds
+  the tags and `(year).` tail.
+- **`date`** the year as an integer (see §5).
+- **`lang`** exactly one of: `sysml-v1` · `sysml-v2` · `uaf` · `arcadia` · `opm` · `oml` ·
+  `cross-cutting` (language-general — methods, standards, communities that span notations).
+- **`type`** exactly one of: `methodology` · `tutorial` · `course` · `book-paper` ·
+  `model` · `tool` · `community` · `spec` · `api`.
+- **`flagship: true`** is valid **only** when `lang: sysml-v1`; it pulls the entry into the
+  marquee "Magic Grid & Cameo / CATIA Magic" subsection. Omit it otherwise.
+- **`tags`** every value must be defined in `data/tags.yaml` (the generator errors on an
+  unknown tag). Add a new tag there first, with a one-line meaning.
+
+The generator validates all of this and fails closed, so a bad record stops CI with a
+clear message.
+
+## 4. Tag vocabulary (`data/tags.yaml`)
+
+`data/tags.yaml` is the single authority for the controlled tag vocabulary and for which
+tags are **tool tokens** (`tool: true`) that drive the *By tool* view. To add a tag:
+
+```yaml
+NewTag: {desc: "One-line meaning shown in the Tag legend"}
+ToolName: {desc: "The tool's name", tool: true}   # tool: true -> appears as a By-tool group
 ```
 
-- **Description:** factual, one line, **≤ 140 characters** (measured from the first
-  character after ` - ` to the last character before the first tag, excluding the link
-  markup and tags). No hype.
-- **`has-model`** means: a **directly downloadable, non-paywalled** file in a recognized
-  model format (`.mdzip`, `.mdxml`, `.sysml`, `.uml`, or an Eclipse model project) that
-  opens in a named tool. Screenshots, papers *describing* a model, and access-gated /
-  request-only files **do not** qualify.
+Keep tags drawn from this vocabulary; the *Tag legend* view is generated from it, so every
+tag is self-documenting. Tool tokens must be a subset of the vocabulary (the generator
+enforces this).
 
-## 4. Tag vocabulary, cardinality & order
+## 5. The year rule (`date`)
 
-Tags appear in this fixed order, drawn **only** from this vocabulary:
-
-`language → method → tool → has-model → type → spec/standard → paid → year`
-
-| Axis | Cardinality | Values |
-|------|-------------|--------|
-| language | exactly 1 | `SysMLv1` · `SysMLv2` · `SysML-general` (version-agnostic: methodology, books, both-version docs — not a lazy default) |
-| method | 0 or 1 | `MagicGrid` |
-| tool | 0 or more | `Cameo` · `CATIA-Magic` · `Papyrus` · `Rhapsody` · `SysON` · `other-tool` |
-| has-model | 0 or 1 | `has-model` |
-| type | exactly 1 (dominant form) | `tutorial` · `course` · `book` · `paper` · `blog` · `video` · `tool` · `plugin` · `mcp` |
-| spec/standard | 0 or 1 | `spec` · `standard` |
-| paid | 0 or 1 | `paid` |
-| year | exactly 1 | `(YYYY)` (see §5) |
-
-- `other-tool` graduates to its own tag only once ≥ 3 entries share it.
-- For an OMG/INCOSE normative document use `spec`/`standard` and omit `paper`.
-
-## 5. The year rule (`YYYY`)
-
-`(YYYY)` = the year of the resource's **most recent author-published version**:
+`date` = the year of the resource's **most recent author-published version**:
 
 - a paper → its publication year;
 - a repo → its latest tagged release, or the latest default-branch commit if untagged;
 - a course → its current cohort year.
 
-**Trivial edits (typo fixes) don't count.** Examples:
-
-- A 2019 paper with a 2024 typo-fix commit → `(2019)`.
-- A repo whose latest release tag is `v2.1` from 2023 → `(2023)`.
+**Trivial edits (typo fixes) don't count.** A 2019 paper with a 2024 typo-fix commit →
+`date: 2019`. A repo whose latest release tag is `v2.1` from 2023 → `date: 2023`.
 
 ## 6. Canonical-URL rule (dedupe)
 
@@ -97,49 +112,31 @@ SysML/Cameo tooling. To keep it trustworthy:
 - **A superior competing tool is listed above a JGS one.** Neutrality is enforced by
   this rule, not by tone.
 
-> **Table of Contents:** the `## Contents` ToC is hand-maintained and lists only the
-> top-level sections (a flat ToC keeps awesome-lint happy). If you add or rename a
-> **top-level** section, update the ToC by hand; sub-sections are not listed. CI validates
-> every ToC anchor resolves (lychee `--include-fragments anchor-only`).
+## 8. Generating & checking locally
 
-## 8. Cross-listing (Model Gallery)
-
-Each `has-model` entry has **exactly one canonical home** — its section under *Magic Grid
-& Cameo*. The **Model Gallery** is a *table* (not a list) of anchor links back to those
-canonical entries — never duplicated entry text.
-
-To make a model appear in the Gallery, write a matched **triple**:
-
-```
-<!-- canonical home, in its section: -->
-<a id="resource-name"></a>
-- [Resource Name](https://example.com) - Description `SysMLv2` `Cameo` `has-model` (2024).
-```
-
-```
-<!-- Gallery row, in the Model Gallery table: -->
-| [Resource Name](#resource-name) | Magic Grid › Example models | `Cameo` `has-model` `(2024)` |
-```
-
-**The `<a id>` value MUST equal the slugified resource name:** lowercase, spaces → `-`,
-drop every character outside `[a-z0-9-]`, collapse repeats, append `-1`/`-2`… on
-collision. (CI checks an anchor *exists*; it can't check the slug *matches the name* —
-so get it right by following this rule and the worked example above.) The Gallery `Tags`
-column is a convenience subset, not the canonical tag run.
-
-## 9. Local link-check
-
-No install needed — check your changed links with Docker:
+You need Python **3.11** (the canonical version — use [pyenv](https://github.com/pyenv/pyenv)
+or [asdf](https://asdf-vm.com/) to match it) and the pinned dependency:
 
 ```sh
-docker run --rm -v "$PWD:/d" -w /d lycheeverse/lychee --include-fragments anchor-only README.md
+pip install -r requirements.txt
+python scripts/generate.py            # rewrite README.md from the data
+python scripts/generate.py --check    # verify README.md matches the data (what CI runs)
+python scripts/generate.py --self-check   # run the generator's built-in tests
 ```
 
-Or just open a **draft PR** and let CI check it for you.
+**Enable the pre-commit hook once** so regeneration happens automatically before each commit:
 
-## 10. Maintenance cadence
+```sh
+pip install pre-commit && pre-commit install
+```
+
+CI runs three independent checks on every PR — `generate-check` (the data and README are
+in sync and valid), `awesome-lint` (structure), and `lychee` (links + ToC anchors resolve).
+All three must pass.
+
+## 9. Maintenance cadence
 
 The maintainers run a **quarterly sweep** (add new resources, prune rot), logged in
 `CHANGELOG.md` with the date, and update the *Last full sweep* badge at the top of the
-README each time. If it's been **> 6 months** since the last sweep, the badge flips to
-"maintenance lapsed" — call it out in an issue.
+README template each time. If it's been **> 6 months** since the last sweep, the badge
+flips to "maintenance lapsed" — call it out in an issue.
