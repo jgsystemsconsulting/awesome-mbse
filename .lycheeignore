@@ -16,6 +16,8 @@ https://www\.incose\.org/
 https://www\.researchgate\.net/
 # CameoMagic — slow host, times out the checker; live in a browser
 https://cameomagic\.com/
+# IBM jazz.net library — very slow PDF host, times out the checker; live in a browser
+https://jazz\.net/
 # GitHub issue-form link: written as the conventional relative ../../issues/new/choose
 # (correct for browsers); lychee resolves it to a nonexistent local file path.
 issues/new/choose
