@@ -14,6 +14,8 @@ https://incose\.onlinelibrary\.wiley\.com/
 https://www\.incose\.org/
 # ResearchGate — blocks automated access
 https://www\.researchgate\.net/
+# CameoMagic — slow host, times out the checker; live in a browser
+https://cameomagic\.com/
 # GitHub issue-form link: written as the conventional relative ../../issues/new/choose
 # (correct for browsers); lychee resolves it to a nonexistent local file path.
 issues/new/choose
