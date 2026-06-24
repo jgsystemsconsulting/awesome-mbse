@@ -1,0 +1,31 @@
+# Controlled tag vocabulary — the single authority for the Tag-legend view and validation.
+# Every tag used in data/entries.yaml MUST be defined here.
+# `tool: true` marks a By-tool grouping token (these MUST be a subset of these keys).
+
+SysML-general: {desc: "Applies across SysML versions / language-general"}
+SysMLv1: {desc: "SysML version 1.x"}
+SysMLv2: {desc: "SysML version 2.x (textual)"}
+MagicGrid: {desc: "The MagicGrid modelling method"}
+Cameo: {desc: "Cameo Systems Modeler / CATIA Magic", tool: true}
+CATIA-Magic: {desc: "CATIA Magic (No Magic) platform", tool: true}
+Papyrus: {desc: "Eclipse Papyrus", tool: true}
+Rhapsody: {desc: "IBM Engineering Systems Design Rhapsody", tool: true}
+SysON: {desc: "Eclipse SysON web modeler", tool: true}
+SysIDE: {desc: "Sensmetry SysIDE VS Code extension", tool: true}
+Capella: {desc: "Eclipse Capella (Arcadia)", tool: true}
+Modelio: {desc: "Modelio open-source modeler", tool: true}
+Gaphor: {desc: "Gaphor lightweight modeler", tool: true}
+other-tool: {desc: "A tool outside the named set"}
+book: {desc: "Book"}
+paper: {desc: "Academic / technical paper"}
+tutorial: {desc: "Hands-on tutorial"}
+video: {desc: "Video resource"}
+course: {desc: "Training course"}
+paid: {desc: "Paid / commercial resource"}
+spec: {desc: "Specification document"}
+standard: {desc: "Standard / handbook"}
+blog: {desc: "Blog / community site"}
+plugin: {desc: "Tool plugin / profile"}
+mcp: {desc: "Model Context Protocol server"}
+tool: {desc: "Software tool"}
+has-model: {desc: "Ships an openable model"}

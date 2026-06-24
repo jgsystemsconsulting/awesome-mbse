@@ -171,11 +171,10 @@ def render_spine(entries: list[dict], legend: dict) -> dict[str, str]:
         if lang in ADJACENT:
             lines.append(f"### {LANG_TITLES[lang]}\n")
         if lang == "sysml-v1":
-            flagship = order([e for e in here if e.get("flagship")])
+            flagship = [e for e in here if e.get("flagship")]
             if flagship:
                 lines.append(f"### {MARQUEE_TITLE}\n")
-                lines.extend(render_entry(e) for e in flagship)
-                lines.append("")
+                lines.extend(_type_subsections(flagship, "####"))
             rest = [e for e in here if not e.get("flagship")]
             lines.extend(_type_subsections(rest, sub_heading))
         else:
@@ -288,10 +287,12 @@ def render_toc(template: str) -> str:
 def fill(template: str, blocks: dict[str, str]) -> str:
     for section, body in blocks.items():
         pat = re.compile(
-            rf"(<!-- AUTOGEN:START section={re.escape(section)} -->\n).*?"
-            rf"(\n<!-- AUTOGEN:END section={re.escape(section)} -->)", re.S)
-        template = pat.sub(lambda m, b=body: m.group(1) + b.rstrip("\n") + m.group(2),
-                           template)
+            rf"(<!-- AUTOGEN:START section={re.escape(section)} -->)"
+            rf".*?"
+            rf"(<!-- AUTOGEN:END section={re.escape(section)} -->)", re.S)
+        template = pat.sub(
+            lambda m, b=body: f"{m.group(1)}\n{b.rstrip(chr(10))}\n{m.group(2)}",
+            template)
     return template
 
 
@@ -384,7 +385,8 @@ def self_check() -> None:
     blocks = render_spine(good, legend)
     v1 = blocks["sysml-v1"]
     assert f"### {MARQUEE_TITLE}" in v1 and "Alpha Guide" in v1, v1
-    assert "### Tutorials" not in v1
+    assert "#### Methodology & guides" in v1, v1   # marquee keeps type sub-subsections
+    assert "Tutorials" not in v1                   # no tutorial entry in fixture
     assert "### Example models" in blocks["sysml-v2"] and "Beta Models" in blocks["sysml-v2"]
     assert set(blocks) == set(LANGS)
 
@@ -421,6 +423,26 @@ def self_check() -> None:
 
     check_count_invariant(good, render_spine(good, legend))  # must not raise
     assert normalise("﻿a\r\nb\r\n") == "a\nb\n", repr(normalise("﻿a\r\nb\r\n"))
+
+    # --- end-to-end: build() must actually inject entries between markers (fill regression)
+    full_tmpl = tmpl + (
+        "## UAF & architecture frameworks\nUse this for defence architecture.\n"
+        "<!-- AUTOGEN:START section=uaf -->\n<!-- AUTOGEN:END section=uaf -->\n\n"
+        "## Adjacent & non-SysML notations\nUse this for non-SysML.\n"
+        "<!-- AUTOGEN:START section=arcadia -->\n<!-- AUTOGEN:END section=arcadia -->\n"
+        "<!-- AUTOGEN:START section=opm -->\n<!-- AUTOGEN:END section=opm -->\n"
+        "<!-- AUTOGEN:START section=oml -->\n<!-- AUTOGEN:END section=oml -->\n\n"
+        "## Cross-cutting (language-general)\nUse this for language-general.\n"
+        "<!-- AUTOGEN:START section=cross-cutting -->\n<!-- AUTOGEN:END section=cross-cutting -->\n\n"
+        "<!-- AUTOGEN:START section=view-openable-models -->\n<!-- AUTOGEN:END section=view-openable-models -->\n"
+        "<!-- AUTOGEN:START section=view-by-tool -->\n<!-- AUTOGEN:END section=view-by-tool -->\n"
+        "<!-- AUTOGEN:START section=view-by-type -->\n<!-- AUTOGEN:END section=view-by-type -->\n"
+        "<!-- AUTOGEN:START section=view-tag-legend -->\n<!-- AUTOGEN:END section=view-tag-legend -->\n"
+    )
+    out = build(good, legend, full_tmpl)
+    assert "Alpha Guide" in out and "https://a.example" in out, "fill did not inject entries"
+    assert "https://b.example" in out and "https://g.example" in out
+    assert "- [Alpha Guide](https://a.example)" in out, out
 
     print("self-check OK")
 
