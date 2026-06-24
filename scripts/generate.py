@@ -57,6 +57,17 @@ TYPE_TITLES = {
 
 MARKER_RE = re.compile(r"<!-- AUTOGEN:(START|END) section=([a-z0-9-]+) -->")
 
+COMPETITIVE = [
+    ["[mycr0ft/awesome-sysml](https://github.com/mycr0ft/awesome-sysml)", "~2",
+     "2026-06 (active)",
+     "Narrow: SysML v2 textual tooling only; ~3 Cameo mentions, **0 MagicDraw / "
+     "Magic Grid**, no methods/libraries"],
+    ["[kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering)",
+     "~11", "2021 (abandoned)", "Broad SE links, **no MBSE depth**, stale"],
+    ["[rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering)",
+     "~1", "2024 (stagnant)", "**None**"],
+]
+
 
 # --------------------------------------------------------------------------- #
 # Core helpers
@@ -193,13 +204,13 @@ def render_views(entries: list[dict], legend: dict) -> dict[str, str]:
     # section headings (the Home column + ToC + chooser), which always resolve; per-entry
     # list items are not headings, so we never link to #title.
     models = order([e for e in entries if e["type"] == "model"])
-    rows = ["| Model | Home | Tags |", "| --- | --- | --- |"]
+    rows = []
     for e in models:
         home_title = LANG_TITLES[e["lang"]]
         home = f"[{home_title}](#{slug(home_title)})"
         tags = " ".join(f"`{t}`" for t in e.get("tags", []))
-        rows.append(f"| [{esc(e['title'])}]({e['url']}) | {home} | {tags} |")
-    v["view-openable-models"] = "\n".join(rows) + "\n"
+        rows.append([f"[{esc(e['title'])}]({e['url']})", home, tags])
+    v["view-openable-models"] = render_table(["Model", "Home", "Tags"], rows)
 
     parts: list[str] = []
     for tok in tool_tokens(legend):
@@ -221,11 +232,24 @@ def render_views(entries: list[dict], legend: dict) -> dict[str, str]:
         parts.append("")
     v["view-by-type"] = ("\n".join(parts).rstrip() + "\n") if parts else "\n"
 
-    rows = ["| Tag | Meaning |", "| --- | --- |"]
-    for tag in sorted(legend):
-        rows.append(f"| `{tag}` | {esc(legend[tag]['desc'])} |")
-    v["view-tag-legend"] = "\n".join(rows) + "\n"
+    legend_rows = [[f"`{tag}`", esc(legend[tag]["desc"])] for tag in sorted(legend)]
+    v["view-tag-legend"] = render_table(["Tag", "Meaning"], legend_rows)
     return v
+
+
+def render_table(headers: list[str], rows: list[list[str]]) -> str:
+    """GFM table with aligned pipes (awesome-lint remark-lint:table-pipe-alignment)."""
+    widths = [len(h) for h in headers]
+    for r in rows:
+        for i, cell in enumerate(r):
+            widths[i] = max(widths[i], len(cell))
+
+    def fmt(cells: list[str]) -> str:
+        return "| " + " | ".join(c.ljust(widths[i]) for i, c in enumerate(cells)) + " |"
+
+    out = [fmt(headers), "| " + " | ".join("-" * w for w in widths) + " |"]
+    out += [fmt(r) for r in rows]
+    return "\n".join(out) + "\n"
 
 
 def assert_view_consistency(entries: list[dict], views: dict[str, str]) -> None:
@@ -240,7 +264,7 @@ def assert_view_consistency(entries: list[dict], views: dict[str, str]) -> None:
 # Template assembly
 # --------------------------------------------------------------------------- #
 def expected_marker_set() -> set[str]:
-    return {"contents", *LANGS, *VIEW_IDS}
+    return {"contents", *LANGS, *VIEW_IDS, "competitive"}
 
 
 def check_markers(template: str, expected: set[str]) -> None:
@@ -313,7 +337,8 @@ def build(entries: list[dict], legend: dict, template: str) -> str:
     check_count_invariant(entries, spine)
     views = render_views(entries, legend)
     assert_view_consistency(entries, views)
-    blocks = {"contents": render_toc(template), **spine, **views}
+    competitive = render_table(["List", "Stars", "Last update", "MBSE coverage"], COMPETITIVE)
+    blocks = {"contents": render_toc(template), **spine, **views, "competitive": competitive}
     return normalise(fill(template, blocks)).rstrip("\n") + "\n"
 
 
@@ -440,7 +465,9 @@ def self_check() -> None:
         "<!-- AUTOGEN:START section=view-openable-models -->\n<!-- AUTOGEN:END section=view-openable-models -->\n"
         "<!-- AUTOGEN:START section=view-by-tool -->\n<!-- AUTOGEN:END section=view-by-tool -->\n"
         "<!-- AUTOGEN:START section=view-by-type -->\n<!-- AUTOGEN:END section=view-by-type -->\n"
-        "<!-- AUTOGEN:START section=view-tag-legend -->\n<!-- AUTOGEN:END section=view-tag-legend -->\n"
+        "<!-- AUTOGEN:START section=view-tag-legend -->\n<!-- AUTOGEN:END section=view-tag-legend -->\n\n"
+        "## The competitive landscape\n"
+        "<!-- AUTOGEN:START section=competitive -->\n<!-- AUTOGEN:END section=competitive -->\n"
     )
     out = build(good, legend, full_tmpl)
     assert "Alpha Guide" in out and "https://a.example" in out, "fill did not inject entries"

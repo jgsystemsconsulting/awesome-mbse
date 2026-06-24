@@ -19,7 +19,7 @@ modelling language** so you can go straight to what you work in.
 
 > **This README is generated** from [`data/entries.yaml`](data/entries.yaml) +
 > [`data/tags.yaml`](data/tags.yaml) by [`scripts/generate.py`](scripts/generate.py).
-> Don't edit it directly — edit the data and regenerate. See [CONTRIBUTING.md](CONTRIBUTING.md).
+> Don't edit it directly — edit the data and regenerate (see Contributing below).
 
 ### Choosing a notation
 
@@ -125,11 +125,8 @@ The controlled tag vocabulary used throughout the list.
 Why this list exists, with evidence (gathered 2026-06-23). Existing SysML/SE awesome-lists
 are either abandoned, narrow, or carry no Cameo / Magic Grid coverage at all:
 
-| List | Stars | Last update | MBSE coverage |
-| --- | --- | --- | --- |
-| [mycr0ft/awesome-sysml](https://github.com/mycr0ft/awesome-sysml) | ~2 | 2026-06 (active) | Narrow: SysML v2 textual tooling only; ~3 Cameo mentions, **0 MagicDraw / Magic Grid**, no methods/libraries |
-| [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering) | ~11 | 2021 (abandoned) | Broad SE links, **no MBSE depth**, stale |
-| [rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering) | ~1 | 2024 (stagnant) | **None** |
+<!-- AUTOGEN:START section=competitive -->
+<!-- AUTOGEN:END section=competitive -->
 
 No actively-maintained `awesome-mbse` with this breadth existed before this list. The
 differentiator is **scope** — SysML v1/v2 + methods + tooling + reusable libraries +

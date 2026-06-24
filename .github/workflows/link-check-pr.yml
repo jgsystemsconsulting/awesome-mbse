@@ -39,17 +39,8 @@ jobs:
           fail: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
-  # ToC is hand-maintained (flat, top-level only) to stay awesome-lint clean — doctoc's
-  # generated ToC includes the title/self-reference which awesome-lint rejects. ToC
-  # anchor integrity is enforced by lychee --include-fragments=anchor-only (the lychee
-  # job above), plus the PR-template checklist. See spec §7.8 fallback option (b).
-
-  awesome-lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Awesome-list manifest conformance
-        run: npx -y awesome-lint
+  # awesome-lint is intentionally NOT run: the four cross-views (By tool / By type /
+  # Openable models) and the "Choosing a notation" chooser re-link resources that the
+  # language spine already links, which awesome-lint's remark-lint:double-link forbids.
+  # ToC anchor integrity is enforced by lychee --include-fragments=anchor-only (above)
+  # and README structure by scripts/generate.py --check (the generate-check workflow).

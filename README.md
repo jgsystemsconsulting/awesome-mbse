@@ -19,7 +19,7 @@ modelling language** so you can go straight to what you work in.
 
 > **This README is generated** from [`data/entries.yaml`](data/entries.yaml) +
 > [`data/tags.yaml`](data/tags.yaml) by [`scripts/generate.py`](scripts/generate.py).
-> Don't edit it directly — edit the data and regenerate. See [CONTRIBUTING.md](CONTRIBUTING.md).
+> Don't edit it directly — edit the data and regenerate (see Contributing below).
 
 ### Choosing a notation
 
@@ -292,31 +292,31 @@ Every entry that ships an openable model, across all notations — the fast path
 just want a real model to open and learn from.
 
 <!-- AUTOGEN:START section=view-openable-models -->
-| Model | Home | Tags |
-| --- | --- | --- |
-| [Airbus Apollo-11 SysML v2](https://github.com/airbus/apollo-11-sysml-v2) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [DLR-FT STPA Library](https://github.com/DLR-FT/SysMLv2LibrarySTPA) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [fusion-tea](https://github.com/1cFE/fusion-tea) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [GfSE SAF — Fire-Fighting Drone System \(Cameo\)](https://github.com/GfSE/SAF-Cameo-Profile/tree/main/SAF_Plugin/samples/SAF) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `tool` |
-| [GfSE SAF-SysMLV2](https://github.com/GfSE/SAF-SysMLV2) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [jhaws1982 OOSEM Reference](https://github.com/jhaws1982/sysmlv2-mbse-reference) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [MBSE4U — The SysML v2 Book Examples](https://github.com/MBSE4U/the-sysmlv2-book-examples) | [SysML v2](#sysml-v2) | `SysMLv2` `Cameo` `has-model` `paper` |
-| [MOSA Implementation \(CUSA 2026, Cameo\)](https://github.com/EnolaTechnologies/cusa26) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
-| [OMG SysML v2 Release examples](https://github.com/Systems-Modeling/SysML-v2-Release/tree/master/sysml/src/examples) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [Robot Vacuum Cleaner \(SysML v2\)](https://github.com/elan8/sysml-robot-vacuum-cleaner) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [sensmetry Advent of SysML v2](https://github.com/sensmetry/advent-of-sysml-v2) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [sensmetry DETECT](https://github.com/sensmetry/detect) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [SysML v2 Astronomy Reference](https://github.com/elan8/sysml-v2-astronomy-reference) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [Don't Panic Batmobile](https://github.com/MBSE4U/dont-panic-batmobile) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [GaloisInc — VERSE-OpenSUT](https://github.com/GaloisInc/VERSE-OpenSUT/tree/main/models/SysMLv1) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
-| [GfSE SysML v2 Models](https://github.com/GfSE/SysML-v2-Models) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [Open-MBEE DesertKite \(OOSEM\)](https://github.com/Open-MBEE/DesertKite.sysml) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [TU Ilmenau CMBSE](https://github.com/ziruili-tu-ilmenau/CMBSE) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
-| [Open-MBEE MDK DocGen Sample Model](https://github.com/Open-MBEE/exec-cameo-mdk/tree/develop/src/main/dist/samples/MDK) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `tool` |
-| [EOSS — Earth Observation Satellite System \(Cameo\)](https://github.com/seakers/cameo-LLM-plugin/tree/main/cameo/examples) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
-| [GTRI INGRID Rapid-Modeling Demo Models](https://github.com/gtri/rapid-modeling-tools/tree/master/ingrid-quick-start) | [SysML v1](#sysml-v1) | `SysMLv1` `CATIA-Magic` `has-model` `tool` |
-| [Package Delivery Drone \(Cameo\)](https://github.com/jmgogo/Package-Delivery-Drone/blob/main/model/Package%20Delivery%20Drone.mdzip) | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper` |
-| [yutaro-ito Sample SysML v2 Project](https://github.com/yutaro-ito/sample-sysml-v2-project) | [SysML v2](#sysml-v2) | `SysMLv2` `has-model` |
+| Model                                                                                                                                   | Home                  | Tags                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ------------------------------------------- |
+| [Airbus Apollo-11 SysML v2](https://github.com/airbus/apollo-11-sysml-v2)                                                               | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [DLR-FT STPA Library](https://github.com/DLR-FT/SysMLv2LibrarySTPA)                                                                     | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [fusion-tea](https://github.com/1cFE/fusion-tea)                                                                                        | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [GfSE SAF — Fire-Fighting Drone System \(Cameo\)](https://github.com/GfSE/SAF-Cameo-Profile/tree/main/SAF_Plugin/samples/SAF)           | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `tool`        |
+| [GfSE SAF-SysMLV2](https://github.com/GfSE/SAF-SysMLV2)                                                                                 | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [jhaws1982 OOSEM Reference](https://github.com/jhaws1982/sysmlv2-mbse-reference)                                                        | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [MBSE4U — The SysML v2 Book Examples](https://github.com/MBSE4U/the-sysmlv2-book-examples)                                              | [SysML v2](#sysml-v2) | `SysMLv2` `Cameo` `has-model` `paper`       |
+| [MOSA Implementation \(CUSA 2026, Cameo\)](https://github.com/EnolaTechnologies/cusa26)                                                 | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper`       |
+| [OMG SysML v2 Release examples](https://github.com/Systems-Modeling/SysML-v2-Release/tree/master/sysml/src/examples)                    | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [Robot Vacuum Cleaner \(SysML v2\)](https://github.com/elan8/sysml-robot-vacuum-cleaner)                                                | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [sensmetry Advent of SysML v2](https://github.com/sensmetry/advent-of-sysml-v2)                                                         | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [sensmetry DETECT](https://github.com/sensmetry/detect)                                                                                 | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [SysML v2 Astronomy Reference](https://github.com/elan8/sysml-v2-astronomy-reference)                                                   | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [Don't Panic Batmobile](https://github.com/MBSE4U/dont-panic-batmobile)                                                                 | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [GaloisInc — VERSE-OpenSUT](https://github.com/GaloisInc/VERSE-OpenSUT/tree/main/models/SysMLv1)                                        | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper`       |
+| [GfSE SysML v2 Models](https://github.com/GfSE/SysML-v2-Models)                                                                         | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [Open-MBEE DesertKite \(OOSEM\)](https://github.com/Open-MBEE/DesertKite.sysml)                                                         | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [TU Ilmenau CMBSE](https://github.com/ziruili-tu-ilmenau/CMBSE)                                                                         | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
+| [Open-MBEE MDK DocGen Sample Model](https://github.com/Open-MBEE/exec-cameo-mdk/tree/develop/src/main/dist/samples/MDK)                 | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `tool`        |
+| [EOSS — Earth Observation Satellite System \(Cameo\)](https://github.com/seakers/cameo-LLM-plugin/tree/main/cameo/examples)             | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper`       |
+| [GTRI INGRID Rapid-Modeling Demo Models](https://github.com/gtri/rapid-modeling-tools/tree/master/ingrid-quick-start)                   | [SysML v1](#sysml-v1) | `SysMLv1` `CATIA-Magic` `has-model` `tool`  |
+| [Package Delivery Drone \(Cameo\)](https://github.com/jmgogo/Package-Delivery-Drone/blob/main/model/Package%20Delivery%20Drone.mdzip)   | [SysML v1](#sysml-v1) | `SysMLv1` `Cameo` `has-model` `paper`       |
+| [yutaro-ito Sample SysML v2 Project](https://github.com/yutaro-ito/sample-sysml-v2-project)                                             | [SysML v2](#sysml-v2) | `SysMLv2` `has-model`                       |
 | [Multiagent Warehouse \(MaaS\)](https://github.com/autarchprinceps/Multiagent-Warehouse/blob/master/Documentation/maas-warehouse.mdzip) | [SysML v1](#sysml-v1) | `SysMLv1` `CATIA-Magic` `has-model` `paper` |
 <!-- AUTOGEN:END section=view-openable-models -->
 
@@ -533,35 +533,35 @@ just want a real model to open and learn from.
 The controlled tag vocabulary used throughout the list.
 
 <!-- AUTOGEN:START section=view-tag-legend -->
-| Tag | Meaning |
-| --- | --- |
-| `CATIA-Magic` | CATIA Magic \(No Magic\) platform |
-| `Cameo` | Cameo Systems Modeler / CATIA Magic |
-| `Capella` | Eclipse Capella \(Arcadia\) |
-| `Gaphor` | Gaphor lightweight modeler |
-| `MagicGrid` | The MagicGrid modelling method |
-| `Modelio` | Modelio open-source modeler |
-| `Papyrus` | Eclipse Papyrus |
-| `Rhapsody` | IBM Engineering Systems Design Rhapsody |
-| `SysIDE` | Sensmetry SysIDE VS Code extension |
+| Tag             | Meaning                                          |
+| --------------- | ------------------------------------------------ |
+| `CATIA-Magic`   | CATIA Magic \(No Magic\) platform                |
+| `Cameo`         | Cameo Systems Modeler / CATIA Magic              |
+| `Capella`       | Eclipse Capella \(Arcadia\)                      |
+| `Gaphor`        | Gaphor lightweight modeler                       |
+| `MagicGrid`     | The MagicGrid modelling method                   |
+| `Modelio`       | Modelio open-source modeler                      |
+| `Papyrus`       | Eclipse Papyrus                                  |
+| `Rhapsody`      | IBM Engineering Systems Design Rhapsody          |
+| `SysIDE`        | Sensmetry SysIDE VS Code extension               |
 | `SysML-general` | Applies across SysML versions / language-general |
-| `SysMLv1` | SysML version 1.x |
-| `SysMLv2` | SysML version 2.x \(textual\) |
-| `SysON` | Eclipse SysON web modeler |
-| `blog` | Blog / community site |
-| `book` | Book |
-| `course` | Training course |
-| `has-model` | Ships an openable model |
-| `mcp` | Model Context Protocol server |
-| `other-tool` | A tool outside the named set |
-| `paid` | Paid / commercial resource |
-| `paper` | Academic / technical paper |
-| `plugin` | Tool plugin / profile |
-| `spec` | Specification document |
-| `standard` | Standard / handbook |
-| `tool` | Software tool |
-| `tutorial` | Hands-on tutorial |
-| `video` | Video resource |
+| `SysMLv1`       | SysML version 1.x                                |
+| `SysMLv2`       | SysML version 2.x \(textual\)                    |
+| `SysON`         | Eclipse SysON web modeler                        |
+| `blog`          | Blog / community site                            |
+| `book`          | Book                                             |
+| `course`        | Training course                                  |
+| `has-model`     | Ships an openable model                          |
+| `mcp`           | Model Context Protocol server                    |
+| `other-tool`    | A tool outside the named set                     |
+| `paid`          | Paid / commercial resource                       |
+| `paper`         | Academic / technical paper                       |
+| `plugin`        | Tool plugin / profile                            |
+| `spec`          | Specification document                           |
+| `standard`      | Standard / handbook                              |
+| `tool`          | Software tool                                    |
+| `tutorial`      | Hands-on tutorial                                |
+| `video`         | Video resource                                   |
 <!-- AUTOGEN:END section=view-tag-legend -->
 
 ## The competitive landscape
@@ -569,11 +569,13 @@ The controlled tag vocabulary used throughout the list.
 Why this list exists, with evidence (gathered 2026-06-23). Existing SysML/SE awesome-lists
 are either abandoned, narrow, or carry no Cameo / Magic Grid coverage at all:
 
-| List | Stars | Last update | MBSE coverage |
-| --- | --- | --- | --- |
-| [mycr0ft/awesome-sysml](https://github.com/mycr0ft/awesome-sysml) | ~2 | 2026-06 (active) | Narrow: SysML v2 textual tooling only; ~3 Cameo mentions, **0 MagicDraw / Magic Grid**, no methods/libraries |
-| [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering) | ~11 | 2021 (abandoned) | Broad SE links, **no MBSE depth**, stale |
-| [rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering) | ~1 | 2024 (stagnant) | **None** |
+<!-- AUTOGEN:START section=competitive -->
+| List                                                                                                      | Stars | Last update      | MBSE coverage                                                                                                |
+| --------------------------------------------------------------------------------------------------------- | ----- | ---------------- | ------------------------------------------------------------------------------------------------------------ |
+| [mycr0ft/awesome-sysml](https://github.com/mycr0ft/awesome-sysml)                                         | ~2    | 2026-06 (active) | Narrow: SysML v2 textual tooling only; ~3 Cameo mentions, **0 MagicDraw / Magic Grid**, no methods/libraries |
+| [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering)                 | ~11   | 2021 (abandoned) | Broad SE links, **no MBSE depth**, stale                                                                     |
+| [rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering) | ~1    | 2024 (stagnant)  | **None**                                                                                                     |
+<!-- AUTOGEN:END section=competitive -->
 
 No actively-maintained `awesome-mbse` with this breadth existed before this list. The
 differentiator is **scope** — SysML v1/v2 + methods + tooling + reusable libraries +
