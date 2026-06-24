@@ -21,13 +21,13 @@ modelling language** so you can go straight to what you work in.
 > [`data/tags.yaml`](data/tags.yaml) by [`scripts/generate.py`](scripts/generate.py).
 > Don't edit it directly — edit the data and regenerate (see Contributing below).
 
-### Choosing a notation
+**Choosing a notation:**
 
-- **You run Cameo / a programme today** → [SysML v1](#sysml-v1) · Magic Grid.
-- **Greenfield, text-friendly, tool-flexible** → [SysML v2](#sysml-v2).
-- **Defence / enterprise architecture** → [UAF & architecture frameworks](#uaf--architecture-frameworks).
-- **Eclipse / non-SysML world** → [Adjacent & non-SysML notations](#adjacent--non-sysml-notations).
-- **Just want an openable model** → [Find it your way › Openable models](#openable-models).
+- **Run Cameo / a programme today** → SysML v1 · Magic Grid.
+- **Greenfield, text-friendly, tool-flexible** → SysML v2.
+- **Defence / enterprise architecture** → UAF & architecture frameworks.
+- **Eclipse / non-SysML world** → Adjacent & non-SysML notations.
+- **Just want an openable model** → Find it your way (linked at the end of this list).
 
 ## Contents
 
@@ -88,37 +88,9 @@ span SysML v1, v2, and beyond.
 
 ## Find it your way
 
-Cross-cutting views over everything above, generated from the same data — pick the lens
-that matches your need.
-
-### Openable models
-
-Every entry that ships an openable model, across all notations — the fast path when you
-just want a real model to open and learn from.
-
-<!-- AUTOGEN:START section=view-openable-models -->
-<!-- AUTOGEN:END section=view-openable-models -->
-
-### By tool
-
-"What here runs in my tool?" Entries grouped by the tool they target.
-
-<!-- AUTOGEN:START section=view-by-tool -->
-<!-- AUTOGEN:END section=view-by-tool -->
-
-### By resource type
-
-"Show me every tutorial / every paper / every model." Entries grouped by resource type.
-
-<!-- AUTOGEN:START section=view-by-type -->
-<!-- AUTOGEN:END section=view-by-type -->
-
-### Tag legend
-
-The controlled tag vocabulary used throughout the list.
-
-<!-- AUTOGEN:START section=view-tag-legend -->
-<!-- AUTOGEN:END section=view-tag-legend -->
+Prefer to browse by something other than language? The same entries are indexed four ways
+— **Openable models**, **By tool**, **By resource type**, and a **Tag legend** — in
+**[docs/find-it-your-way.md](docs/find-it-your-way.md)**, generated from the same data.
 
 ## The competitive landscape
 

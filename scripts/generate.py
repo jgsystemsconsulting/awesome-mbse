@@ -24,6 +24,8 @@ ENTRIES_FILE = ROOT / "data" / "entries.yaml"
 TAGS_FILE = ROOT / "data" / "tags.yaml"
 TEMPLATE_FILE = ROOT / "README.template.md"
 OUTPUT_FILE = ROOT / "README.md"
+DOCS_TEMPLATE = ROOT / "docs" / "find-it-your-way.template.md"
+DOCS_OUTPUT = ROOT / "docs" / "find-it-your-way.md"
 CURRENT_YEAR = datetime.date.today().year  # only bounds date validation; never rendered
 
 LANGS = ["sysml-v1", "sysml-v2", "uaf", "arcadia", "opm", "oml", "cross-cutting"]
@@ -207,7 +209,8 @@ def render_views(entries: list[dict], legend: dict) -> dict[str, str]:
     rows = []
     for e in models:
         home_title = LANG_TITLES[e["lang"]]
-        home = f"[{home_title}](#{slug(home_title)})"
+        # Home points into the main list (this view lives in docs/, the sections in README).
+        home = f"[{home_title}](../README.md#{slug(home_title)})"
         tags = " ".join(f"`{t}`" for t in e.get("tags", []))
         rows.append([f"[{esc(e['title'])}]({e['url']})", home, tags])
     v["view-openable-models"] = render_table(["Model", "Home", "Tags"], rows)
@@ -263,8 +266,8 @@ def assert_view_consistency(entries: list[dict], views: dict[str, str]) -> None:
 # --------------------------------------------------------------------------- #
 # Template assembly
 # --------------------------------------------------------------------------- #
-def expected_marker_set() -> set[str]:
-    return {"contents", *LANGS, *VIEW_IDS, "competitive"}
+README_MARKERS = {"contents", *LANGS, "competitive"}
+DOCS_MARKERS = set(VIEW_IDS)
 
 
 def check_markers(template: str, expected: set[str]) -> None:
@@ -329,22 +332,36 @@ def _blurb_sections() -> list[tuple[str, str]]:
     return out
 
 
-def build(entries: list[dict], legend: dict, template: str) -> str:
+def build_readme(entries: list[dict], legend: dict, template: str) -> str:
+    """README = the curated list by language. Each resource is linked exactly once here
+    (the cross-views live in docs/), so the README stays awesome-lint clean."""
     validate(entries, legend)
-    check_markers(template, expected_marker_set())
+    check_markers(template, README_MARKERS)
     check_blurbs(template, _blurb_sections())
     spine = render_spine(entries, legend)
     check_count_invariant(entries, spine)
-    views = render_views(entries, legend)
-    assert_view_consistency(entries, views)
     competitive = render_table(["List", "Stars", "Last update", "MBSE coverage"], COMPETITIVE)
-    blocks = {"contents": render_toc(template), **spine, **views, "competitive": competitive}
+    blocks = {"contents": render_toc(template), **spine, "competitive": competitive}
     return normalise(fill(template, blocks)).rstrip("\n") + "\n"
 
 
-def generate() -> str:
-    return build(load_yaml(ENTRIES_FILE), load_yaml(TAGS_FILE),
-                 TEMPLATE_FILE.read_text(encoding="utf-8"))
+def build_docs(entries: list[dict], legend: dict, template: str) -> str:
+    """docs/find-it-your-way.md = the four cross-views. These re-link spine resources,
+    so they are kept out of the README (awesome-lint forbids duplicate links)."""
+    validate(entries, legend)
+    check_markers(template, DOCS_MARKERS)
+    views = render_views(entries, legend)
+    assert_view_consistency(entries, views)
+    return normalise(fill(template, views)).rstrip("\n") + "\n"
+
+
+def generate() -> dict[Path, str]:
+    entries = load_yaml(ENTRIES_FILE)
+    legend = load_yaml(TAGS_FILE)
+    return {
+        OUTPUT_FILE: build_readme(entries, legend, TEMPLATE_FILE.read_text(encoding="utf-8")),
+        DOCS_OUTPUT: build_docs(entries, legend, DOCS_TEMPLATE.read_text(encoding="utf-8")),
+    }
 
 
 # --------------------------------------------------------------------------- #
@@ -452,8 +469,8 @@ def self_check() -> None:
     check_count_invariant(good, render_spine(good, legend))  # must not raise
     assert normalise("﻿a\r\nb\r\n") == "a\nb\n", repr(normalise("﻿a\r\nb\r\n"))
 
-    # --- end-to-end: build() must actually inject entries between markers (fill regression)
-    full_tmpl = tmpl + (
+    # --- end-to-end README: build_readme must inject spine entries (fill regression)
+    readme_tmpl = tmpl + (
         "## UAF & architecture frameworks\nUse this for defence architecture.\n"
         "<!-- AUTOGEN:START section=uaf -->\n<!-- AUTOGEN:END section=uaf -->\n\n"
         "## Adjacent & non-SysML notations\nUse this for non-SysML.\n"
@@ -462,17 +479,24 @@ def self_check() -> None:
         "<!-- AUTOGEN:START section=oml -->\n<!-- AUTOGEN:END section=oml -->\n\n"
         "## Cross-cutting (language-general)\nUse this for language-general.\n"
         "<!-- AUTOGEN:START section=cross-cutting -->\n<!-- AUTOGEN:END section=cross-cutting -->\n\n"
-        "<!-- AUTOGEN:START section=view-openable-models -->\n<!-- AUTOGEN:END section=view-openable-models -->\n"
-        "<!-- AUTOGEN:START section=view-by-tool -->\n<!-- AUTOGEN:END section=view-by-tool -->\n"
-        "<!-- AUTOGEN:START section=view-by-type -->\n<!-- AUTOGEN:END section=view-by-type -->\n"
-        "<!-- AUTOGEN:START section=view-tag-legend -->\n<!-- AUTOGEN:END section=view-tag-legend -->\n\n"
         "## The competitive landscape\n"
         "<!-- AUTOGEN:START section=competitive -->\n<!-- AUTOGEN:END section=competitive -->\n"
     )
-    out = build(good, legend, full_tmpl)
+    out = build_readme(good, legend, readme_tmpl)
     assert "Alpha Guide" in out and "https://a.example" in out, "fill did not inject entries"
-    assert "https://b.example" in out and "https://g.example" in out
     assert "- [Alpha Guide](https://a.example)" in out, out
+    assert "view-by-tool" not in out, "views must not be in the README"
+
+    # --- end-to-end docs: build_docs must inject the four views
+    docs_tmpl = (
+        "# Find it your way\n"
+        "<!-- AUTOGEN:START section=view-openable-models -->\n<!-- AUTOGEN:END section=view-openable-models -->\n"
+        "<!-- AUTOGEN:START section=view-by-tool -->\n<!-- AUTOGEN:END section=view-by-tool -->\n"
+        "<!-- AUTOGEN:START section=view-by-type -->\n<!-- AUTOGEN:END section=view-by-type -->\n"
+        "<!-- AUTOGEN:START section=view-tag-legend -->\n<!-- AUTOGEN:END section=view-tag-legend -->\n"
+    )
+    docs_out = build_docs(good, legend, docs_tmpl)
+    assert "Beta Models" in docs_out and "### Example models" in docs_out, docs_out
 
     print("self-check OK")
 
@@ -483,16 +507,22 @@ def main(argv: list[str]) -> int:
         return 0
     rendered = generate()
     if "--check" in argv:
-        current = normalise(OUTPUT_FILE.read_text(encoding="utf-8")) if OUTPUT_FILE.exists() else ""
-        if current != rendered:
-            sys.stdout.writelines(difflib.unified_diff(
-                current.splitlines(True), rendered.splitlines(True),
-                "README.md (committed)", "README.md (regenerated)"))
+        drift = False
+        for path, content in rendered.items():
+            current = normalise(path.read_text(encoding="utf-8")) if path.exists() else ""
+            if current != content:
+                drift = True
+                rel = path.relative_to(ROOT)
+                sys.stdout.writelines(difflib.unified_diff(
+                    current.splitlines(True), content.splitlines(True),
+                    f"{rel} (committed)", f"{rel} (regenerated)"))
+        if drift:
             return 1
-        print("README.md up to date")
+        print("README.md + docs/find-it-your-way.md up to date")
         return 0
-    OUTPUT_FILE.write_text(rendered, encoding="utf-8", newline="\n")
-    print(f"wrote {OUTPUT_FILE}")
+    for path, content in rendered.items():
+        path.write_text(content, encoding="utf-8", newline="\n")
+        print(f"wrote {path}")
     return 0
 
 

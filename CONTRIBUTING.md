@@ -130,10 +130,11 @@ python scripts/generate.py --self-check   # run the generator's built-in tests
 pip install pre-commit && pre-commit install
 ```
 
-CI runs two independent checks on every PR — `generate-check` (the data and README are in
-sync and valid, structure enforced by the generator) and `lychee` (links + ToC anchors
-resolve). Both must pass. (`awesome-lint` is intentionally not run: its `double-link` rule
-is incompatible with the cross-views, which re-link resources the spine already links.)
+CI runs three independent checks on every PR — `generate-check` (the data and both output
+files are in sync and valid), `awesome-lint` (README structure), and `lychee` (links + ToC
+anchors resolve). All three must pass. The four cross-views live in
+[`docs/find-it-your-way.md`](docs/find-it-your-way.md) (also generated) so the README links
+each resource exactly once and stays awesome-lint-clean.
 
 ## 9. Maintenance cadence
 
