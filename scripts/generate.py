@@ -305,11 +305,14 @@ def check_count_invariant(entries: list[dict], spine: dict[str, str]) -> None:
         raise ValueError(f"marquee count {flag_rendered} != flagship {n_flag}")
 
 
+TOC_SKIP = {"Contents", "Contributing"}  # awesome-toc treats these as boilerplate, not ToC items
+
+
 def render_toc(template: str) -> str:
     out: list[str] = []
     for line in template.splitlines():
         m = re.match(r"^## (.+)$", line)
-        if m and "Contents" not in m.group(1):
+        if m and m.group(1) not in TOC_SKIP:
             out.append(f"- [{m.group(1)}](#{slug(m.group(1))})")
     return "\n".join(out) + "\n"
 

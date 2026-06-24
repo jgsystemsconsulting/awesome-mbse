@@ -39,7 +39,6 @@ modelling language** so you can go straight to what you work in.
 - [Cross-cutting (language-general)](#cross-cutting-language-general)
 - [Find it your way](#find-it-your-way)
 - [The competitive landscape](#the-competitive-landscape)
-- [Contributing](#contributing)
 - [Support & security](#support--security)
 <!-- AUTOGEN:END section=contents -->
 
