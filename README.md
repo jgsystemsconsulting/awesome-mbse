@@ -45,14 +45,14 @@ and awesome-requirements-engineering (private, org-visible).
 | [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella)                         | Capella tool and the Arcadia method                                                   | Live           | Linked public spoke                                         |
 | awesome-requirements-engineering                                                                  | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers                      | Live           | Private spoke (org-visible); hub still GAP for RE body copy |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation            | Live           | Linked public spoke (initial seed)                          |
-| awesome-stpa                                                                                      | STAMP / STPA and hazard analysis; functional safety methods                           | Planned        | Model Gallery DLR-FT STPA library (one entry, thin)         |
+| [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa)                               | STAMP / STPA and hazard analysis; functional safety methods                           | Live           | Dedicated private spoke; hub keeps the DLR-FT STPA library as its one cross-cutting entry |
 
 Gaps, snapshot 2026-09-17 (not a permanent census): ArchiMate niche lives in
 awesome-archimate (no dedicated hub body section by design); Capella moved to
 awesome-capella (hub keeps only the cross-cutting methodology directory entry);
 digital engineering has a linked spoke (initial seed); requirements engineering has
-a private spoke while hub RE body copy remains a GAP; STPA is one hub entry (the
-DLR-FT STPA library).
+a private spoke while hub RE body copy remains a GAP; STPA has a dedicated spoke (the
+hub keeps one cross-cutting entry, the DLR-FT STPA library).
 
 ## Magic Grid & Cameo / CATIA Magic
 
@@ -265,8 +265,8 @@ maintained `awesome-mbse` with this breadth existed before this list.
 - [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering) - Broad systems-engineering links, untouched since 2021; no MBSE depth `SE-general` `external-list` (2021).
 - [rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering) - Minimal systems-engineering collection, stagnant since 2024; no MBSE coverage `SE-general` `external-list` (2024).
 
-TODO: re-check the `awesome-stpa` namespace on launch day (`awesome-capella` and
-`awesome-archimate` created 2026-09-17). Re-check remaining planned niches on each
+`awesome-stpa` namespace re-checked empty on 2026-09-17 (`awesome-capella` and
+`awesome-archimate` created the same day). Re-check remaining planned niches on each
 create day.
 
 ## Contributing
