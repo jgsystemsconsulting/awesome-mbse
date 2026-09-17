@@ -28,18 +28,35 @@ Two rules hold across the family:
 When a spoke splits out of the hub, the hub's section for that niche shrinks to a short
 pointer plus the few entries that are genuinely cross-cutting.
 
+## Private mode
+
+The default state of every family repo is private until it is explicitly released.
+
+- Entry links still pass the public-availability inclusion bar. A private repo linking
+  private resources violates the bar all the same; the CHANGELOG 2026-06 removal of
+  jgs-magic-sysmlv2-mcp is the precedent.
+- While the hub is private, public spokes reference the family in text only. No
+  FAMILY.md hyperlinks from public repos: they 404 for outside readers.
+- The `sindresorhus/awesome` submission step is deferred to the future public-release
+  runbook; it is not part of private-structure work.
+- Sweep badges, CI, and cadence are unchanged by privacy.
+
 ## Registry
 
-| Repo | Owns | Status |
-|------|------|--------|
-| [awesome-mbse](https://github.com/jgsystemsconsulting/awesome-mbse) | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live |
-| [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2) | SysML v2 the language: spec, parsers, editors, API clients, example models | Live |
-| awesome-magic-grid | Magic Grid method and Cameo practice, split out of the hub | In development |
-| awesome-archimate | ArchiMate 3.x, the Archi tool, EA modeling practice | Planned. Namespace empty as of 2026-09 |
-| awesome-capella | Capella tool and the Arcadia method | Planned. Namespace empty as of 2026-09 |
-| awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Planned. Namespace empty as of 2026-09 |
-| awesome-digital-engineering | Digital thread, model-based definition, digital engineering transformation | Planned. Namespace empty as of 2026-09 |
-| awesome-stpa | STAMP / STPA and hazard analysis; functional safety methods | Planned. Namespace empty as of 2026-09 |
+| Repo | Owns | Status | Visibility |
+|------|------|--------|------------|
+| [awesome-mbse](https://github.com/jgsystemsconsulting/awesome-mbse) | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live | private |
+| [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2) | SysML v2 the language: spec, parsers, editors, API clients, example models | Live | public |
+| awesome-magic-grid | Magic Grid method and Cameo practice | In development | local only. No GitHub repo exists; the local working copy is a hub fork pending re-scope, not a niche spoke |
+| awesome-archimate | ArchiMate 3.x, the Archi tool, EA modeling practice | Planned | none yet |
+| awesome-capella | Capella tool and the Arcadia method | Planned | none yet |
+| awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Planned | none yet |
+| awesome-digital-engineering | Digital thread, model-based definition, digital engineering transformation | Planned | none yet |
+| awesome-stpa | STAMP / STPA and hazard analysis; functional safety methods | Planned | none yet |
+
+Status is only `Live` | `In development` | `Planned`. Visibility is only `public` |
+`private` | `local only` | `none yet`, and never appears inside Status cells. Namespace
+check dates live in the namespace table under External lists and namespaces.
 
 Do not add a registry row until the GitHub namespace has been checked again that day.
 Update the Status column when a repo goes live.
@@ -62,6 +79,27 @@ Route a resource by its primary subject:
 Borderline cases (a SysML v2 paper that applies Magic Grid, an ArchiMate model of a
 SysML system) go to the list whose reader would search for the resource by its main
 claim, and get a cross-link from the other.
+
+## External lists and namespaces
+
+External lists cover adjacent ground. They are neighbors and competitors, not family.
+
+| List | Coverage note | Last checked |
+|------|---------------|--------------|
+| [mycr0ft/awesome-sysml](https://github.com/mycr0ft/awesome-sysml) | SysML v2 textual tooling; thin on Magic Grid and openable Cameo models | 2026-06 |
+| [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering) | Broad systems-engineering links; no MBSE depth; untouched since 2021 | 2026-06 |
+| [rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering) | Minimal systems-engineering collection; no MBSE coverage; stagnant since 2024 | 2026-06 |
+
+Namespace checks for the planned spokes. Result vocabulary: `empty` | `incumbent
+found` | `TODO re-check`.
+
+| Name | Checked | Result | Next action |
+|------|---------|--------|-------------|
+| awesome-archimate | 2026-09-17 | empty | Re-check on create day |
+| awesome-capella | - | TODO re-check | Re-check on launch day (rate-limited on the 2026-09-17 list-family pass) |
+| awesome-stpa | - | TODO re-check | Re-check on launch day (rate-limited on the 2026-09-17 list-family pass) |
+| awesome-requirements-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
+| awesome-digital-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
 
 ## Shared standard
 
@@ -102,6 +140,89 @@ Every family repo has, without exception:
 5. Add the registry row here and the spoke link in the hub README.
 6. When the list is stable, submit it to `sindresorhus/awesome` following the
    submission runbook used for awesome-sysml-v2.
+
+### Per-spoke create checklist template
+
+Copy per planned spoke. The checklists are the structure; do not create the repo first.
+
+- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
+- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
+- [ ] Repo created (private) from the README skeleton
+- [ ] Hub README family table row updated with the URL
+- [ ] Registry status flipped to Live
+
+### awesome-archimate
+
+Planned. Hub GAP: no dedicated ArchiMate section. Namespace empty on 2026-09-17.
+
+- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
+- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
+- [ ] Repo created (private) from the README skeleton
+- [ ] Hub README family table row updated with the URL
+- [ ] Registry status flipped to Live
+
+### awesome-capella
+
+Planned. Hub carries Capella/Arcadia thinly: four Broader Context entries (Arcadia
+method page, Arcadia primer, py-capellambse, Eclipse Capella). Namespace TODO re-check
+(rate-limited on the 2026-09-17 list-family pass).
+
+- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
+- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
+- [ ] Repo created (private) from the README skeleton
+- [ ] Hub README family table row updated with the URL
+- [ ] Registry status flipped to Live
+
+### awesome-requirements-engineering
+
+Planned. Hub GAP: requirements engineering is absent from the hub. Namespace empty per
+niche research; re-check on create day.
+
+- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
+- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
+- [ ] Repo created (private) from the README skeleton
+- [ ] Hub README family table row updated with the URL
+- [ ] Registry status flipped to Live
+
+### awesome-digital-engineering
+
+Planned. Hub GAP: digital engineering is absent from the hub. Namespace empty per
+niche research; re-check on create day.
+
+- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
+- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
+- [ ] Repo created (private) from the README skeleton
+- [ ] Hub README family table row updated with the URL
+- [ ] Registry status flipped to Live
+
+### awesome-stpa
+
+Planned. Hub carries one STPA entry: the Model Gallery DLR-FT STPA library. Namespace
+TODO re-check (rate-limited on the 2026-09-17 list-family pass).
+
+- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
+- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
+- [ ] Repo created (private) from the README skeleton
+- [ ] Hub README family table row updated with the URL
+- [ ] Registry status flipped to Live
+
+### awesome-magic-grid status note
+
+The local working copy runs a generator pipeline (`scripts/generate.py` over
+`data/entries.yaml`) while the family standard mandates a hand-maintained table of
+contents. That conflict is surfaced, not solved: it is tracked in
+`../awesome-magic-grid/STATUS.md`. Re-scope (prune entries, retitle, decide generator
+versus hand maintenance) is a TODO.
+
+### awesome-sysml-v2 live-spoke alignment
+
+Not a create checklist: the repo exists and is public. Alignment with the family
+standard, checked on each sweep.
+
+- [ ] Family pointer line present (text only while hub private)
+- [ ] Last full sweep badge
+- [ ] Entry tags and year tokens per family standard
+- [ ] CONTRIBUTING year/dedupe/neutrality rules aligned
 
 ## README skeleton
 
