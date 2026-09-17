@@ -15,3 +15,7 @@ https://www\.researchgate\.net/
 # GitHub issue-form link: written as the conventional relative ../../issues/new/choose
 # (correct for browsers); lychee resolves it to a nonexistent local file path.
 issues/new/choose
+# INCOSE.org WAF blocks automated clients (2026-09)
+https://www\.incose\.org/
+# JPL MDS returns 403 to automated clients (2026-09)
+https://mds\.jpl\.nasa\.gov/
