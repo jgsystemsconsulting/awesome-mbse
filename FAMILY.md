@@ -96,7 +96,7 @@ found` | `TODO re-check`.
 | Name | Checked | Result | Next action |
 |------|---------|--------|-------------|
 | awesome-archimate | 2026-09-17 | empty | Re-check on create day |
-| awesome-capella | - | TODO re-check | Re-check on launch day (rate-limited on the 2026-09-17 list-family pass) |
+| awesome-capella | 2026-09-17 | empty | Live as jgsystemsconsulting/awesome-capella |
 | awesome-stpa | - | TODO re-check | Re-check on launch day (rate-limited on the 2026-09-17 list-family pass) |
 | awesome-requirements-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
 | awesome-digital-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
@@ -163,15 +163,15 @@ Planned. Hub GAP: no dedicated ArchiMate section. Namespace empty on 2026-09-17.
 
 ### awesome-capella
 
-Planned. Hub carries Capella/Arcadia thinly: four Broader Context entries (Arcadia
-method page, Arcadia primer, py-capellambse, Eclipse Capella). Namespace TODO re-check
-(rate-limited on the 2026-09-17 list-family pass).
+Live. Public spoke at https://github.com/jgsystemsconsulting/awesome-capella (73 verified
+entries, 2026-09-17). Hub Capella/Arcadia section shrunk to a pointer plus cross-cutting
+entries. Namespace re-check empty on create day.
 
-- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
-- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
-- [ ] Repo created (private) from the README skeleton
-- [ ] Hub README family table row updated with the URL
-- [ ] Registry status flipped to Live
+- [x] Namespace re-checked on 2026-09-17 (result: empty)
+- [x] Roughly 40 candidate entries gathered, all passing the inclusion bar (73 shipped)
+- [x] Repo created (public, per reviewed spec M1) from the README skeleton
+- [x] Hub README family table row updated with the URL
+- [x] Registry status flipped to Live
 
 ### awesome-requirements-engineering
 
