@@ -51,7 +51,7 @@ The default state of every family repo is private until it is explicitly release
 | awesome-archimate | ArchiMate 3.x, the Archi tool, EA modeling practice | Planned | none yet |
 | awesome-capella | Capella tool and the Arcadia method | Planned | none yet |
 | awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Planned | none yet |
-| awesome-digital-engineering | Digital thread, model-based definition, digital engineering transformation | Planned | none yet |
+| [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | public |
 | awesome-stpa | STAMP / STPA and hazard analysis; functional safety methods | Planned | none yet |
 
 Status is only `Live` | `In development` | `Planned`. Visibility is only `public` |
@@ -186,14 +186,15 @@ niche research; re-check on create day.
 
 ### awesome-digital-engineering
 
-Planned. Hub GAP: digital engineering is absent from the hub. Namespace empty per
-niche research; re-check on create day.
+Live. Public spoke at https://github.com/jgsystemsconsulting/awesome-digital-engineering
+(launched 2026-09-17, initial seed under 40 with honest growth label). Hub still has no
+DE resource section (GAP closed by spoke, not by hub content).
 
-- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
-- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
-- [ ] Repo created (private) from the README skeleton
-- [ ] Hub README family table row updated with the URL
-- [ ] Registry status flipped to Live
+- [x] Namespace re-checked on 2026-09-17 (result: empty)
+- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar (growth in progress)
+- [x] Repo created (public) from the README skeleton
+- [x] Hub README family table row updated with the URL
+- [x] Registry status flipped to Live
 
 ### awesome-stpa
 
