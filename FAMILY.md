@@ -48,7 +48,7 @@ The default state of every family repo is private until it is explicitly release
 | [awesome-mbse](https://github.com/jgsystemsconsulting/awesome-mbse) | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live | private |
 | [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2) | SysML v2 the language: spec, parsers, editors, API clients, example models | Live | public |
 | awesome-magic-grid | Magic Grid method and Cameo practice | In development | local only. No GitHub repo exists; the local working copy is a hub fork pending re-scope, not a niche spoke |
-| awesome-archimate | ArchiMate 3.x, the Archi tool, EA modeling practice | Planned | none yet |
+| [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate) | ArchiMate 3.x and 4, the Archi tool, EA modeling practice | Live | public |
 | [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella) | Capella tool and the Arcadia method | Live | public |
 | awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Live | private |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | public |
@@ -95,7 +95,7 @@ found` | `TODO re-check`.
 
 | Name | Checked | Result | Next action |
 |------|---------|--------|-------------|
-| awesome-archimate | 2026-09-17 | empty | Re-check on create day |
+| awesome-archimate | 2026-09-17 (create-day re-check: empty) | empty | None; repo created |
 | awesome-capella | 2026-09-17 | empty | Live as jgsystemsconsulting/awesome-capella |
 | awesome-stpa | - | TODO re-check | Re-check on launch day (rate-limited on the 2026-09-17 list-family pass) |
 | awesome-requirements-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
@@ -153,13 +153,16 @@ Copy per planned spoke. The checklists are the structure; do not create the repo
 
 ### awesome-archimate
 
-Planned. Hub GAP: no dedicated ArchiMate section. Namespace empty on 2026-09-17.
+Live. Hub GAP: no dedicated ArchiMate section. Namespace empty on 2026-09-17 and on
+the create-day re-check. Launched with 17 verified seeds under the depth waiver
+(2026-09-17, owner: spoke maintainer); the ~40-entry bar is the target for the first
+full sweep, logged in the spoke CHANGELOG.
 
-- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
-- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
-- [ ] Repo created (private) from the README skeleton
-- [ ] Hub README family table row updated with the URL
-- [ ] Registry status flipped to Live
+- [x] Namespace re-checked on 2026-09-17 (result: empty)
+- [x] Depth waiver applied: opened with 17 verified seeds (minimum 15 live) per the 2026-09-17 waiver
+- [x] Repo created (public, matching awesome-sysml-v2) from the README skeleton
+- [x] Hub README family table row updated with the URL
+- [x] Registry status flipped to Live
 
 ### awesome-capella
 
