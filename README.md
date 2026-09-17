@@ -29,10 +29,12 @@ Cameo section as the standout-deep part no other list covers.
 ## List family
 
 This repo is the hub of a family of lists; the registry and family rules live in
-[FAMILY.md](FAMILY.md). The live spokes are
+[FAMILY.md](FAMILY.md). Live spokes (see the table below for status and visibility):
 [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2),
+[awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate),
+[awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella),
 [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering),
-and [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate).
+and awesome-requirements-engineering (private, org-visible).
 
 | List                                                                                              | Scope                                                                                 | Status         | Where the niche lives today                                 |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------------- |
@@ -45,10 +47,12 @@ and [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation            | Live           | Linked public spoke (initial seed)                          |
 | awesome-stpa                                                                                      | STAMP / STPA and hazard analysis; functional safety methods                           | Planned        | Model Gallery DLR-FT STPA library (one entry, thin)         |
 
-Gaps, snapshot 2026-09-17 (not a permanent census): requirements engineering and
-digital engineering now has a linked spoke (initial seed); remaining gaps: ArchiMate has no dedicated hub section;
-STPA is one entry (the DLR-FT STPA library); Capella moved to the awesome-capella spoke (the hub keeps only the cross-cutting
-methodology directory entry).
+Gaps, snapshot 2026-09-17 (not a permanent census): ArchiMate niche lives in
+awesome-archimate (no dedicated hub body section by design); Capella moved to
+awesome-capella (hub keeps only the cross-cutting methodology directory entry);
+digital engineering has a linked spoke (initial seed); requirements engineering has
+a private spoke while hub RE body copy remains a GAP; STPA is one hub entry (the
+DLR-FT STPA library).
 
 ## Magic Grid & Cameo / CATIA Magic
 
@@ -261,10 +265,9 @@ maintained `awesome-mbse` with this breadth existed before this list.
 - [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering) - Broad systems-engineering links, untouched since 2021; no MBSE depth `SE-general` `external-list` (2021).
 - [rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering) - Minimal systems-engineering collection, stagnant since 2024; no MBSE coverage `SE-general` `external-list` (2024).
 
-TODO: re-check the `awesome-stpa` namespace on launch day (`awesome-capella` done 2026-09-17; both
-were rate-limited on the 2026-09-17 list-family pass). Re-check `awesome-archimate`
-(empty-ish on 2026-09-17), `awesome-requirements-engineering`, and
-`awesome-digital-engineering` (probed in niche research) again on each create day.
+TODO: re-check the `awesome-stpa` namespace on launch day (`awesome-capella` and
+`awesome-archimate` created 2026-09-17). Re-check remaining planned niches on each
+create day.
 
 ## Contributing
 
