@@ -17,6 +17,9 @@ Cameo section as the standout-deep part no other list covers.
 > inclusion criteria as everything else, alongside competing alternatives. See
 > [Editorial neutrality](CONTRIBUTING.md#7-editorial-neutrality).
 
+**List family:** this repo is the hub. See [FAMILY.md](FAMILY.md) for the spoke
+registry, scope boundaries, and the shared standard every family list follows.
+
 ## Contents
 
 - [Magic Grid & Cameo / CATIA Magic](#magic-grid--cameo--catia-magic)
