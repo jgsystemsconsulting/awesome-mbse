@@ -58,7 +58,7 @@ The default state of every family repo is private until it is explicitly release
 | [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella) | Capella tool and the Arcadia method | Live | public |
 | awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Live | private |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | public |
-| [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa) | STAMP / STPA and hazard analysis; functional safety methods | Live | private |
+| [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa) | STAMP / STPA and hazard analysis; functional safety methods | Live | public |
 
 Status is only `Live` | `In development` | `Planned`. Visibility is only `public` |
 `private` | `local only` | `none yet`, and never appears inside Status cells. Namespace
