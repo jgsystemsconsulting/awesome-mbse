@@ -29,14 +29,17 @@ Cameo section as the standout-deep part no other list covers.
 ## List family
 
 This repo is the hub of a family of lists; the registry and family rules live in
-[FAMILY.md](FAMILY.md).
+[FAMILY.md](FAMILY.md). The live spokes are
+[awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2),
+[awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering),
+and [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate).
 
 | List                                                                                              | Scope                                                                                 | Status         | Where the niche lives today                                 |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------------- |
 | awesome-mbse                                                                                      | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live           | This repo (hub and cross-cutting)                           |
 | [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2)                       | SysML v2 the language: spec, parsers, editors, API clients, example models            | Live           | Linked public spoke                                         |
 | awesome-magic-grid                                                                                | Magic Grid method and Cameo practice                                                  | In development | Hub section Magic Grid and Cameo (no spoke URL)             |
-| awesome-archimate                                                                                 | ArchiMate 3.x, the Archi tool, EA modeling practice                                   | Planned        | GAP (no dedicated hub section)                              |
+| [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate)                     | ArchiMate 3.x and 4, the Archi tool, EA modeling practice                             | Live           | Linked public spoke                                         |
 | [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella)                         | Capella tool and the Arcadia method                                                   | Live           | Linked public spoke                                         |
 | awesome-requirements-engineering                                                                  | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers                      | Live           | Private spoke (org-visible); hub still GAP for RE body copy |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation            | Live           | Linked public spoke (initial seed)                          |
