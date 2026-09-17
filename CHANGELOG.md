@@ -6,13 +6,12 @@ tracks the most recent dated entry here.
 ## 2026-09 - Spoke launch: awesome-archimate
 
 - **Launched [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate)**
-  (public) as an additional live spoke (third Live spoke after awesome-sysml-v2 and
-  awesome-digital-engineering): ArchiMate 3.x and 4, the Archi tool, EA modeling
-  practice. Opened with 17 verified seed entries under the depth waiver.
+  (public) as an additional Live spoke: ArchiMate 3.x and 4, the Archi tool, EA
+  modeling practice. Opened with 17 verified seed entries under the depth waiver.
 - **FAMILY.md registry**: awesome-archimate flipped Planned -> Live, repo link added,
   scope text updated to "ArchiMate 3.x and 4, the Archi tool, EA modeling practice".
-- **Hub README**: the List family paragraph now names the live spokes (sysml-v2, digital-engineering, archimate); the
-  registry-mirror table rows for awesome-sysml-v2 and awesome-archimate updated.
+- **Hub README**: List family paragraph and mirror table updated for the Live
+  awesome-archimate spoke (full Live census remains the mirror table).
 
 ## 2026-06 — Enable CI link-checking
 
