@@ -28,15 +28,15 @@ This repo is the hub of a family of lists; the registry and family rules live in
 | [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2) | SysML v2 the language: spec, parsers, editors, API clients, example models | Live | Linked public spoke |
 | awesome-magic-grid | Magic Grid method and Cameo practice | In development | Hub section Magic Grid and Cameo (no spoke URL) |
 | awesome-archimate | ArchiMate 3.x, the Archi tool, EA modeling practice | Planned | GAP (no dedicated hub section) |
-| awesome-capella | Capella tool and the Arcadia method | Planned | Broader Context Capella/Arcadia entries (thin) |
+| [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella) | Capella tool and the Arcadia method | Live | Linked public spoke |
 | awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Planned | GAP (absent) |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | Linked public spoke (initial seed) |
 | awesome-stpa | STAMP / STPA and hazard analysis; functional safety methods | Planned | Model Gallery DLR-FT STPA library (one entry, thin) |
 
 Gaps, snapshot 2026-09-17 (not a permanent census): requirements engineering and
 digital engineering now has a linked spoke (initial seed); remaining gaps: ArchiMate has no dedicated hub section;
-STPA is one entry (the DLR-FT STPA library); Capella is four entries (the Arcadia
-method page, the Arcadia primer, py-capellambse, Eclipse Capella).
+STPA is one entry (the DLR-FT STPA library); Capella moved to the awesome-capella spoke (the hub keeps only the cross-cutting
+methodology directory entry).
 
 ## Contents
 
@@ -185,13 +185,14 @@ the **tools** to run it, and **reusable libraries** to build from.
 
 Cross-tool MBSE methods — the "how to model", not the language itself.
 
+> Capella and Arcadia-specific resources live in the family spoke
+> [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella).
+
 - [Survey of MBSE Methodologies (Estefan, INCOSE/OMG)](https://www.omg.org/sysml/MBSE_Methodology_Survey_RevB.pdf) - The standard comparative reference: OOSEM, Harmony-SE, RUP-SE, Vitech, JPL State Analysis, OPM side by side `SysML-general` `paper` (2008).
 - [OMG MBSE Wiki — Methodology Directory](https://www.omgwiki.org/MBSE/doku.php?id=mbse:methodology) - Master index of MBSE methodologies (OOSEM, SYSMOD, Harmony, Arcadia, and more) `SysML-general` `blog` (2024).
 - [OOSEM (OMG MBSE Wiki)](https://www.omgwiki.org/MBSE/doku.php?id=mbse:incoseoosem) - Vendor-neutral reference for the Object-Oriented Systems Engineering Method `SysML-general` `blog` (2023).
 - [SYSMOD (Tim Weilkiens)](https://mbse4u.com/sysmod/) - Canonical page for the SYSMOD method toolbox: roles, activities, products, and SysML integration `SysML-general` `blog` (2022).
 - [Harmony aMBSE Deskbook (IBM)](https://jazz.net/library-content/wp-content/uploads/2020/11/Harmony-aMBSE-Deskbook-Version-1.pdf) - The full IBM Harmony agile-MBSE method deskbook, freely available `SysMLv1` `Rhapsody` `book` (2020).
-- [Arcadia Method (official)](https://mbse-capella.org/arcadia.html) - Canonical page for the Arcadia method (AFNOR Z67-140) implemented by Eclipse Capella `SysML-general` `blog` (2024).
-- [An Introduction to Arcadia (Voirin)](https://download.eclipse.org/capella/publis/An_Introduction_to_Arcadia_20150115.pdf) - Open primer on the Arcadia method's perspectives and engineering workflow `SysML-general` `paper` (2015).
 - [FAS Method](https://fas-method.org/) - Official site for Functional Architectures for Systems (Lamm & Weilkiens), with open publications and plugins `SysML-general` `blog` (2024).
 - [JPL State Analysis](https://mds.jpl.nasa.gov/public/sa/) - NASA/JPL's primary state-based MBSE method for control-system and mission modeling `SysML-general` `blog` (2023).
 - [Object-Process Methodology (Dori, Technion)](https://esml.technion.ac.il/opm/overview/) - Authoritative overview of OPM (ISO 19450), a self-contained graphical-plus-textual modeling method `SysML-general` `blog` (2022).
@@ -238,11 +239,9 @@ components, frameworks, and standard profiles — rather than whole-system refer
 - [Cameo Systems Modeler / CATIA Magic](https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler) - Commercial cross-platform MBSE environment: SysML, UML, DoDAF/MODAF, requirements traceability `SysMLv1` `Cameo` `tool` `paid` (2024).
 - [Eclipse Papyrus](https://eclipse.dev/papyrus/) - Industrial-grade open-source Eclipse modeling tool for UML with full SysML support `SysMLv1` `Papyrus` `tool` (2024).
 - [IBM Engineering Systems Design Rhapsody](https://www.ibm.com/products/engineering-rhapsody) - Commercial MBSE tool: SysML plus the Harmony method, UAF/DoDAF, AUTOSAR, FMI co-simulation `SysMLv1` `Rhapsody` `tool` `paid` (2024).
-- [Eclipse Capella](https://mbse-capella.org/) - Open-source MBSE tool implementing the Arcadia method (adjacent to SysML) `SysML-general` `other-tool` `tool` (2024).
 - [Gaphor](https://github.com/gaphor/gaphor) - Lightweight open-source Python UML/SysML/RAAML modeler with a clean, readable OMG-standard metamodel `SysML-general` `other-tool` `tool` (2026).
 - [Modelio](https://github.com/ModelioOpenSource/Modelio) - Open-source (GPL-3.0) enterprise modeling environment with a full SysML v1 diagram suite incl. parametrics `SysMLv1` `other-tool` `tool` (2024).
 - [openCAESAR / OML](https://github.com/opencaesar/oml) - JPL-originated ontology-based modeling language and OWL toolchain for traceable MBSE, with worked examples `SysML-general` `other-tool` `tool` (2025).
-- [py-capellambse](https://github.com/DSD-DBS/py-capellambse) - Headless Python library to load, traverse, diff, and generate from Capella/Arcadia models — "models as data" `SysML-general` `other-tool` `tool` (2026).
 
 ### APIs & automation
 

@@ -49,7 +49,7 @@ The default state of every family repo is private until it is explicitly release
 | [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2) | SysML v2 the language: spec, parsers, editors, API clients, example models | Live | public |
 | awesome-magic-grid | Magic Grid method and Cameo practice | In development | local only. No GitHub repo exists; the local working copy is a hub fork pending re-scope, not a niche spoke |
 | awesome-archimate | ArchiMate 3.x, the Archi tool, EA modeling practice | Planned | none yet |
-| awesome-capella | Capella tool and the Arcadia method | Planned | none yet |
+| [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella) | Capella tool and the Arcadia method | Live | public |
 | awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Planned | none yet |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | public |
 | awesome-stpa | STAMP / STPA and hazard analysis; functional safety methods | Planned | none yet |
