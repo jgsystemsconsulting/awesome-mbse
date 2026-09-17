@@ -17,15 +17,34 @@ Cameo section as the standout-deep part no other list covers.
 > inclusion criteria as everything else, alongside competing alternatives. See
 > [Editorial neutrality](CONTRIBUTING.md#7-editorial-neutrality).
 
-**List family:** this repo is the hub. See [FAMILY.md](FAMILY.md) for the spoke
-registry, scope boundaries, and the shared standard every family list follows.
+## List family
+
+This repo is the hub of a family of lists; the registry and family rules live in
+[FAMILY.md](FAMILY.md).
+
+| List | Scope | Status | Where the niche lives today |
+|------|-------|--------|-----------------------------|
+| awesome-mbse | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live | This repo (hub and cross-cutting) |
+| [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2) | SysML v2 the language: spec, parsers, editors, API clients, example models | Live | Linked public spoke; the only existing live spoke |
+| awesome-magic-grid | Magic Grid method and Cameo practice | In development | Hub section Magic Grid and Cameo (no spoke URL) |
+| awesome-archimate | ArchiMate 3.x, the Archi tool, EA modeling practice | Planned | GAP (no dedicated hub section) |
+| awesome-capella | Capella tool and the Arcadia method | Planned | Broader Context Capella/Arcadia entries (thin) |
+| awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Planned | GAP (absent) |
+| awesome-digital-engineering | Digital thread, model-based definition, digital engineering transformation | Planned | GAP (absent) |
+| awesome-stpa | STAMP / STPA and hazard analysis; functional safety methods | Planned | Model Gallery DLR-FT STPA library (one entry, thin) |
+
+Gaps, snapshot 2026-09-17 (not a permanent census): requirements engineering and
+digital engineering are absent from the hub; ArchiMate has no dedicated hub section;
+STPA is one entry (the DLR-FT STPA library); Capella is four entries (the Arcadia
+method page, the Arcadia primer, py-capellambse, Eclipse Capella).
 
 ## Contents
 
+- [List family](#list-family)
 - [Magic Grid & Cameo / CATIA Magic](#magic-grid--cameo--catia-magic)
 - [Model Gallery](#model-gallery)
 - [Broader SysML / MBSE Context](#broader-sysml--mbse-context)
-- [The competitive landscape](#the-competitive-landscape)
+- [External awesome lists](#external-awesome-lists)
 - [Support & security](#support--security)
 
 ## Magic Grid & Cameo / CATIA Magic
@@ -232,20 +251,20 @@ components, frameworks, and standard profiles — rather than whole-system refer
 - [SysML v2 API Cookbook](https://github.com/Systems-Modeling/SysML-v2-API-Cookbook) - Recipes and worked examples for using the SysML v2 API `SysMLv2` `tool` (2025).
 - [Open-MBEE Flexo-MMS for SysML v2](https://github.com/Open-MBEE/flexo-mms-sysmlv2) - Git+RDF-backed Model Management System implementing the OMG SysML v2 REST/HTTP API ("Git for models") `SysMLv2` `tool` (2026).
 
-## The competitive landscape
+## External awesome lists
 
-Why this list exists, with evidence (gathered 2026-06-23). Existing SysML/SE awesome-lists
-are either abandoned, narrow, or carry no Cameo / Magic Grid coverage at all:
+Why this list exists, with evidence (gathered 2026-06): existing SysML/SE awesome-lists
+are either abandoned, narrow, or carry no Cameo / Magic Grid coverage. No actively
+maintained `awesome-mbse` with this breadth existed before this list.
 
-| List                                                                                                      | Stars | Last update      | MBSE coverage                                                                                                |
-| --------------------------------------------------------------------------------------------------------- | ----- | ---------------- | ------------------------------------------------------------------------------------------------------------ |
-| [mycr0ft/awesome-sysml](https://github.com/mycr0ft/awesome-sysml)                                         | ~2    | 2026-06 (active) | Narrow: SysML v2 textual tooling only; ~3 Cameo mentions, **0 MagicDraw / Magic Grid**, no methods/libraries |
-| [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering)                 | ~11   | 2021 (abandoned) | Broad SE links, **no MBSE depth**, stale                                                                     |
-| [rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering) | ~1    | 2024 (stagnant)  | **None**                                                                                                     |
+- [mycr0ft/awesome-sysml](https://github.com/mycr0ft/awesome-sysml) - Community SysML v2 tools and samples list; thin on Magic Grid and openable Cameo models `SysMLv2` `external-list` (2025).
+- [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering) - Broad systems-engineering links, untouched since 2021; no MBSE depth `SE-general` `external-list` (2021).
+- [rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering) - Minimal systems-engineering collection, stagnant since 2024; no MBSE coverage `SE-general` `external-list` (2024).
 
-No actively-maintained `awesome-mbse` with this breadth existed before this list. The
-differentiator is **scope** — SysML v1/v2 + methods + tooling + reusable libraries +
-openable models, with **Magic Grid / Cameo** depth no other list has — plus freshness.
+TODO: re-check the `awesome-capella` and `awesome-stpa` namespaces on launch day (both
+were rate-limited on the 2026-09-17 list-family pass). Re-check `awesome-archimate`
+(empty-ish on 2026-09-17), `awesome-requirements-engineering`, and
+`awesome-digital-engineering` (probed in niche research) again on each create day.
 
 ## Contributing
 
