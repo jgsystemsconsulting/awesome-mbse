@@ -45,7 +45,7 @@ and awesome-requirements-engineering (private, org-visible).
 | [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella)                         | Capella tool and the Arcadia method                                                   | Live           | Linked public spoke                                         |
 | awesome-requirements-engineering                                                                  | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers                      | Live           | Private spoke (org-visible); hub still GAP for RE body copy |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation            | Live           | Linked public spoke (initial seed)                          |
-| [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa)                               | STAMP / STPA and hazard analysis; functional safety methods                           | Live           | Dedicated private spoke; hub keeps the DLR-FT STPA library as its one cross-cutting entry |
+| [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa)                               | STAMP / STPA and hazard analysis; functional safety methods                           | Live           | Dedicated spoke; hub keeps the DLR-FT STPA library as its one cross-cutting entry |
 
 Gaps, snapshot 2026-09-17 (not a permanent census): ArchiMate niche lives in
 awesome-archimate (no dedicated hub body section by design); Capella moved to
