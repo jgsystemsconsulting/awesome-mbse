@@ -50,7 +50,7 @@ The default state of every family repo is private until it is explicitly release
 | awesome-magic-grid | Magic Grid method and Cameo practice | In development | local only. No GitHub repo exists; the local working copy is a hub fork pending re-scope, not a niche spoke |
 | awesome-archimate | ArchiMate 3.x, the Archi tool, EA modeling practice | Planned | none yet |
 | [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella) | Capella tool and the Arcadia method | Live | public |
-| awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Planned | none yet |
+| awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Live | private |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | public |
 | awesome-stpa | STAMP / STPA and hazard analysis; functional safety methods | Planned | none yet |
 
@@ -175,14 +175,15 @@ entries. Namespace re-check empty on create day.
 
 ### awesome-requirements-engineering
 
-Planned. Hub GAP: requirements engineering is absent from the hub. Namespace empty per
-niche research; re-check on create day.
+Live. Private spoke created and populated 2026-09-17 (40 entries). Hub still has no
+RE resource section (GAP closed by spoke status, not by hub body copy). Public release
+and sindresorhus/awesome submission are later steps.
 
-- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
-- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
-- [ ] Repo created (private) from the README skeleton
-- [ ] Hub README family table row updated with the URL
-- [ ] Registry status flipped to Live
+- [x] Namespace re-checked on 2026-09-17 (result: empty)
+- [x] Roughly 40 candidate entries gathered, all passing the inclusion bar
+- [x] Repo created (private) from the README skeleton
+- [x] Hub README family table row updated with the URL
+- [x] Registry status flipped to Live
 
 ### awesome-digital-engineering
 
