@@ -17,27 +17,6 @@ Cameo section as the standout-deep part no other list covers.
 > inclusion criteria as everything else, alongside competing alternatives. See
 > [Editorial neutrality](CONTRIBUTING.md#7-editorial-neutrality).
 
-## List family
-
-This repo is the hub of a family of lists; the registry and family rules live in
-[FAMILY.md](FAMILY.md).
-
-| List | Scope | Status | Where the niche lives today |
-|------|-------|--------|-----------------------------|
-| awesome-mbse | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live | This repo (hub and cross-cutting) |
-| [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2) | SysML v2 the language: spec, parsers, editors, API clients, example models | Live | Linked public spoke |
-| awesome-magic-grid | Magic Grid method and Cameo practice | In development | Hub section Magic Grid and Cameo (no spoke URL) |
-| awesome-archimate | ArchiMate 3.x, the Archi tool, EA modeling practice | Planned | GAP (no dedicated hub section) |
-| [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella) | Capella tool and the Arcadia method | Live | Linked public spoke |
-| awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Planned | GAP (absent) |
-| [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | Linked public spoke (initial seed) |
-| awesome-stpa | STAMP / STPA and hazard analysis; functional safety methods | Planned | Model Gallery DLR-FT STPA library (one entry, thin) |
-
-Gaps, snapshot 2026-09-17 (not a permanent census): requirements engineering and
-digital engineering now has a linked spoke (initial seed); remaining gaps: ArchiMate has no dedicated hub section;
-STPA is one entry (the DLR-FT STPA library); Capella moved to the awesome-capella spoke (the hub keeps only the cross-cutting
-methodology directory entry).
-
 ## Contents
 
 - [List family](#list-family)
@@ -46,6 +25,27 @@ methodology directory entry).
 - [Broader SysML / MBSE Context](#broader-sysml--mbse-context)
 - [External awesome lists](#external-awesome-lists)
 - [Support & security](#support--security)
+
+## List family
+
+This repo is the hub of a family of lists; the registry and family rules live in
+[FAMILY.md](FAMILY.md).
+
+| List                                                                                              | Scope                                                                                 | Status         | Where the niche lives today                                                  |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------------------------------- |
+| awesome-mbse                                                                                      | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live           | This repo (hub and cross-cutting)                                            |
+| [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2)                       | SysML v2 the language: spec, parsers, editors, API clients, example models            | Live           | Linked public spoke                                                          |
+| awesome-magic-grid                                                                                | Magic Grid method and Cameo practice                                                  | In development | Hub section Magic Grid and Cameo (no spoke URL)                              |
+| awesome-archimate                                                                                 | ArchiMate 3.x, the Archi tool, EA modeling practice                                   | Planned        | GAP (no dedicated hub section)                                               |
+| awesome-capella                                                                                   | Capella tool and the Arcadia method                                                   | Live           | Linked public spoke |
+| awesome-requirements-engineering                                                                  | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers                      | Planned        | GAP (absent)                                                                 |
+| [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation            | Live           | Linked public spoke (initial seed)                                           |
+| awesome-stpa                                                                                      | STAMP / STPA and hazard analysis; functional safety methods                           | Planned        | Model Gallery DLR-FT STPA library (one entry, thin)                          |
+
+Gaps, snapshot 2026-09-17 (not a permanent census): requirements engineering and
+digital engineering now has a linked spoke (initial seed); remaining gaps: ArchiMate has no dedicated hub section;
+STPA is one entry (the DLR-FT STPA library); Capella moved to the awesome-capella spoke (the hub keeps only the cross-cutting
+methodology directory entry).
 
 ## Magic Grid & Cameo / CATIA Magic
 
@@ -156,7 +156,6 @@ Implementation). Cameo entries link back to [Example models](#example-models).
 | [Don't Panic Batmobile](https://github.com/MBSE4U/dont-panic-batmobile)                                              | Companion model for Weilkiens & Muggeo's "Don't Panic"                     | `SysMLv2` `has-model` `(2025)`     |
 | [Robot Vacuum Cleaner (SysML v2)](https://github.com/elan8/sysml-robot-vacuum-cleaner)                               | 21-file autonomous-robot model: architecture, behavior, firmware, analysis | `SysMLv2` `has-model` `(2026)`     |
 | [fusion-tea](https://github.com/1cFE/fusion-tea)                                                                     | Fusion-energy model + units/costing libraries (36 `.sysml` files)          | `SysMLv2` `has-model` `(2026)`     |
-| [yutaro-ito Sample SysML v2 Project](https://github.com/yutaro-ito/sample-sysml-v2-project)                          | End-to-end method walkthrough: context→requirements→logical architecture   | `SysMLv2` `has-model` `(2022)`     |
 | [sensmetry DETECT](https://github.com/sensmetry/detect)                                                              | Hazard-analysis (DEM&S) tool modeled in SysML v2                           | `SysMLv2` `has-model` `(2026)`     |
 | [DLR-FT STPA Library](https://github.com/DLR-FT/SysMLv2LibrarySTPA)                                                  | DLR System-Theoretic Process Analysis safety library + worked example      | `SysMLv2` `has-model` `(2026)`     |
 | [GfSE SAF-SysMLV2](https://github.com/GfSE/SAF-SysMLV2)                                                              | System Architecture Framework expressed in SysML v2 (33 files)             | `SysMLv2` `has-model` `(2026)`     |
@@ -185,8 +184,7 @@ the **tools** to run it, and **reusable libraries** to build from.
 
 Cross-tool MBSE methods — the "how to model", not the language itself.
 
-> Capella and Arcadia-specific resources live in the family spoke
-> [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella).
+> Capella and Arcadia-specific resources live in the family spoke awesome-capella.
 
 - [Survey of MBSE Methodologies (Estefan, INCOSE/OMG)](https://www.omg.org/sysml/MBSE_Methodology_Survey_RevB.pdf) - The standard comparative reference: OOSEM, Harmony-SE, RUP-SE, Vitech, JPL State Analysis, OPM side by side `SysML-general` `paper` (2008).
 - [OMG MBSE Wiki — Methodology Directory](https://www.omgwiki.org/MBSE/doku.php?id=mbse:methodology) - Master index of MBSE methodologies (OOSEM, SYSMOD, Harmony, Arcadia, and more) `SysML-general` `blog` (2024).
@@ -206,7 +204,7 @@ there unless a specific programme mandates DoDAF or NAF.
 
 - [OMG UAF Specification](https://www.omg.org/spec/UAF) - The Unified Architecture Framework spec hub: Domain Metamodel (DMM) and the UAFML profile Cameo implements `SysML-general` `spec` (2022).
 - [OMG UAF Program Page](https://www.omg.org/uaf/) - OMG's UAF overview and community page: concepts, videos, certification, and adoption guidance `SysML-general` `blog` (2024).
-- [UAF Plugin Documentation (Cameo/No Magic)](https://docs.nomagic.com/spaces/UAFP190SP3/pages/47112606/UAF+Plugin+Documentation) - Official Dassault/No Magic docs for the UAF plugin in Cameo/MagicDraw, with sample models `SysMLv1` `Cameo` `tutorial` (2024).
+- [UAF Plugin Documentation (Cameo/No Magic)](https://docs.nomagic.com/) - Official Dassault/No Magic docs hub for Cameo/MagicDraw plugins, including UAF `SysMLv1` `Cameo` `tutorial` (2024).
 - [OMG UPDM Specification](https://www.omg.org/spec/UPDM/) - The Unified Profile for DoDAF/MODAF — UAF's predecessor profile, still referenced by legacy programmes `SysML-general` `spec` (2013).
 - [NATO Architecture Framework v4](https://www.nato.int/en/about-us/organization/nato-structure/digital-policy-committee-dpc/nato-architecture-framework-version) - Official NATO landing page for NAF v4.1, the current NATO architecture framework `SysML-general` `standard` (2020).
 - [DoD Architecture Framework (DoDAF 2.02)](https://dodcio.defense.gov/library/dod-architecture-framework/) - Official US DoD CIO page for DoDAF 2.02, the US defence architecture framework `SysML-general` `standard` (2010).
@@ -260,7 +258,7 @@ maintained `awesome-mbse` with this breadth existed before this list.
 - [kktse/awesome-systems-engineering](https://github.com/kktse/awesome-systems-engineering) - Broad systems-engineering links, untouched since 2021; no MBSE depth `SE-general` `external-list` (2021).
 - [rolling-robot/awesome-systems-engineering](https://github.com/rolling-robot/awesome-systems-engineering) - Minimal systems-engineering collection, stagnant since 2024; no MBSE coverage `SE-general` `external-list` (2024).
 
-TODO: re-check the `awesome-capella` and `awesome-stpa` namespaces on launch day (both
+TODO: re-check the `awesome-stpa` namespace on launch day (`awesome-capella` done 2026-09-17; both
 were rate-limited on the 2026-09-17 list-family pass). Re-check `awesome-archimate`
 (empty-ish on 2026-09-17), `awesome-requirements-engineering`, and
 `awesome-digital-engineering` (probed in niche research) again on each create day.
