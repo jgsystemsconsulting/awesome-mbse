@@ -25,16 +25,16 @@ This repo is the hub of a family of lists; the registry and family rules live in
 | List | Scope | Status | Where the niche lives today |
 |------|-------|--------|-----------------------------|
 | awesome-mbse | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live | This repo (hub and cross-cutting) |
-| [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2) | SysML v2 the language: spec, parsers, editors, API clients, example models | Live | Linked public spoke; the only existing live spoke |
+| [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2) | SysML v2 the language: spec, parsers, editors, API clients, example models | Live | Linked public spoke |
 | awesome-magic-grid | Magic Grid method and Cameo practice | In development | Hub section Magic Grid and Cameo (no spoke URL) |
 | awesome-archimate | ArchiMate 3.x, the Archi tool, EA modeling practice | Planned | GAP (no dedicated hub section) |
 | awesome-capella | Capella tool and the Arcadia method | Planned | Broader Context Capella/Arcadia entries (thin) |
 | awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Planned | GAP (absent) |
-| awesome-digital-engineering | Digital thread, model-based definition, digital engineering transformation | Planned | GAP (absent) |
+| [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | Linked public spoke (initial seed) |
 | awesome-stpa | STAMP / STPA and hazard analysis; functional safety methods | Planned | Model Gallery DLR-FT STPA library (one entry, thin) |
 
 Gaps, snapshot 2026-09-17 (not a permanent census): requirements engineering and
-digital engineering are absent from the hub; ArchiMate has no dedicated hub section;
+digital engineering now has a linked spoke (initial seed); remaining gaps: ArchiMate has no dedicated hub section;
 STPA is one entry (the DLR-FT STPA library); Capella is four entries (the Arcadia
 method page, the Arcadia primer, py-capellambse, Eclipse Capella).
 
