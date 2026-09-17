@@ -52,7 +52,7 @@ The default state of every family repo is private until it is explicitly release
 | [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella) | Capella tool and the Arcadia method | Live | public |
 | awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Live | private |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | public |
-| awesome-stpa | STAMP / STPA and hazard analysis; functional safety methods | Planned | none yet |
+| [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa) | STAMP / STPA and hazard analysis; functional safety methods | Live | private |
 
 Status is only `Live` | `In development` | `Planned`. Visibility is only `public` |
 `private` | `local only` | `none yet`, and never appears inside Status cells. Namespace
@@ -97,7 +97,7 @@ found` | `TODO re-check`.
 |------|---------|--------|-------------|
 | awesome-archimate | 2026-09-17 (create-day re-check: empty) | empty | None; repo created |
 | awesome-capella | 2026-09-17 | empty | Live as jgsystemsconsulting/awesome-capella |
-| awesome-stpa | - | TODO re-check | Re-check on launch day (rate-limited on the 2026-09-17 list-family pass) |
+| awesome-stpa | 2026-09-17 | empty | Namespace clear; repo created the same day |
 | awesome-requirements-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
 | awesome-digital-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
 
@@ -202,14 +202,15 @@ DE resource section (GAP closed by spoke, not by hub content).
 
 ### awesome-stpa
 
-Planned. Hub carries one STPA entry: the Model Gallery DLR-FT STPA library. Namespace
-TODO re-check (rate-limited on the 2026-09-17 list-family pass).
+Live. Hub keeps the cross-cutting Model Gallery DLR-FT STPA library entry; the niche
+spoke carries the deep list. Namespace re-checked empty on 2026-09-17; repo created
+private the same day.
 
-- [ ] Namespace re-checked on YYYY-MM-DD (result: empty / incumbent found)
-- [ ] Roughly 40 candidate entries gathered, all passing the inclusion bar
-- [ ] Repo created (private) from the README skeleton
-- [ ] Hub README family table row updated with the URL
-- [ ] Registry status flipped to Live
+- [x] Namespace re-checked on 2026-09-17 (result: empty)
+- [x] Roughly 40 candidate entries gathered, all passing the inclusion bar
+- [x] Repo created (private) from the README skeleton
+- [x] Hub README family table row updated with the URL
+- [x] Registry status flipped to Live
 
 ### awesome-magic-grid status note
 
