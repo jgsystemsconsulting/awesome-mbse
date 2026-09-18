@@ -1,5 +1,11 @@
 # Awesome MBSE [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+<p align="right">
+  <a href="https://github.com/jgsystemsconsulting/awesome-magic-grid">
+    <img src="media/logo.svg" width="256" alt="list mark">
+  </a>
+</p>
+
 > A curated, vetted, dated index of **Model-Based Systems Engineering** — SysML v1/v2,
 > methods, tools, and openable models — with the deepest **Magic Grid / Cameo / CATIA
 > Magic** coverage anywhere.
