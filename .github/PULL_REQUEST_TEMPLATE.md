@@ -29,3 +29,4 @@
 
 - [ ] If a **top-level** section was added/renamed, updated the hand-maintained `## Contents` ToC
 - [ ] (If a JGS product) it sits next to ≥1 competing/alternative entry (CONTRIBUTING.md §7)
+- [ ] If a chip value, section heading, or entry count changed, updated `docs/index.html` to match (CI runs `scripts/check_release.py`; see CONTRIBUTING.md section 11)

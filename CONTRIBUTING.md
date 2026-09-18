@@ -143,3 +143,27 @@ The maintainers run a **quarterly sweep** (add new resources, prune rot), logged
 `CHANGELOG.md` with the date, and update the *Last full sweep* badge at the top of the
 README each time. If it's been **> 6 months** since the last sweep, the badge flips to
 "maintenance lapsed" — call it out in an issue.
+
+## 11. Landing page truth
+
+CI runs `scripts/check_release.py` on every push and PR to main (workflow `validate`).
+The gate treats these landing-page bits as inputs (not freehand chrome):
+
+- Chip `<dt>` names must stay exactly `version`, `sweep`, and `entries`. Their `<dd>`
+  values must match the `Version:` field in `RELEASE-INFO.txt`, the README
+  `Last full sweep: YYYY-MM` badge, and the curated bullet count.
+- Curated bullets counted for the entries chip live only under these three README
+  `##` sections: Magic Grid & Cameo / CATIA Magic, Broader SysML / MBSE Context,
+  External awesome lists. Model Gallery is a pointer table and is not counted.
+- The six section-index `<li>` href fragments must equal the GitHub slugs of these
+  headings, in this order: List family, Magic Grid & Cameo / CATIA Magic, Model
+  Gallery, Broader SysML / MBSE Context, External awesome lists, Support & security.
+  Fragments today: `#list-family`, `#magic-grid--cameo--catia-magic`,
+  `#model-gallery`, `#broader-sysml--mbse-context`, `#external-awesome-lists`,
+  `#support--security`.
+- Visible display text (labels around chip values, section-index link wording) may
+  change. The gate reads names, values, and fragments only.
+
+If you rename a top-level product section or bump version/sweep/entry count, update
+`docs/index.html` in the same change.
+
