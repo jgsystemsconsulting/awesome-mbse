@@ -35,20 +35,19 @@ This repo is the hub of a family of lists; the registry and family rules live in
 | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | -------- | --------------------------- |
 | awesome-mbse                                                                                                | Hub for cross-cutting MBSE methods, tools, models, Magic Grid / Cameo | Live     | This repo                   |
 | [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2)                                 | SysML v2 language: specs, parsers, editors, APIs, examples            | Live     | Public spoke                |
+| [awesome-magicgrid-mbse](https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse)                     | MagicGrid method materials and MBSE practice                          | Live     | Public spoke                |
 | awesome-magic-grid (redirect)                                                                               | Former hub name; Magic Grid body stays here                           | Redirect | 301 to awesome-mbse         |
 | [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate)                               | ArchiMate specs, Archi tool, EA practice                              | Live     | Public spoke                |
 | [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella)                                   | Capella tool and Arcadia method                                       | Live     | Public spoke                |
 | [awesome-requirements-engineering](https://github.com/jgsystemsconsulting/awesome-requirements-engineering) | Requirements discipline: EARS, KAOS, ReqIF, tools, papers             | Live     | Public spoke                |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering)           | Digital thread and digital engineering practice                       | Live     | Public spoke                |
 | [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa)                                         | STAMP/STPA and hazard analysis                                        | Live     | Public spoke                |
+| [awesome-enterprise-architect](https://github.com/jgsystemsconsulting/awesome-enterprise-architect)         | Sparx/enterprise architecture tooling index                           | Live     | Public spoke                |
+| [awesome-sparx-ea](https://github.com/jgsystemsconsulting/awesome-sparx-ea)                                 | Sparx Systems Enterprise Architect resources                          | Live     | Public spoke (early)        |
 
-Gaps, snapshot 2026-09-18 (not a permanent census): ArchiMate niche lives in
-awesome-archimate (no dedicated hub body section by design); Capella moved to
-awesome-capella (hub keeps only the cross-cutting methodology directory entry);
-digital engineering has a linked spoke; requirements engineering has a public
-spoke while hub RE body copy remains a GAP; STPA has a dedicated spoke (the hub
-keeps one cross-cutting entry, the DLR-FT STPA library). awesome-magic-grid is a
-GitHub rename redirect to this hub, not a separate repository.
+Gaps, snapshot 2026-09-18 (not a permanent census): hub RE body copy remains a GAP;
+awesome-magic-grid is a GitHub rename redirect to this hub, not a separate repository;
+awesome-sparx-ea is early and may still need full awesome-list packaging.
 
 ## Magic Grid & Cameo / CATIA Magic
 
