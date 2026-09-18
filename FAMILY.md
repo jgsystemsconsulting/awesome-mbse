@@ -51,12 +51,12 @@ The default state of every family repo is private until it is explicitly release
 
 | Repo | Owns | Status | Visibility |
 |------|------|--------|------------|
-| [awesome-mbse](https://github.com/jgsystemsconsulting/awesome-mbse) | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live | private |
+| [awesome-mbse](https://github.com/jgsystemsconsulting/awesome-mbse) | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live | public |
 | [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2) | SysML v2 the language: spec, parsers, editors, API clients, example models | Live | public |
-| awesome-magic-grid | Magic Grid method and Cameo practice | In development | local only. No GitHub repo exists; the local working copy is a hub fork pending re-scope, not a niche spoke |
+| awesome-magic-grid | Former name of the hub (rename redirect) | Redirect | GitHub 301 to awesome-mbse; Magic Grid / Cameo body lives in the hub |
 | [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate) | ArchiMate 3.x and 4, the Archi tool, EA modeling practice | Live | public |
 | [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella) | Capella tool and the Arcadia method | Live | public |
-| awesome-requirements-engineering | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Live | private |
+| [awesome-requirements-engineering](https://github.com/jgsystemsconsulting/awesome-requirements-engineering) | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Live | public |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | public |
 | [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa) | STAMP / STPA and hazard analysis; functional safety methods | Live | public |
 
@@ -74,7 +74,7 @@ Route a resource by its primary subject:
 | Primary subject | Home |
 |-----------------|------|
 | SysML v2 syntax, parsers, editors, the v2 API | awesome-sysml-v2 |
-| Magic Grid method, Cameo / CATIA Magic how-tos | awesome-magic-grid |
+| Magic Grid method, Cameo / CATIA Magic how-tos | awesome-mbse (hub section; awesome-magic-grid is a rename redirect) |
 | ArchiMate viewpoints, the Archi tool, TOGAF-aligned modeling | awesome-archimate |
 | Capella workbenches, Arcadia method material | awesome-capella |
 | Requirements elicitation and management as its own discipline | awesome-requirements-engineering |
@@ -190,7 +190,7 @@ and sindresorhus/awesome submission are later steps.
 
 - [x] Namespace re-checked on 2026-09-17 (result: empty)
 - [x] Roughly 40 candidate entries gathered, all passing the inclusion bar
-- [x] Repo created (private) from the README skeleton
+- [x] Repo created (now public) from the README skeleton
 - [x] Hub README family table row updated with the URL
 - [x] Registry status flipped to Live
 
@@ -220,11 +220,10 @@ private the same day.
 
 ### awesome-magic-grid status note
 
-The local working copy runs a generator pipeline (`scripts/generate.py` over
-`data/entries.yaml`) while the family standard mandates a hand-maintained table of
-contents. That conflict is surfaced, not solved: it is tracked in
-`../awesome-magic-grid/STATUS.md`. Re-scope (prune entries, retitle, decide generator
-versus hand maintenance) is a TODO.
+`awesome-magic-grid` is a GitHub repository rename that **301-redirects to**
+[awesome-mbse](https://github.com/jgsystemsconsulting/awesome-mbse). It is not a
+separate niche spoke. Magic Grid / Cameo content remains a deep section of the hub
+until a true dedicated spoke is intentionally created.
 
 ### awesome-sysml-v2 live-spoke alignment
 
