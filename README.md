@@ -1,10 +1,6 @@
 # Awesome MBSE [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<p align="right">
-  <a href="https://jgsystemsconsulting.github.io/awesome-mbse/">
-    <img src="media/logo.svg" width="256" alt="list mark">
-  </a>
-</p>
+[<img src="media/logo.svg" align="right" width="100" alt="MBSE">](https://jgsystemsconsulting.github.io/awesome-mbse/)
 
 > Model-based systems engineering: SysML, methods, tools, openable models, and Magic Grid practice.
 
