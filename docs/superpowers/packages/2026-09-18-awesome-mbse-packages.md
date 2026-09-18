@@ -111,7 +111,7 @@ URLs rot uncaught. Link integrity is the core failure mode of an awesome list.
 | name | org-catalogue-entry |
 | size | S |
 | deps | P1 |
-| status | ready |
+| status | done |
 | promoted_ids | [] |
 | corroboration | 2 (value, cohesion) |
 | first_prompt | `/superpowers-process full org catalogue entry` |
@@ -151,7 +151,7 @@ block a live URL; package still prepares the entry and branch.
 | name | awesome-acceptability-assessment |
 | size | S |
 | deps | none |
-| status | ready |
+| status | done |
 | promoted_ids | [] |
 | corroboration | 2 (value, cohesion) |
 | first_prompt | `/superpowers-process full awesome acceptability assessment` |
