@@ -10,3 +10,6 @@ Linked resources are the property of their respective owners and are referenced,
 redistributed. "Cameo", "CATIA Magic", "MagicDraw", and "MagicGrid" are trademarks of
 Dassault Systèmes; "SysML" and "KerML" are trademarks of the Object Management Group.
 They are used here nominatively to describe resources, with no implication of endorsement.
+
+IBM Plex Sans and IBM Plex Mono font files under docs/fonts/ are Copyright © 2017 IBM
+Corp. and licensed under the SIL Open Font License 1.1 (see docs/fonts/OFL.txt).
