@@ -1,21 +1,19 @@
 # Awesome MBSE [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <p align="right">
-  <a href="https://github.com/jgsystemsconsulting/awesome-magic-grid">
+  <a href="https://jgsystemsconsulting.github.io/awesome-mbse/">
     <img src="media/logo.svg" width="256" alt="list mark">
   </a>
 </p>
 
-> A curated, vetted, dated index of **Model-Based Systems Engineering** — SysML v1/v2,
-> methods, tools, and openable models — with the deepest **Magic Grid / Cameo / CATIA
-> Magic** coverage anywhere.
+> Model-based systems engineering: SysML, methods, tools, openable models, and Magic Grid practice.
 
 ![Last full sweep: 2026-06](https://img.shields.io/badge/last%20full%20sweep-2026--06-brightgreen)
 
 Built for the **practitioner hunting a real, openable model to learn from or copy**, and
 for anyone who wants one trustworthy starting point for SysML/MBSE. Every link is
 checked; dead links are pruned; each entry is dated and tagged. Coverage spans the whole
-MBSE ecosystem — language, method, tooling, and reusable libraries — with the Magic Grid /
+MBSE ecosystem  -  language, method, tooling, and reusable libraries  -  with the Magic Grid /
 Cameo section as the standout-deep part no other list covers.
 
 > **Maintained by [JG Systems Consulting Ltd.](https://github.com/jgsystemsconsulting), a
@@ -35,22 +33,17 @@ Cameo section as the standout-deep part no other list covers.
 ## List family
 
 This repo is the hub of a family of lists; the registry and family rules live in
-[FAMILY.md](FAMILY.md). Live spokes (see the table below for status and visibility):
-[awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2),
-[awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate),
-[awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella),
-[awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering),
-and awesome-requirements-engineering (private, org-visible).
+[FAMILY.md](FAMILY.md). Live spokes and status are in the table below.
 
-| List                                                                                              | Scope                                                                                 | Status         | Where the niche lives today                                 |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------------- |
-| awesome-mbse                                                                                      | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live           | This repo (hub and cross-cutting)                           |
-| [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2)                       | SysML v2 the language: spec, parsers, editors, API clients, example models            | Live           | Linked public spoke                                         |
-| awesome-magic-grid                                                                                | Magic Grid method and Cameo practice                                                  | In development | Hub section Magic Grid and Cameo (no spoke URL)             |
-| [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate)                     | ArchiMate 3.x and 4, the Archi tool, EA modeling practice                             | Live           | Linked public spoke                                         |
-| [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella)                         | Capella tool and the Arcadia method                                                   | Live           | Linked public spoke                                         |
-| awesome-requirements-engineering                                                                  | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers                      | Live           | Private spoke (org-visible); hub still GAP for RE body copy |
-| [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation            | Live           | Linked public spoke (initial seed)                          |
+| List                                                                                              | Scope                                                                                 | Status         | Where the niche lives today                                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------- | --------------------------------------------------------------------------------- |
+| awesome-mbse                                                                                      | Hub. Cross-cutting MBSE: methods, tool landscape, openable models, Magic Grid / Cameo | Live           | This repo (hub and cross-cutting)                                                 |
+| [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2)                       | SysML v2 the language: spec, parsers, editors, API clients, example models            | Live           | Linked public spoke                                                               |
+| awesome-magic-grid                                                                                | Magic Grid method and Cameo practice                                                  | In development | Hub section Magic Grid and Cameo (no spoke URL)                                   |
+| [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate)                     | ArchiMate 3.x and 4, the Archi tool, EA modeling practice                             | Live           | Linked public spoke                                                               |
+| [awesome-capella](https://github.com/jgsystemsconsulting/awesome-capella)                         | Capella tool and the Arcadia method                                                   | Live           | Linked public spoke                                                               |
+| awesome-requirements-engineering                                                                  | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers                      | Live           | Linked public spoke; hub still GAP for RE body copy                               |
+| [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation            | Live           | Linked public spoke (initial seed)                                                |
 | [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa)                               | STAMP / STPA and hazard analysis; functional safety methods                           | Live           | Dedicated spoke; hub keeps the DLR-FT STPA library as its one cross-cutting entry |
 
 Gaps, snapshot 2026-09-17 (not a permanent census): ArchiMate niche lives in
@@ -63,7 +56,7 @@ hub keeps one cross-cutting entry, the DLR-FT STPA library).
 ## Magic Grid & Cameo / CATIA Magic
 
 The flagship. Magic Grid is the SysML modeling method developed at No Magic (now
-Dassault Systèmes) and applied in Cameo Systems Modeler / CATIA Magic — a grid of
+Dassault Systèmes) and applied in Cameo Systems Modeler / CATIA Magic  -  a grid of
 problem/solution domains × structure/behaviour/requirements/parametrics that tells you
 *what to model next*. **New here?** Start with the [MagicGrid Book of
 Knowledge](#methodology--guides), then open a real model from the Model Gallery (see the
@@ -79,10 +72,10 @@ covers.
 
 ### Tutorials
 
-- [Cameo Systems Modeler — Product Documentation](https://docs.nomagic.com/spaces/CSM2022xR1/pages/106636564/Cameo+Systems+Modeler+Home+Page) - Official vendor docs: projects, SysML diagramming, requirements, collaboration `SysMLv1` `Cameo` `tutorial` (2022).
-- [Cameo Simulation Toolkit — Tutorial](https://docs.nomagic.com/spaces/CST2024x/pages/136730007/Tutorial) - Official step-by-step tutorial for executing and simulating SysML models in Cameo `SysMLv1` `Cameo` `tutorial` (2024).
-- [Colorado State University — Cameo Tutorial Script](https://www.engr.colostate.edu/se/wp-content/uploads/2026/01/CAMEO-TUTORIAL-SCRIPT.pdf) - University-authored written walkthrough: new project, Systems Engineer role, SysML setup `SysMLv1` `Cameo` `tutorial` (2026).
-- [CameoMagic — Free MBSE & SysML Resources](https://cameomagic.com/free-resources/) - Practitioner blog and YouTube with hands-on Cameo tutorials (BDD, IBD, parametrics, state machines) `SysML-general` `Cameo` `tutorial` (2024).
+- [Cameo Systems Modeler  -  Product Documentation](https://docs.nomagic.com/spaces/CSM2022xR1/pages/106636564/Cameo+Systems+Modeler+Home+Page) - Official vendor docs: projects, SysML diagramming, requirements, collaboration `SysMLv1` `Cameo` `tutorial` (2022).
+- [Cameo Simulation Toolkit  -  Tutorial](https://docs.nomagic.com/spaces/CST2024x/pages/136730007/Tutorial) - Official step-by-step tutorial for executing and simulating SysML models in Cameo `SysMLv1` `Cameo` `tutorial` (2024).
+- [Colorado State University  -  Cameo Tutorial Script](https://www.engr.colostate.edu/se/wp-content/uploads/2026/01/CAMEO-TUTORIAL-SCRIPT.pdf) - University-authored written walkthrough: new project, Systems Engineer role, SysML setup `SysMLv1` `Cameo` `tutorial` (2026).
+- [CameoMagic  -  Free MBSE & SysML Resources](https://cameomagic.com/free-resources/) - Practitioner blog and YouTube with hands-on Cameo tutorials (BDD, IBD, parametrics, state machines) `SysML-general` `Cameo` `tutorial` (2024).
 - [Webel MBSE/SysML Video Tutorials](https://vimeopro.com/webel/mbse) - Large library of Cameo Simulation Toolkit and SysML v1 mini-tutorials `SysMLv1` `Cameo` `video` (2023).
 
 ### Courses & learning paths
@@ -90,13 +83,13 @@ covers.
 - [SysML Intensive with MBSE Using Cameo Systems Modeler](https://www.3ds.com/edu/catia-magic-training/sysml-intensive-mbse-using-cameo-systems-modeler) - Official Dassault 5-day SysML lecture plus 2-day MBSE lab using Cameo `SysML-general` `Cameo` `course` `paid` (2024).
 - [Intro to MBSE and SysML with Cameo (TriMech)](https://enterprise.trimech.com/training-course/intro-to-mbse-and-sysml-with-cameo/) - Beginner-friendly instructor-led Cameo and MBSE course with lecture, demo, and workshops `SysMLv1` `Cameo` `course` `paid` (2024).
 - [Intro to MBSE and SysML v2 with Cameo (TriMech)](https://trimech.com/intro-to-mbse-and-sysml-v2-training-course/) - SysML v2 introductory course for newcomers, taught using Cameo `SysMLv2` `Cameo` `course` `paid` (2024).
-- [Transitioning Models to SysML v2 with MBSE (Caltech CTME)](https://ctme.caltech.edu/transitioning-models-to-sysml-v2-with-mbse.html) - 3-day Caltech course on moving SysML v1 Cameo models to SysML v2 `SysMLv2` `Cameo` `course` `paid` (2024).
-- [SysML v2 Workshop on Cameo / CATIA Magic (Webel)](https://webel.com.au/node/4399) - 5-day Webel SysML v2 workshop run on Cameo/CATIA Magic with a Balls & Boxes sample `SysMLv2` `Cameo` `course` `paid` (2024).
+- [Transitioning Models to SysML v2 with MBSE (Caltech CTME)](https://ctme.caltech.edu/transitioning-models-to-sysml-v2-with-mbse.html) - Three-day Caltech course on moving SysML v1 Cameo models to SysML v2 `SysMLv2` `Cameo` `course` `paid` (2024).
+- [SysML v2 Workshop on Cameo / CATIA Magic (Webel)](https://webel.com.au/node/4399) - Five-day Webel SysML v2 workshop run on Cameo/CATIA Magic with a Balls & Boxes sample `SysMLv2` `Cameo` `course` `paid` (2024).
 - [OMG/INCOSE SysML Tutorial (Friedenthal et al.)](https://www.omg.org/sysml/INCOSE-OMGSysML-Tutorial-Final-090901.pdf) - The canonical 175-slide SysML tutorial by the spec authors; free, foundational `SysML-general` `course` (2009).
 - [Modeling with SysML Tutorial (Friedenthal & Oster, JHU/APL)](https://www.jhuapl.edu/sites/default/files/2023-03/ModelingwithSysMLTutorial.pdf) - INCOSE tutorial deck on building SysML models, freely hosted by JHU/APL `SysML-general` `course` (2023).
-- [MIT OCW 16.842 — Fundamentals of Systems Engineering](https://ocw.mit.edu/courses/16-842-fundamentals-of-systems-engineering-fall-2015/) - de Weck's open graduate SE course; Session 3 covers SysML/OPM. Free video and notes `SysML-general` `course` (2015).
-- [NASA NESC Academy — Systems Engineering Catalog](https://nescacademy.nasa.gov/catalogs/systemseng) - NASA's public on-demand video library with multiple freely viewable MBSE lectures `SysML-general` `video` (2024).
-- [Eclipse SysON — Tutorials (YouTube)](https://www.youtube.com/@EclipseSysON) - Free tutorial and demo videos for the open-source web-based SysML v2 modeler `SysMLv2` `SysON` `video` (2025).
+- [MIT OCW 16.842  -  Fundamentals of Systems Engineering](https://ocw.mit.edu/courses/16-842-fundamentals-of-systems-engineering-fall-2015/) - De Weck's open graduate SE course; Session 3 covers SysML/OPM. Free video and notes `SysML-general` `course` (2015).
+- [NASA NESC Academy  -  Systems Engineering Catalog](https://nescacademy.nasa.gov/catalogs/systemseng) - NASA's public on-demand video library with multiple freely viewable MBSE lectures `SysML-general` `video` (2024).
+- [Eclipse SysON  -  Tutorials (YouTube)](https://www.youtube.com/@EclipseSysON) - Free tutorial and demo videos for the open-source web-based SysML v2 modeler `SysMLv2` `SysON` `video` (2025).
 
 ### Books & papers
 
@@ -105,17 +98,17 @@ covers.
 ### Example models
 
 Real, openable models that use Cameo / MagicDraw. Cameo's `.mdzip` is a proprietary
-binary, so the open-web Cameo corpus is small — see the Model Gallery section below for
+binary, so the open-web Cameo corpus is small  -  see the Model Gallery section below for
 the much larger SysML v2 textual corpus.
 
 <a id="mbse4u-the-sysml-v2-book-examples"></a>
-- [MBSE4U — The SysML v2 Book Examples](https://github.com/MBSE4U/the-sysmlv2-book-examples) - Companion Cameo `.mdzip` models (incl. a Drone) for Weilkiens & Muggeo's SysML v2 book `SysMLv2` `Cameo` `has-model` `paper` (2026).
+- [MBSE4U  -  The SysML v2 Book Examples](https://github.com/MBSE4U/the-sysmlv2-book-examples) - Companion Cameo `.mdzip` models (incl. a Drone) for Weilkiens & Muggeo's SysML v2 book `SysMLv2` `Cameo` `has-model` `paper` (2026).
 <a id="verse-opensut"></a>
-- [GaloisInc — VERSE-OpenSUT](https://github.com/GaloisInc/VERSE-OpenSUT/tree/main/models/SysMLv1) - Open System-Under-Test reference with Cameo SysML v1 `.mdzip` models (MPS, system overview) `SysMLv1` `Cameo` `has-model` `paper` (2025).
+- [GaloisInc  -  VERSE-OpenSUT](https://github.com/GaloisInc/VERSE-OpenSUT/tree/main/models/SysMLv1) - Open System-Under-Test reference with Cameo SysML v1 `.mdzip` models (MPS, system overview) `SysMLv1` `Cameo` `has-model` `paper` (2025).
 <a id="multiagent-warehouse"></a>
 - [Multiagent Warehouse (MaaS)](https://github.com/autarchprinceps/Multiagent-Warehouse/blob/master/Documentation/maas-warehouse.mdzip) - A MagicDraw `.mdzip` model of a multi-agent warehouse system `SysMLv1` `CATIA-Magic` `has-model` `paper` (2017).
 <a id="gfse-saf-ffds-cameo-model"></a>
-- [GfSE SAF — Fire-Fighting Drone System (Cameo)](https://github.com/GfSE/SAF-Cameo-Profile/tree/main/SAF_Plugin/samples/SAF) - Openable Cameo `.mdzip` reference model of a fire-fighting drone system, built with the System Architecture Framework `SysMLv1` `Cameo` `has-model` `tool` (2026).
+- [GfSE SAF  -  Fire-Fighting Drone System (Cameo)](https://github.com/GfSE/SAF-Cameo-Profile/tree/main/SAF_Plugin/samples/SAF) - Openable Cameo `.mdzip` reference model of a fire-fighting drone system, built with the System Architecture Framework `SysMLv1` `Cameo` `has-model` `tool` (2026).
 <a id="gtri-ingrid-rapid-modeling"></a>
 - [GTRI INGRID Rapid-Modeling Demo Models](https://github.com/gtri/rapid-modeling-tools/tree/master/ingrid-quick-start) - Cameo/MagicDraw `.mdzip` demo models shipped with GTRI's INGRID pattern-based rapid-modeling tooling `SysMLv1` `CATIA-Magic` `has-model` `tool` (2023).
 <a id="open-mbee-mdk-docgen-sample"></a>
@@ -123,7 +116,7 @@ the much larger SysML v2 textual corpus.
 <a id="package-delivery-drone-cameo"></a>
 - [Package Delivery Drone (Cameo)](https://github.com/jmgogo/Package-Delivery-Drone/blob/main/model/Package%20Delivery%20Drone.mdzip) - Self-contained Cameo `.mdzip` SysML model of a package-delivery drone system architecture (Apache-2.0) `SysMLv1` `Cameo` `has-model` `paper` (2023).
 <a id="eoss-cameo-model"></a>
-- [EOSS — Earth Observation Satellite System (Cameo)](https://github.com/seakers/cameo-LLM-plugin/tree/main/cameo/examples) - Cameo `.mdzip` model of an Earth-observation satellite system from the SEAK Lab `SysMLv1` `Cameo` `has-model` `paper` (2023).
+- [EOSS  -  Earth Observation Satellite System (Cameo)](https://github.com/seakers/cameo-LLM-plugin/tree/main/cameo/examples) - Cameo `.mdzip` model of an Earth-observation satellite system from the SEAK Lab `SysMLv1` `Cameo` `has-model` `paper` (2023).
 <a id="enola-mosa-cameo-model"></a>
 - [MOSA Implementation (CUSA 2026, Cameo)](https://github.com/EnolaTechnologies/cusa26) - Cameo `.mdzip` model of a Modular Open Systems Approach implementation, from a CATIA User Symposium talk `SysMLv1` `Cameo` `has-model` `paper` (2026).
 
@@ -145,7 +138,7 @@ CONTRIBUTING).
 ## Model Gallery
 
 Openable models, fast path. The Cameo `.mdzip` corpus on the open web is small (3 above),
-so this gallery is dominated by **SysML v2 textual (`.sysml`) models** — abundant,
+so this gallery is dominated by **SysML v2 textual (`.sysml`) models**  -  abundant,
 high-quality, and openable in any SysML v2 tool (SysIDE, SysON, the Pilot
 Implementation). Cameo entries link back to [Example models](#example-models).
 
@@ -177,7 +170,7 @@ Implementation). Cameo entries link back to [Example models](#example-models).
 
 ## Broader SysML / MBSE Context
 
-Curated, not exhaustive — the wider ecosystem any MBSE practitioner runs into: the
+Curated, not exhaustive  -  the wider ecosystem any MBSE practitioner runs into: the
 **language** (SysML v1, the stable incumbent; SysML v2, the textual successor now in
 release), the **methods** to apply it, the **architecture frameworks** to structure it,
 the **tools** to run it, and **reusable libraries** to build from.
@@ -186,39 +179,39 @@ the **tools** to run it, and **reusable libraries** to build from.
 
 - [OMG SysML Specification](https://www.omg.org/spec/SysML/) - Canonical OMG SysML spec page; now defaults to v2.0 (2025), with v1.7 the final v1 release `SysML-general` `spec` (2025).
 - [OMG SysML v1.7](https://www.omg.org/spec/SysML/1.7/) - The final SysML v1 release; the general-purpose v1 MBSE modeling language `SysMLv1` `spec` (2024).
-- [Systems-Modeling/SysML-v2-Release](https://github.com/Systems-Modeling/SysML-v2-Release) - "Start here" for SysML v2: the latest incremental release with spec, training, examples, libraries `SysMLv2` `spec` (2026).
+- [Systems-Modeling/SysML-v2-Release](https://github.com/Systems-Modeling/SysML-v2-Release) - Start here for SysML v2: the latest incremental release with spec, training, examples, libraries `SysMLv2` `spec` (2026).
 - [INCOSE Systems Engineering Handbook](https://www.incose.org/resources-publications/technical-publications/se-handbook/) - The practitioner reference for SE life-cycle processes, aligned to ISO/IEC/IEEE 15288 `SysML-general` `standard` `paid` (2023).
-- [OMG KerML Specification](https://www.omg.org/spec/KerML/) - The Kernel Modeling Language spec — the formal semantic foundation underlying SysML v2 `SysMLv2` `spec` (2025).
+- [OMG KerML Specification](https://www.omg.org/spec/KerML/) - The Kernel Modeling Language spec  -  the formal semantic foundation underlying SysML v2 `SysMLv2` `spec` (2025).
 - [OMG Systems Modeling API & Services](https://www.omg.org/spec/SystemsModelingAPI/) - OMG spec defining platform-independent REST/SOAP/Java APIs for KerML and SysML v2 models `SysMLv2` `spec` (2025).
 - [OMG SysML v2.0 Specification](https://www.omg.org/spec/SysML/2.0/) - The dedicated landing page for the SysML v2.0 language release `SysMLv2` `spec` (2025).
 - [NASA Systems Modeling Handbook (NASA-HDBK-1009)](https://standards.nasa.gov/standard/NASA/NASA-HDBK-1009) - Official NASA tool-agnostic guidance on building and using system models `SysML-general` `standard` (2022).
 
 ### Methodology & method references
 
-Cross-tool MBSE methods — the "how to model", not the language itself.
+Cross-tool MBSE methods  -  the "how to model", not the language itself.
 
 > Capella and Arcadia-specific resources live in the family spoke awesome-capella.
 
 - [Survey of MBSE Methodologies (Estefan, INCOSE/OMG)](https://www.omg.org/sysml/MBSE_Methodology_Survey_RevB.pdf) - The standard comparative reference: OOSEM, Harmony-SE, RUP-SE, Vitech, JPL State Analysis, OPM side by side `SysML-general` `paper` (2008).
-- [OMG MBSE Wiki — Methodology Directory](https://www.omgwiki.org/MBSE/doku.php?id=mbse:methodology) - Master index of MBSE methodologies (OOSEM, SYSMOD, Harmony, Arcadia, and more) `SysML-general` `blog` (2024).
+- [OMG MBSE Wiki  -  Methodology Directory](https://www.omgwiki.org/MBSE/doku.php?id=mbse:methodology) - Master index of MBSE methodologies (OOSEM, SYSMOD, Harmony, Arcadia, and more) `SysML-general` `blog` (2024).
 - [OOSEM (OMG MBSE Wiki)](https://www.omgwiki.org/MBSE/doku.php?id=mbse:incoseoosem) - Vendor-neutral reference for the Object-Oriented Systems Engineering Method `SysML-general` `blog` (2023).
 - [SYSMOD (Tim Weilkiens)](https://mbse4u.com/sysmod/) - Canonical page for the SYSMOD method toolbox: roles, activities, products, and SysML integration `SysML-general` `blog` (2022).
 - [Harmony aMBSE Deskbook (IBM)](https://jazz.net/library-content/wp-content/uploads/2020/11/Harmony-aMBSE-Deskbook-Version-1.pdf) - The full IBM Harmony agile-MBSE method deskbook, freely available `SysMLv1` `Rhapsody` `book` (2020).
 - [FAS Method](https://fas-method.org/) - Official site for Functional Architectures for Systems (Lamm & Weilkiens), with open publications and plugins `SysML-general` `blog` (2024).
 - [JPL State Analysis](https://mds.jpl.nasa.gov/public/sa/) - NASA/JPL's primary state-based MBSE method for control-system and mission modeling `SysML-general` `blog` (2023).
 - [Object-Process Methodology (Dori, Technion)](https://esml.technion.ac.il/opm/overview/) - Authoritative overview of OPM (ISO 19450), a self-contained graphical-plus-textual modeling method `SysML-general` `blog` (2022).
-- [SpesML — Open Methodology Docs (TUM/fortiss)](https://spesml.github.io/) - Full open documentation of the SPES-based SpesML method: viewpoints, concepts, case studies, Cameo plugin `SysML-general` `Cameo` `blog` (2024).
+- [SpesML  -  Open Methodology Docs (TUM/fortiss)](https://spesml.github.io/) - Full open documentation of the SPES-based SpesML method: viewpoints, concepts, case studies, Cameo plugin `SysML-general` `Cameo` `blog` (2024).
 
 ### Architecture frameworks
 
 The defence/enterprise architecture frameworks SysML models get built against. **UAF** is
-the modern OMG framework — it supersedes UPDM/DoDAF/MODAF and runs natively in Cameo; start
+the modern OMG framework  -  it supersedes UPDM/DoDAF/MODAF and runs natively in Cameo; start
 there unless a specific programme mandates DoDAF or NAF.
 
 - [OMG UAF Specification](https://www.omg.org/spec/UAF) - The Unified Architecture Framework spec hub: Domain Metamodel (DMM) and the UAFML profile Cameo implements `SysML-general` `spec` (2022).
 - [OMG UAF Program Page](https://www.omg.org/uaf/) - OMG's UAF overview and community page: concepts, videos, certification, and adoption guidance `SysML-general` `blog` (2024).
 - [UAF Plugin Documentation (Cameo/No Magic)](https://docs.nomagic.com/) - Official Dassault/No Magic docs hub for Cameo/MagicDraw plugins, including UAF `SysMLv1` `Cameo` `tutorial` (2024).
-- [OMG UPDM Specification](https://www.omg.org/spec/UPDM/) - The Unified Profile for DoDAF/MODAF — UAF's predecessor profile, still referenced by legacy programmes `SysML-general` `spec` (2013).
+- [OMG UPDM Specification](https://www.omg.org/spec/UPDM/) - The Unified Profile for DoDAF/MODAF  -  UAF's predecessor profile, still referenced by legacy programmes `SysML-general` `spec` (2013).
 - [NATO Architecture Framework v4](https://www.nato.int/en/about-us/organization/nato-structure/digital-policy-committee-dpc/nato-architecture-framework-version) - Official NATO landing page for NAF v4.1, the current NATO architecture framework `SysML-general` `standard` (2020).
 - [DoD Architecture Framework (DoDAF 2.02)](https://dodcio.defense.gov/library/dod-architecture-framework/) - Official US DoD CIO page for DoDAF 2.02, the US defence architecture framework `SysML-general` `standard` (2010).
 - [MOD Architecture Framework (MODAF)](https://www.gov.uk/guidance/mod-architecture-framework) - Official UK gov.uk MODAF page; now withdrawn in favour of NAF/UAF but still widely referenced `SysML-general` `standard` (2016).
@@ -232,14 +225,14 @@ there unless a specific programme mandates DoDAF or NAF.
 
 ### Domain & reusable libraries
 
-Building-block libraries and profiles you **import** into your own model — units, domain
-components, frameworks, and standard profiles — rather than whole-system reference models.
+Building-block libraries and profiles you **import** into your own model  -  units, domain
+components, frameworks, and standard profiles  -  rather than whole-system reference models.
 
 - [SysML v2 Standard Library](https://github.com/Systems-Modeling/SysML-v2-Release/tree/master/sysml.library) - The normative KerML/SysML v2 standard libraries: ISQ quantities, SI units, geometry, analysis, domain libs `SysMLv2` `tool` (2026).
 - [SysML v2 Library for AADL](https://github.com/Systems-Modeling/SysML-v2-AADL-Release) - Official SysML v2 rendering of AADL (base types, property sets, component categories) for avionics/embedded `SysMLv2` `tool` (2026).
 - [SYSMOD for SysML v2](https://github.com/MBSE4U/sysmod-sysmlv2) - Tim Weilkiens' SYSMOD method as an importable SysML v2 language-extension library, with examples `SysMLv2` `tool` (2026).
 - [elan8 SysML v2 Domain Libraries](https://github.com/elan8/sysml-domain-libraries) - Importable domain building-block libraries (robotics: actuation, control, autonomy, operations) `SysMLv2` `has-model` `tool` (2026).
-- [QUDT — Quantities, Units, Dimensions & Types](https://github.com/qudt/qudt-public-repo) - RDF/OWL vocabulary of quantities and units widely reused for units handling in MBSE models `SysML-general` `other-tool` `tool` (2024).
+- [QUDT  -  Quantities, Units, Dimensions & Types](https://github.com/qudt/qudt-public-repo) - RDF/OWL vocabulary of quantities and units widely reused for units handling in MBSE models `SysML-general` `other-tool` `tool` (2024).
 - [openCAESAR Metrology Vocabularies](https://github.com/opencaesar/metrology-vocabularies) - ISO/IEC 80000 quantities-and-units plus JCGM VIM4 metrology, as importable OML libraries `SysML-general` `other-tool` `tool` (2026).
 - [GfSE SAF Cameo Profile](https://github.com/GfSE/SAF-Cameo-Profile) - System Architecture Framework profile, UAF-tracing profile, and library packaged for Cameo `SysMLv1` `Cameo` `plugin` (2026).
 - [SCRE Cameo Profiles](https://github.com/tsherburne/scre-profile) - Secure Cyber Resilient Engineering profiles for Cameo, built on RAAML and SACM (safety/assurance) `SysMLv1` `Cameo` `plugin` (2025).
@@ -277,7 +270,7 @@ create day.
 
 ## Contributing
 
-Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for the inclusion bar,
+Contributions welcome  -  see [CONTRIBUTING.md](CONTRIBUTING.md) for the inclusion bar,
 entry format, and tag vocabulary. Suggest a resource via the
 [issue form](../../issues/new/choose) or open a pull request.
 
@@ -285,11 +278,11 @@ entry format, and tag vocabulary. Suggest a resource via the
 
 Questions or a problem with a linked resource? Open an issue using the suggest-a-resource
 form (linked in the Contributing section above). To report a malicious or compromised link
-privately, email **support@jgsystemsconsulting.com** — see [SECURITY.md](SECURITY.md).
+privately, email **support@jgsystemsconsulting.com**  -  see [SECURITY.md](SECURITY.md).
 
 ---
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, the maintainers have waived all copyright and related
-or neighboring rights to this work — released under CC0 1.0 Universal. See [LICENSE](LICENSE).
+or neighboring rights to this work  -  released under CC0 1.0 Universal. See [LICENSE](LICENSE).
