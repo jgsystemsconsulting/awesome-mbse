@@ -59,7 +59,10 @@ The default state of every family repo is private until it is explicitly release
 | [awesome-requirements-engineering](https://github.com/jgsystemsconsulting/awesome-requirements-engineering) | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Live | public |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | public |
 | [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa) | STAMP / STPA and hazard analysis; functional safety methods | Live | public |
-| awesome-mbse-community | People and organizations behind free and open SE/MBSE knowledge | Live | private |
+| [awesome-magicgrid-mbse](https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse) | MagicGrid method materials and MBSE practice | Live | public |
+| [awesome-enterprise-architect](https://github.com/jgsystemsconsulting/awesome-enterprise-architect) | Sparx/enterprise architecture tooling index | Live | public |
+| [awesome-sparx-ea](https://github.com/jgsystemsconsulting/awesome-sparx-ea) | Sparx Systems Enterprise Architect resources | In development | public |
+| [awesome-mbse-community](https://github.com/jgsystemsconsulting/awesome-mbse-community) | People and organizations behind free and open SE/MBSE knowledge | Live | public |
 
 Status is only `Live` | `In development` | `Planned`. Visibility is only `public` |
 `private` | `local only` | `none yet`, and never appears inside Status cells. Namespace
@@ -108,6 +111,9 @@ found` | `TODO re-check`.
 | awesome-requirements-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
 | awesome-digital-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
 | awesome-mbse-community | 2026-09-22 (create-day re-check: empty) | empty | Live as jgsystemsconsulting/awesome-mbse-community |
+| awesome-magicgrid-mbse | 2026-09-22 (registry backfill re-check) | empty | None; repo public |
+| awesome-enterprise-architect | 2026-09-22 (registry backfill re-check) | empty | None; repo public |
+| awesome-sparx-ea | 2026-09-22 (registry backfill re-check) | empty | None; repo public |
 
 ## Shared standard
 
