@@ -59,6 +59,7 @@ The default state of every family repo is private until it is explicitly release
 | [awesome-requirements-engineering](https://github.com/jgsystemsconsulting/awesome-requirements-engineering) | Requirements as a discipline: EARS, KAOS, ReqIF, tooling, papers | Live | public |
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering) | Digital thread, model-based definition, digital engineering transformation | Live | public |
 | [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa) | STAMP / STPA and hazard analysis; functional safety methods | Live | public |
+| awesome-mbse-community | People and organizations behind free and open SE/MBSE knowledge | Live | private |
 
 Status is only `Live` | `In development` | `Planned`. Visibility is only `public` |
 `private` | `local only` | `none yet`, and never appears inside Status cells. Namespace
@@ -106,6 +107,7 @@ found` | `TODO re-check`.
 | awesome-stpa | 2026-09-17 | empty | Namespace clear; repo created the same day |
 | awesome-requirements-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
 | awesome-digital-engineering | 2026-06 | empty | Re-check on create day (niche research: namespace free or thin incumbents) |
+| awesome-mbse-community | 2026-09-22 (create-day re-check: empty) | empty | Live as jgsystemsconsulting/awesome-mbse-community |
 
 ## Shared standard
 
