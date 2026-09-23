@@ -24,6 +24,8 @@ Cameo section as the standout-deep part no other list covers.
 - [Model Gallery](#model-gallery)
 - [Broader SysML / MBSE Context](#broader-sysml--mbse-context)
 - [External awesome lists](#external-awesome-lists)
+- [Install](#install)
+- [Usage](#usage)
 - [Support & security](#support--security)
 
 ## List family
@@ -275,6 +277,18 @@ Contributions welcome - see [CONTRIBUTING.md](CONTRIBUTING.md) for the inclusion
 entry format, and tag vocabulary. Suggest a resource via the
 [issue form](../../issues/new/choose) or open a pull request.
 
+## Install
+
+Nothing to install: read the list here on GitHub or on the landing page. To keep a local
+copy, clone the repository - the list is a single `README.md` with no build step.
+
+## Usage
+
+Skim a section, follow the dated links, and start from an entry that matches your tool
+and year. Every entry carries a date so you can judge freshness at a glance; the Model
+Gallery section points at models you can open today. To cite the list, use
+[CITATION.cff](CITATION.cff).
+
 ## Support & security
 
 Questions or a problem with a linked resource? Open an issue using the suggest-a-resource
@@ -285,9 +299,8 @@ privately, email **support@jgsystemsconsulting.com** - see [SECURITY.md](SECURIT
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-To the extent possible under law, the maintainers have waived all copyright and related
-or neighboring rights to this work - released under CC0 1.0 Universal. See [LICENSE](LICENSE).
-
-## Licence
-
-Copyright (c) 2026 JG Systems Consulting Ltd. See [LICENSE](LICENSE). No purchase or licence key is needed to use this list; for commercial questions, see [labs.jgsystemsconsulting.com/licensing.html](https://labs.jgsystemsconsulting.com/licensing.html).
+Copyright (c) 2026 JG Systems Consulting Ltd. To the extent possible under law, the
+maintainers have waived all copyright and related or neighboring rights to this work -
+released under CC0 1.0 Universal. See [LICENSE](LICENSE). No purchase or licence key is
+needed to use this list; for commercial questions, see
+[labs.jgsystemsconsulting.com/licensing.html](https://labs.jgsystemsconsulting.com/licensing.html).

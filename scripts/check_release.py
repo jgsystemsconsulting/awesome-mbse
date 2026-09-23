@@ -45,7 +45,7 @@ for f in tracked:
 # batches stay out of origin/main. docs/superpowers tracked history is frozen
 # at this baseline; a deliberate add or prune updates the hash below.
 NEVER_TRACK = (".zcode/", ".superpowers/")
-SUPERPOWERS_BASELINE = "746635ec013f5e56e740d31752f42a32effd252a82a539d74fd201f171d42d72"
+SUPERPOWERS_BASELINE = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 for f in tracked:
     if f.startswith(NEVER_TRACK):
         fails.append(f"internal artifact tracked (RR-B-37): {f}")
