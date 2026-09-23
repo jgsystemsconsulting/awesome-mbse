@@ -1,6 +1,7 @@
 # Copyright (c) 2026 JG Systems Consulting Ltd. See LICENSE.
 # SPDX-License-Identifier: CC0-1.0
 """Release gate for Awesome MBSE (Base + list files + landing truth)."""
+import hashlib
 import pathlib
 import re
 import subprocess
@@ -21,9 +22,14 @@ for f in REQUIRED:
         fails.append(f"required file missing: {f}")
 
 CFF_FIELDS = ["cff-version", "message", "title", "authors", "license", "repository-code"]
-_cff = pathlib.Path("CITATION.cff").read_text(encoding="utf-8")
-missing = [f for f in CFF_FIELDS if f"{f}:" not in _cff]
-assert not missing, f"CITATION.cff missing fields: {missing}"
+_cff_path = pathlib.Path("CITATION.cff")
+if _cff_path.is_file():
+    _cff = _cff_path.read_text(encoding="utf-8")
+    _cff_missing = [f for f in CFF_FIELDS if f"{f}:" not in _cff]
+    if _cff_missing:
+        fails.append(f"CITATION.cff missing fields: {_cff_missing}")
+else:
+    fails.append("required file missing: CITATION.cff")
 
 tracked = subprocess.run(
     ["git", "ls-files"], capture_output=True, text=True, check=True
@@ -34,6 +40,25 @@ FORBIDDEN_PATH_PARTS = [
 for f in tracked:
     if any(part in f for part in FORBIDDEN_PATH_PARTS):
         fails.append(f"forbidden tracked path: {f}")
+
+# --- RR-B-37 internal-artifact escape guard: session state and workflow
+# batches stay out of origin/main. docs/superpowers tracked history is frozen
+# at this baseline; a deliberate add or prune updates the hash below.
+NEVER_TRACK = (".zcode/", ".superpowers/")
+SUPERPOWERS_BASELINE = "746635ec013f5e56e740d31752f42a32effd252a82a539d74fd201f171d42d72"
+for f in tracked:
+    if f.startswith(NEVER_TRACK):
+        fails.append(f"internal artifact tracked (RR-B-37): {f}")
+_sp = sorted(f for f in tracked if f.startswith("docs/superpowers/"))
+if hashlib.sha256("\n".join(_sp).encode()).hexdigest() != SUPERPOWERS_BASELINE:
+    fails.append(
+        f"docs/superpowers tracked set changed (RR-B-37): {len(_sp)} files vs "
+        "frozen baseline; if deliberate, update SUPERPOWERS_BASELINE"
+    )
+_gitignore = pathlib.Path(".gitignore").read_text(encoding="utf-8")
+for rule in NEVER_TRACK + ("docs/superpowers/",):
+    if rule not in _gitignore:
+        fails.append(f".gitignore lost the RR-B-37 rule: {rule}")
 
 FORBIDDEN_CONTENT = [
     re.compile(r"BEGIN [A-Z ]*PRIVATE KEY"),
