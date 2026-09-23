@@ -1,6 +1,6 @@
 Product:   awesome-mbse
-Version:    1.0.0
-Build:      2026-06-23 (UTC)
-Tag:        v1.0.0
+Version:    1.1.0
+Build:      2026-09-22 (UTC)
+Tag:        v1.1.0
 Maintainer: JG Systems Consulting Ltd.
 License:    CC0-1.0

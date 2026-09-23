@@ -3,6 +3,33 @@
 Maintenance sweeps and notable changes. The "Last full sweep" badge in the README
 tracks the most recent dated entry here.
 
+## [1.1.0] - 2026-09-22
+
+### Added
+- Root `COPYRIGHT` file, `CITATION.cff`, bug-report issue form plus issue
+  config, `docs/.nojekyll`, and a committed `docs/favicon.svg` (release
+  standard packaging).
+- Private security advisory route in `SECURITY.md` (GitHub security
+  advisories, email as fallback).
+
+### Changed
+- README sweep 2026-09: anchors refreshed (OMG SysML v2.0 publication,
+  SysML-v2-Release 2026-08 train, Capella 7.1.0, INCOSE SE Handbook v5.0,
+  SEBoK v2.14), CATIA Magic naming applied, Model Gallery prose counts
+  fixed.
+- CHANGELOG restructured to Keep-a-Changelog form; prior sweep history
+  preserved verbatim below.
+- Branch protection on `main`; About homepage set to the Pages URL and
+  topics expanded.
+- Soft-404 findings from the manual pass: one mild move, no dead entries.
+  Manual curl sweep of 116 unique README URLs (2026-09-22): 107 HTTP 200; 7
+  HTTP 403 already listed in .lycheeignore (DoD WAF, TriMech/Cloudflare,
+  Wiley/INCOSE Online Library, ResearchGate, INCOSE.org); 1 transient GitHub
+  429 on Package-Delivery-Drone blob (repo root 200 on recheck); 1 transient
+  OMG UPDM 521 (recheck 200, correct UPDM 2.1.1 title). Soft-404: JPL State
+  Analysis URL https://mds.jpl.nasa.gov/public/sa/ redirects to the JPL MDS
+  overview page (still MDS-related; left in place). No entries pruned.
+
 ## 2026-09 - Spoke launch: awesome-archimate
 
 - **Launched [awesome-archimate](https://github.com/jgsystemsconsulting/awesome-archimate)**

@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a broken link, stale entry, or site/CI problem
+labels: [bug]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong?
+      options:
+        - Broken or hijacked link
+        - Stale entry (outdated version, dead project, moved resource)
+        - Wrong description or tags
+        - Landing page or CI problem
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Which section and entry, what you expected, what you got. Include the URL.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (optional)
+      description: A source URL, current version number, or screenshot supporting the fix.

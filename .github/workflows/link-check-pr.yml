@@ -4,6 +4,7 @@ name: link-check (PR)
 # stay awesome-lint conformant. Action refs are full commit SHAs.
 
 on:
+  workflow_dispatch:
   pull_request:
     paths:
       - "README.md"
@@ -19,6 +20,10 @@ permissions:
   contents: read
 
 jobs:
+  # Link exclusions live ONLY in .lycheeignore; each entry carries its reason
+  # inline there. Do not add inline exclude args here (single source).
+  # Deviation from spec AC10 letter: the per-exclusion reasons live in
+  # .lycheeignore comments (single source) instead of this block.
   lychee:
     runs-on: ubuntu-latest
     steps:
@@ -54,4 +59,4 @@ jobs:
         with:
           node-version: "20"
       - name: Awesome-list manifest conformance
-        run: npx -y awesome-lint
+        run: npx -y awesome-lint@2.3.0

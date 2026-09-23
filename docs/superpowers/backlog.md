@@ -8,7 +8,7 @@ only.
 | list-family-private-structure-1 | Re-scope awesome-magic-grid from hub fork to Magic Grid niche | list-family-private-structure | open | ../awesome-magic-grid/STATUS.md |
 | list-family-private-structure-2 | Align awesome-sysml-v2 to family standard (sweep badge, tags, years, CONTRIBUTING) | list-family-private-structure | open | FAMILY.md live-spoke alignment checklist |
 | list-family-private-structure-3 | Namespace re-check capella/stpa on create day (was rate-limited 2026-09-17) | list-family-private-structure | open | FAMILY.md External lists and namespaces |
-| list-family-private-structure-4 | Make hub public when family coherent; then allow FAMILY URL from public spokes | list-family-private-structure | open | docs/runbooks/family-public-release.md Checklist B; runbook-ready, flip pending human decision |
+| list-family-private-structure-4 | Make hub public when family coherent; then allow FAMILY URL from public spokes | list-family-private-structure | open | docs/runbooks/family-public-release.md Checklist B; runbook-ready, flip pending human decision; hub side reconciled a6689ae; spoke-side pointer remainder deferred (out of scope for this run) |
 | awesome-digital-engineering-1 | Grow DE seed past 40 verified entries | awesome-digital-engineering | open | docs/superpowers/seed-inventory-awesome-digital-engineering.md |
 | awesome-digital-engineering-2 | Browser-verify DoD DE Strategy public URL | awesome-digital-engineering | open | https://github.com/jgsystemsconsulting/awesome-digital-engineering/issues/3 |
 | awesome-digital-engineering-3 | Align hub private-structure checklist with public DE launch | awesome-digital-engineering | needs-info | FAMILY.md checklist still said private by default |
@@ -30,8 +30,8 @@ only.
 | archimate-pages-site-1 | Accent link contrast below 4.5:1 AA for normal text (~4.14:1) under locked R-V1 accent | archimate-pages-site | open | docs/superpowers/plans/2026-09-17-archimate-pages-site-ivl-triage-log.md (Task4 deferred minor) |
 | archimate-pages-site-2 | Browser viewport spot-check for 390px overflow and keyboard focus (CSS-only manual so far) | archimate-pages-site | open | awesome-archimate/.superpowers/sdd/2026-09-17-archimate-pages-site/task-4-report.md |
 | b-01 | Landing visitor-copy already applied on docs/index.html (no residual package) | package-loop 2026-09-18 | done | docs/index.html; packages 2026-09-18-awesome-mbse-packages.md |
-| b-02 | Verify/add COPYRIGHT notice consistent with existing NOTICE | package-loop 2026-09-18 | open | NOTICE |
-| b-03 | Record GitHub Pages human enable step for awesome-mbse landing (repo settings) | package-loop 2026-09-18 | open | docs/DISTRIBUTION.md Pages row; docs/index.html |
+| b-02 | Verify/add COPYRIGHT notice consistent with existing NOTICE | package-loop 2026-09-18 | closed | COPYRIGHT (root); closed 2026-09-22 release-standard run |
+| b-03 | Record GitHub Pages human enable step for awesome-mbse landing (repo settings) | package-loop 2026-09-18 | closed | docs/DISTRIBUTION.md Pages row; docs/index.html; Pages already built and verified 200; enable step obsolete, closed 2026-09-22 |
 | b-04 | Enable Dependabot for actions (optional supply-chain follow-on) | package-loop 2026-09-18 | open | no dependabot.yml |
 | b-05 | a11y polish tracked as archimate-pages-site-1/2; apply same bar to hub landing later | package-loop 2026-09-18 | open | docs/superpowers/backlog.md archimate-pages-site-1 |
 | awesome-mbse-community-1 | Pin markdownlint-cli2 in spoke PR gate (unpinned; a future major breaks CI) | awesome-mbse-community | open | ../awesome-mbse-community/.github/workflows/link-check-pr.yml |

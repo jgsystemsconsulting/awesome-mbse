@@ -4,7 +4,7 @@
 
 > Model-based systems engineering: SysML, methods, tools, openable models, and Magic Grid practice.
 
-![Last full sweep: 2026-06](https://img.shields.io/badge/last%20full%20sweep-2026--06-brightgreen)
+![Last full sweep: 2026-09](https://img.shields.io/badge/last%20full%20sweep-2026--09-brightgreen)
 
 Built for the **practitioner hunting a real, openable model to learn from or copy**, and
 for anyone who wants one trustworthy starting point for SysML/MBSE. Every link is
@@ -46,9 +46,11 @@ This repo is the hub of a family of lists; the registry and family rules live in
 | [awesome-sparx-ea](https://github.com/jgsystemsconsulting/awesome-sparx-ea)                                 | Sparx Systems Enterprise Architect resources                          | In development   | Public spoke (early)        |
 | [awesome-mbse-community](https://github.com/jgsystemsconsulting/awesome-mbse-community)                     | People and organizations behind free and open SE/MBSE knowledge       | Live             | Public spoke                |
 
-Gaps, snapshot 2026-09-18 (not a permanent census): hub RE body copy remains a GAP;
-awesome-magic-grid is a GitHub rename redirect to this hub, not a separate repository;
-awesome-sparx-ea is early and may still need full awesome-list packaging.
+Gaps, snapshot 2026-09-22 (not a permanent census): requirements-engineering niche body
+copy lives in the public spoke awesome-requirements-engineering (hub keeps the family
+pointer only; see the List family table above); awesome-magic-grid is a GitHub rename
+redirect to this hub, not a separate repository; awesome-sparx-ea is early and may still
+need full awesome-list packaging.
 
 ## Magic Grid & Cameo / CATIA Magic
 
@@ -91,6 +93,8 @@ covers.
 ### Books & papers
 
 - [Analysis of the Mainstream MBSE Methodologies from the Modeling Practice View](https://www.researchgate.net/publication/366507453_Analysis_of_the_Mainstream_MBSE_Methodologies_from_the_Modeling_Practice_View) - Comparative paper evaluating MBSE methodologies including MagicGrid and OOSEM `SysML-general` `MagicGrid` `paper` (2022).
+- [SEBoK v2.14 (Guide to the Systems Engineering Body of Knowledge)](https://sebokwiki.org/wiki/Guide_to_the_Systems_Engineering_Body_of_Knowledge_%28SEBoK%29) - Living SE body of knowledge wiki; current edition v2.14 released 2026-05 `SysML-general` `standard` (2026).
+- [SysML v2 Release 2026-08](https://github.com/Systems-Modeling/SysML-v2-Release/releases/tag/2026-08) - Dated living-train release of the SysML v2 specification, training materials, examples, and libraries `SysMLv2` `spec` (2026).
 
 ### Example models
 
@@ -134,7 +138,7 @@ CONTRIBUTING).
 
 ## Model Gallery
 
-Openable models, fast path. The Cameo `.mdzip` corpus on the open web is small (3 above),
+Openable models, fast path. The Cameo `.mdzip` corpus on the open web is small (9 above),
 so this gallery is dominated by **SysML v2 textual (`.sysml`) models** - abundant,
 high-quality, and openable in any SysML v2 tool (SysIDE, SysON, the Pilot
 Implementation). Cameo entries link back to [Example models](#example-models).
@@ -176,8 +180,8 @@ the **tools** to run it, and **reusable libraries** to build from.
 
 - [OMG SysML Specification](https://www.omg.org/spec/SysML/) - Canonical OMG SysML spec page; now defaults to v2.0 (2025), with v1.7 the final v1 release `SysML-general` `spec` (2025).
 - [OMG SysML v1.7](https://www.omg.org/spec/SysML/1.7/) - The final SysML v1 release; the general-purpose v1 MBSE modeling language `SysMLv1` `spec` (2024).
-- [Systems-Modeling/SysML-v2-Release](https://github.com/Systems-Modeling/SysML-v2-Release) - Start here for SysML v2: the latest incremental release with spec, training, examples, libraries `SysMLv2` `spec` (2026).
-- [INCOSE Systems Engineering Handbook](https://www.incose.org/resources-publications/technical-publications/se-handbook/) - The practitioner reference for SE life-cycle processes, aligned to ISO/IEC/IEEE 15288 `SysML-general` `standard` `paid` (2023).
+- [Systems-Modeling/SysML-v2-Release](https://github.com/Systems-Modeling/SysML-v2-Release) - Start here for SysML v2: living release train (latest tag 2026-08) with spec, training, examples, libraries `SysMLv2` `spec` (2026).
+- [INCOSE Systems Engineering Handbook, 5th Edition](https://www.wiley.com/en-us/INCOSE+Systems+Engineering+Handbook%3A+A+Guide+for+System+Life+Cycle+Processes+and+Activities%2C+5th+Edition-p-9781119814290) - INCOSE SE Handbook v5.0 (2023), Wiley 5th ed; practitioner reference for SE life-cycle processes aligned to ISO/IEC/IEEE 15288 `SysML-general` `standard` `paid` (2023).
 - [OMG KerML Specification](https://www.omg.org/spec/KerML/) - The Kernel Modeling Language spec - the formal semantic foundation underlying SysML v2 `SysMLv2` `spec` (2025).
 - [OMG Systems Modeling API & Services](https://www.omg.org/spec/SystemsModelingAPI/) - OMG spec defining platform-independent REST/SOAP/Java APIs for KerML and SysML v2 models `SysMLv2` `spec` (2025).
 - [OMG SysML v2.0 Specification](https://www.omg.org/spec/SysML/2.0/) - The dedicated landing page for the SysML v2.0 language release `SysMLv2` `spec` (2025).
@@ -207,7 +211,7 @@ there unless a specific programme mandates DoDAF or NAF.
 
 - [OMG UAF Specification](https://www.omg.org/spec/UAF) - The Unified Architecture Framework spec hub: Domain Metamodel (DMM) and the UAFML profile Cameo implements `SysML-general` `spec` (2022).
 - [OMG UAF Program Page](https://www.omg.org/uaf/) - OMG's UAF overview and community page: concepts, videos, certification, and adoption guidance `SysML-general` `blog` (2024).
-- [UAF Plugin Documentation (Cameo/No Magic)](https://docs.nomagic.com/) - Official Dassault/No Magic docs hub for Cameo/MagicDraw plugins, including UAF `SysMLv1` `Cameo` `tutorial` (2024).
+- [UAF Plugin Documentation (CATIA Magic / No Magic)](https://docs.nomagic.com/) - Official CATIA Magic / No Magic docs hub for Cameo/MagicDraw plugins, including UAF `SysMLv1` `Cameo` `tutorial` (2024).
 - [OMG UPDM Specification](https://www.omg.org/spec/UPDM/) - The Unified Profile for DoDAF/MODAF - UAF's predecessor profile, still referenced by legacy programmes `SysML-general` `spec` (2013).
 - [NATO Architecture Framework v4](https://www.nato.int/en/about-us/organization/nato-structure/digital-policy-committee-dpc/nato-architecture-framework-version) - Official NATO landing page for NAF v4.1, the current NATO architecture framework `SysML-general` `standard` (2020).
 - [DoD Architecture Framework (DoDAF 2.02)](https://dodcio.defense.gov/library/dod-architecture-framework/) - Official US DoD CIO page for DoDAF 2.02, the US defence architecture framework `SysML-general` `standard` (2010).

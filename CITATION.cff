@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: >-
+  If this curated list helped your work, cite it as below.
+title: Awesome MBSE
+authors:
+  - name: JG Systems Consulting Ltd.
+    website: 'https://jgsystemsconsulting.com/'
+type: software
+repository-code: 'https://github.com/jgsystemsconsulting/awesome-mbse'
+url: 'https://jgsystemsconsulting.github.io/awesome-mbse/'
+abstract: >-
+  Curated model-based systems engineering index: SysML, methods, tools,
+  openable models, and Magic Grid practice.
+license: CC0-1.0
+version: 1.1.0
+date-released: '2026-09-22'

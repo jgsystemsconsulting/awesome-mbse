@@ -14,10 +14,16 @@ REQUIRED = [
     "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "docs/DISTRIBUTION.md",
     "docs/index.html", "scripts/check_release.py",
     "DESIGN.md", "DESIGN_BRIEF.md",
+    "COPYRIGHT", "CITATION.cff",
 ]
 for f in REQUIRED:
     if not pathlib.Path(f).is_file():
         fails.append(f"required file missing: {f}")
+
+CFF_FIELDS = ["cff-version", "message", "title", "authors", "license", "repository-code"]
+_cff = pathlib.Path("CITATION.cff").read_text(encoding="utf-8")
+missing = [f for f in CFF_FIELDS if f"{f}:" not in _cff]
+assert not missing, f"CITATION.cff missing fields: {missing}"
 
 tracked = subprocess.run(
     ["git", "ls-files"], capture_output=True, text=True, check=True
