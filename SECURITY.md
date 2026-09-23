@@ -1,6 +1,6 @@
 # Security Policy
 
-This repository is a curated index of links — it ships no executable product. The main
+This repository is a curated index of links: it ships no executable product. The main
 security surface is the links it points to and the CI workflows.
 
 ## Reporting

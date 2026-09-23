@@ -287,3 +287,7 @@ privately, email **support@jgsystemsconsulting.com** - see [SECURITY.md](SECURIT
 
 To the extent possible under law, the maintainers have waived all copyright and related
 or neighboring rights to this work - released under CC0 1.0 Universal. See [LICENSE](LICENSE).
+
+## Licence
+
+Copyright (c) 2026 JG Systems Consulting Ltd. See [LICENSE](LICENSE). No purchase or licence key is needed to use this list; for commercial questions, see [labs.jgsystemsconsulting.com/licensing.html](https://labs.jgsystemsconsulting.com/licensing.html).

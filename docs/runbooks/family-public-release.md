@@ -125,7 +125,7 @@ Gate, then flip, then unlock.
 
 - [ ] Coherence bar met: every registry row with Status `Live` has Visibility
       `public`, or a Live private row is listed under a registry footnote or the
-      planned-spoke note block as `Exception: <repo> remains private — <reason> — <YYYY-MM-DD>`
+      planned-spoke note block as `Exception: <repo> remains private: <reason>: <YYYY-MM-DD>`
       (Visibility cell stays `private`; never invent a fifth Visibility token). A hub
       that 404s its own family table from an anonymous browser is not coherent.
       `In development` and `Planned` rows stay name-only and do not block.

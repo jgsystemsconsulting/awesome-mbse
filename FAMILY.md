@@ -35,10 +35,11 @@ The default state of every family repo is private until it is explicitly release
 - Entry links still pass the public-availability inclusion bar. A private repo linking
   private resources violates the bar all the same; the CHANGELOG 2026-06 removal of
   jgs-magic-sysmlv2-mcp is the precedent.
-- While the hub is private, public spokes reference the family in text only. No
-  FAMILY.md hyperlinks from public repos: they 404 for outside readers.
-- The `sindresorhus/awesome` submission step is deferred until the hub is public. The
-  release procedure (spoke public, hub public, then sindresorhus) lives in
+- **Private mode is historical as of 2026-09-22:** the hub is public, and public
+  spokes now link [FAMILY.md](FAMILY.md) directly (the hub-public gate, Checklist B,
+  unlocked this).
+- The `sindresorhus/awesome` submission is therefore unlocked. The release procedure
+  (spoke public, hub public, then sindresorhus) lives in
   [docs/runbooks/family-public-release.md](docs/runbooks/family-public-release.md).
 - Sweep badges, CI, and cadence are unchanged by privacy.
 - **Status versus Visibility:** Status is content maturity (`Live` / `In development` /
@@ -252,9 +253,9 @@ standard, checked on each sweep.
 
 ![Last full sweep: YYYY-MM](https://img.shields.io/badge/last%20full%20sweep-YYYY--MM-brightgreen)
 
-Part of the awesome-mbse list family (hub repository currently private).
-<!-- After hub public unlock, use:
 Part of the [awesome-mbse list family](https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/FAMILY.md).
+<!-- If the hub ever returns to private, revert to the text-only form:
+Part of the awesome-mbse list family (hub repository currently private).
 -->
 
 Maintained by [JG Systems Consulting Ltd.](https://github.com/jgsystemsconsulting).
