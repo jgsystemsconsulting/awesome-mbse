@@ -17,3 +17,6 @@ docs/superpowers/
 # Office/LibreOffice lock files (OneDrive checkout)
 ~$*
 .~lock.*#
+
+# Hub-internal artifacts relocated out of the served docs/ tree (2026-09-25)
+internal/
