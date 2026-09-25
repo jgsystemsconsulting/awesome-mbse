@@ -1,493 +1,309 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- Copyright (c) 2026 JG Systems Consulting Ltd. See LICENSE. -->
+<!-- SPDX-License-Identifier: CC0-1.0 -->
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Awesome MBSE</title>
-  <meta name="description" content="Curated MBSE and SysML resources: Magic Grid, Cameo, openable models, and the broader ecosystem.">
-  <link rel="canonical" href="https://jgsystemsconsulting.github.io/awesome-mbse/">
-  <meta property="og:title" content="Awesome MBSE">
-  <meta property="og:description" content="Curated MBSE and SysML resources: Magic Grid, Cameo, openable models, and the broader ecosystem.">
-  <meta property="og:url" content="https://jgsystemsconsulting.github.io/awesome-mbse/">
-  <meta property="og:type" content="website">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preload" href="fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/IBMPlexSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <style>
-    @font-face {
-      font-family: "IBM Plex Sans";
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url("fonts/IBMPlexSans-Regular.woff2") format("woff2");
-    }
-    @font-face {
-      font-family: "IBM Plex Sans";
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: url("fonts/IBMPlexSans-Medium.woff2") format("woff2");
-    }
-    @font-face {
-      font-family: "IBM Plex Sans";
-      font-style: normal;
-      font-weight: 600;
-      font-display: swap;
-      src: url("fonts/IBMPlexSans-SemiBold.woff2") format("woff2");
-    }
-    @font-face {
-      font-family: "IBM Plex Mono";
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url("fonts/IBMPlexMono-Regular.woff2") format("woff2");
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Awesome MBSE: curated model-based systems engineering resources</title>
+<meta name="description" content="Curated MBSE and SysML resources: Magic Grid, Cameo, openable models, and the broader ecosystem. Every link is checked, dated, and tagged.">
+<link rel="canonical" href="https://jgsystemsconsulting.github.io/awesome-mbse/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="site.css?v=20260925a">
 
-    :root {
-      --color-bg: oklch(0.985 0.006 255);
-      --color-surface-1: oklch(0.995 0.005 255);
-      --color-surface-2: oklch(0.998 0.004 255);
-      --color-surface-3: oklch(1.0 0 0);
-      --color-primary: oklch(0.19 0.015 260);
-      --color-accent: oklch(0.58 0.17 253);
-      --color-text: oklch(0.17 0.012 258);
-      --color-text-muted: oklch(0.50 0.012 258);
-      --color-border: oklch(0.915 0.008 255);
-      --color-focus-ring: var(--color-accent);
-      --color-success: oklch(0.45 0.10 150);
-      --color-danger: oklch(0.50 0.14 25);
-      --color-attention: oklch(0.55 0.12 85);
-
-      --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-      --font-mono: "IBM Plex Mono", ui-monospace, monospace;
-
-      --text-meta: 0.8rem;   /* 12.8px */
-      --text-body: 1rem;     /* 16px */
-      --text-h3: 1.25rem;    /* 20px */
-      --text-h2: 1.5625rem;  /* 25px */
-      --text-h1: 1.9375rem;  /* 31px */
-
-      --space-1: 4px;
-      --space-2: 8px;
-      --space-3: 16px;
-      --space-4: 32px;
-      --space-5: 56px;
-      --space-section: 80px;
-
-      --radius-sm: 3px;
-      --radius-md: 5px;
-      --radius-lg: 7px;
-
-      --shell-max: 1120px;
-      --prose-max: 70ch;
-
-      color-scheme: light;
-    }
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: var(--font-sans);
-      font-size: var(--text-body);
-      font-weight: 400;
-      line-height: 1.55;
-      color: var(--color-text);
-      background: var(--color-bg);
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a {
-      color: var(--color-accent);
-      text-decoration-thickness: 1px;
-      text-underline-offset: 0.15em;
-      transition: color 160ms ease-out;
-    }
-
-    a:hover {
-      color: var(--color-primary);
-    }
-
-    a:focus-visible,
-    .primary:focus-visible,
-    button:focus-visible {
-      outline: 2px solid var(--color-focus-ring);
-      outline-offset: 2px;
-    }
-
-    .shell {
-      width: min(100% - 2 * var(--space-3), var(--shell-max));
-      margin-inline: auto;
-    }
-
-    .prose {
-      max-width: var(--prose-max);
-    }
-
-    /* Nav */
-    .site-nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: var(--color-bg);
-      border-bottom: 1px solid var(--color-border);
-    }
-
-    .site-nav .shell {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: var(--space-2) var(--space-3);
-      padding-block: var(--space-2);
-      min-height: 48px;
-    }
-
-    .site-nav a {
-      font-size: var(--text-meta);
-      font-weight: 500;
-      color: var(--color-text-muted);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      min-height: 44px;
-      padding: var(--space-1) var(--space-1);
-    }
-
-    .site-nav a:hover {
-      color: var(--color-accent);
-      text-decoration: underline;
-    }
-
-    .site-nav .nav-full {
-      margin-inline-start: auto;
-      color: var(--color-accent);
-    }
-
-    /* Main sections */
-    section {
-      padding-block: var(--space-section);
-    }
-
-    section + section {
-      border-top: 1px solid var(--color-border);
-    }
-
-    h1, h2, h3 {
-      color: var(--color-primary);
-      line-height: 1.25;
-      margin: 0 0 var(--space-3);
-    }
-
-    h1 {
-      font-size: var(--text-h1);
-      font-weight: 600;
-      letter-spacing: -0.02em;
-    }
-
-    h2 {
-      font-size: var(--text-h2);
-      font-weight: 600;
-      letter-spacing: -0.015em;
-    }
-
-    h3 {
-      font-size: var(--text-h3);
-      font-weight: 500;
-    }
-
-    p {
-      margin: 0 0 var(--space-3);
-      color: var(--color-text);
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    .muted {
-      color: var(--color-text-muted);
-    }
-
-    /* Hero */
-    #hero {
-      padding-block: var(--space-5) var(--space-section);
-    }
-
-    #hero .claim {
-      font-size: var(--text-body);
-      max-width: var(--prose-max);
-      margin-bottom: var(--space-3);
-    }
-
-    #hero .support {
-      color: var(--color-text-muted);
-      max-width: var(--prose-max);
-      margin-bottom: var(--space-4);
-    }
-
-    .primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 0 var(--space-4);
-      font-family: var(--font-sans);
-      font-size: var(--text-body);
-      font-weight: 500;
-      line-height: 1.2;
-      color: var(--color-surface-3);
-      background: var(--color-accent);
-      border: 1px solid var(--color-accent);
-      border-radius: var(--radius-md);
-      text-decoration: none;
-      box-shadow: 0 1px 2px color-mix(in oklch, var(--color-primary) 12%, transparent);
-      transition: background-color 160ms ease-out, border-color 160ms ease-out, color 160ms ease-out;
-    }
-
-    .primary:hover {
-      color: var(--color-surface-3);
-      background: var(--color-primary);
-      border-color: var(--color-primary);
-      text-decoration: none;
-    }
-
-    /* Evidence */
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-2);
-      margin: 0 0 var(--space-4);
-      padding: 0;
-      list-style: none;
-    }
-
-    .chip {
-      display: inline-flex;
-      align-items: baseline;
-      gap: var(--space-2);
-      padding: var(--space-1) var(--space-2);
-      font-family: var(--font-mono);
-      font-size: var(--text-meta);
-      font-variant-numeric: tabular-nums;
-      color: var(--color-text-muted);
-      background: var(--color-surface-1);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-sm);
-    }
-
-    .chip dt {
-      font-weight: 400;
-      margin: 0;
-    }
-
-    .chip dd {
-      margin: 0;
-      color: var(--color-text);
-      font-weight: 400;
-    }
-
-    .family {
-      max-width: var(--prose-max);
-      color: var(--color-text-muted);
-      font-size: var(--text-body);
-    }
-
-    /* Sections index */
-    .section-index {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      border-top: 1px solid var(--color-border);
-    }
-
-    .section-index li {
-      border-bottom: 1px solid var(--color-border);
-    }
-
-    .section-index a {
-      display: block;
-      padding: var(--space-3) 0;
-      font-weight: 500;
-      color: var(--color-text);
-      text-decoration: none;
-    }
-
-    .section-index a:hover {
-      color: var(--color-accent);
-      text-decoration: underline;
-    }
-
-    @media (min-width: 1024px) {
-      .section-index {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: var(--space-4);
-      }
-
-      .section-index li:nth-child(odd) {
-        padding-inline-end: var(--space-3);
-      }
-
-      .section-index li:nth-child(even) {
-        padding-inline-start: var(--space-3);
-        border-inline-start: 1px solid var(--color-border);
-      }
-    }
-
-    /* Contribute */
-    .link-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      max-width: var(--prose-max);
-    }
-
-    .link-list li {
-      border-bottom: 1px solid var(--color-border);
-    }
-
-    .link-list li:first-child {
-      border-top: 1px solid var(--color-border);
-    }
-
-    .link-list a {
-      display: block;
-      padding: var(--space-3) 0;
-      font-weight: 500;
-      color: var(--color-text);
-      text-decoration: none;
-    }
-
-    .link-list a:hover {
-      color: var(--color-accent);
-      text-decoration: underline;
-    }
-
-    /* Footer */
-    .site-footer {
-      border-top: 1px solid var(--color-border);
-      padding-block: var(--space-4);
-      font-size: var(--text-meta);
-      color: var(--color-text-muted);
-    }
-
-    .site-footer p {
-      margin: 0;
-      color: var(--color-text-muted);
-    }
-
-    .site-footer a {
-      font-weight: 500;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      *,
-      *::before,
-      *::after {
-        animation: none !important;
-        transition: none !important;
-      }
-    }
-  </style>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jgsystemsconsulting.github.io/awesome-mbse/">
+<meta property="og:title" content="Awesome MBSE">
+<meta property="og:description" content="Curated MBSE and SysML resources: Magic Grid, Cameo, openable models, and the broader ecosystem.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Awesome MBSE">
+<meta name="twitter:description" content="Curated MBSE and SysML resources: Magic Grid, Cameo, openable models, and the broader ecosystem.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Awesome MBSE","applicationCategory":"DeveloperApplication","operatingSystem":"Any","softwareVersion":"1.1.0","license":"https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/LICENSE","url":"https://jgsystemsconsulting.github.io/awesome-mbse/","codeRepository":"https://github.com/jgsystemsconsulting/awesome-mbse","author":{"@type":"Organization","name":"JG Systems Consulting Ltd"}}
+</script>
 </head>
 <body>
-  <nav class="site-nav" aria-label="Page">
-    <div class="shell">
-      <a href="#hero">Top</a>
-      <a href="#evidence">Status</a>
-      <a href="#sections">Sections</a>
-      <a href="#curation">Curation</a>
-      <a href="#contribute">Contribute</a>
-      <a class="nav-full" href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/README.md">Open full list</a>
-    </div>
-  </nav>
 
-  <main>
-    <section id="hero">
-      <div class="shell">
-        <h1>Awesome MBSE</h1>
-        <p class="claim">Curated MBSE and SysML resources for practitioners: Magic Grid, Cameo, openable models, and the broader ecosystem.</p>
-        <p class="support">Open the full list on GitHub for searchable Contents, then jump to the section that matches your work.</p>
-        <a class="primary" href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/README.md">Open full list</a>
-      </div>
-    </section>
+<header class="masthead"><div class="wrap">
+  <span>CLASSIFICATION: <b>PUBLIC</b></span>
+  <span>LICENCE: <b>CC0-1.0</b></span>
+  <span>DOC-ID: <b>JGS-AWE-MBSE</b></span>
+  <span>REV <b>1.1.0</b></span>
+</div></header>
 
-    <section id="evidence" aria-labelledby="evidence-heading">
-      <div class="shell">
-        <h2 id="evidence-heading">Status</h2>
-        <dl class="chips">
-          <div class="chip">
-            <dt>version</dt>
-            <dd>1.1.0</dd>
-          </div>
-          <div class="chip">
-            <dt>sweep</dt>
-            <dd>2026-09</dd>
-          </div>
-          <div class="chip">
-            <dt>entries</dt>
-            <dd>87</dd>
-          </div>
-        </dl>
-        <p class="family">Hub of the awesome-mbse list family.</p>
-      </div>
-    </section>
+<nav class="site" aria-label="Site"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="JG Systems Consulting home"><img src="images/jgs-emblem-dark.png" alt="" width="28" height="28"></a>
+  <a href="#status">Status</a>
+  <a href="#family">Family</a>
+  <a href="#magic-grid">Magic Grid</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#ecosystem">Ecosystem</a>
+  <a href="#external">External</a>
+  <a href="#contribute">Contribute</a>
+</div></nav>
 
-    <section id="sections" aria-labelledby="sections-heading">
-      <div class="shell">
-        <h2 id="sections-heading">Sections</h2>
-        <p class="muted prose">Six README anchors. Open a section on GitHub.</p>
-        <ul class="section-index">
-          <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/README.md#list-family">List family</a></li>
-          <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/README.md#magic-grid--cameo--catia-magic">Magic Grid and Cameo / CATIA Magic</a></li>
-          <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/README.md#model-gallery">Model Gallery</a></li>
-          <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/README.md#broader-sysml--mbse-context">Broader SysML / MBSE Context</a></li>
-          <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/README.md#external-awesome-lists">External awesome lists</a></li>
-          <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/README.md#support--security">Support and security</a></li>
-        </ul>
-      </div>
-    </section>
+<main>
+<div class="hero"><div class="wrap">
+  <h1>Awesome MBSE</h1>
+  <p>Model-based systems engineering: SysML, methods, tools, openable models, and Magic Grid practice.</p>
+  <p class="sub">Built for the practitioner hunting a real, openable model to learn from or copy, and for anyone who wants one trustworthy starting point for SysML/MBSE. Every link is checked; dead links are pruned; each entry is dated and tagged.</p>
+  <div class="cta">
+    <a class="btn btn-primary" href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/README.md">Open full list <span aria-hidden="true">&rarr;</span></a>
+    <a class="btn btn-ghost" href="https://github.com/jgsystemsconsulting/awesome-mbse">View on GitHub <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</div></div>
 
-    <section id="curation" aria-labelledby="curation-heading">
-      <div class="shell">
-        <h2 id="curation-heading">Curation</h2>
-        <p class="prose">Public-domain (CC0) curated index of Model-Based Systems Engineering: SysML v1/v2, methods, tools, and openable models, with deep Magic Grid / Cameo coverage. Nothing to install. The list does not re-host upstream content; follow each link to the source.</p>
-      </div>
-    </section>
+<section id="status"><div class="wrap">
+  <div class="shead"><span class="label">&sect;01 &middot; Status</span><h2>Status</h2></div>
+  <dl class="chips">
+    <div class="chip"><dt>version</dt><dd>1.1.0</dd></div>
+    <div class="chip"><dt>sweep</dt><dd>2026-09</dd></div>
+    <div class="chip"><dt>entries</dt><dd>87</dd></div>
+  </dl>
+  <p class="lead">Nothing to install: read the list here or clone the repository. It is a single README.md with no build step. Skim a section, follow the dated links, and start from an entry that matches your tool and year; to cite the list use <a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/CITATION.cff">CITATION.cff</a>.</p>
+</div></section>
 
-    <section id="contribute" aria-labelledby="contribute-heading">
-      <div class="shell">
-        <h2 id="contribute-heading">Contribute</h2>
-        <p class="muted prose">Suggest a resource or report a dead link via the repository.</p>
-        <ul class="link-list">
-          <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/CONTRIBUTING.md">How to contribute</a></li>
-          <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/issues/new?template=suggest-resource.yml">Suggest a resource</a></li>
-          <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/issues/new">Report a bug or dead link</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
+<section id="family"><div class="wrap">
+  <div class="shead"><span class="label">&sect;02 &middot; List family</span><h2>List family</h2></div>
+  <p class="lead">This repo is the hub of a family of lists; the registry and family rules live in <a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/FAMILY.md">FAMILY.md</a>. Snapshot 2026-09-22, not a permanent census.</p>
+  <div class="grid g2">
+    <div class="cell"><h3>awesome-mbse</h3><p>Hub for cross-cutting MBSE methods, tools, models, Magic Grid / Cameo. Status: Live (this repo).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/awesome-sysml-v2">awesome-sysml-v2</a></h3><p>SysML v2 language: specs, parsers, editors, APIs, examples. Status: Live (public spoke).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse">awesome-magicgrid-mbse</a></h3><p>MagicGrid method materials and MBSE practice. Status: Live (public spoke).</p></div>
+    <div class="cell"><h3>awesome-magic-grid</h3><p>Former hub name; Magic Grid body stays here. Status: Redirect (301 to awesome-mbse).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/awesome-archimate">awesome-archimate</a></h3><p>ArchiMate specs, Archi tool, EA practice. Status: Live (public spoke).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/awesome-capella">awesome-capella</a></h3><p>Capella tool and Arcadia method. Status: Live (public spoke).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/awesome-requirements-engineering">awesome-requirements-engineering</a></h3><p>Requirements discipline: EARS, KAOS, ReqIF, tools, papers. Status: Live (public spoke).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/awesome-digital-engineering">awesome-digital-engineering</a></h3><p>Digital thread and digital engineering practice. Status: Live (public spoke).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/awesome-stpa">awesome-stpa</a></h3><p>STAMP/STPA and hazard analysis. Status: Live (public spoke).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/awesome-enterprise-architect">awesome-enterprise-architect</a></h3><p>Sparx/enterprise architecture tooling index. Status: Live (public spoke).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/awesome-sparx-ea">awesome-sparx-ea</a></h3><p>Sparx Systems Enterprise Architect resources. Status: In development (public spoke, early).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/awesome-mbse-community">awesome-mbse-community</a></h3><p>People and organizations behind free and open SE/MBSE knowledge. Status: Live (public spoke).</p></div>
+  </div>
+</div></section>
 
-  <footer class="site-footer">
-    <div class="shell">
-      <p>
-        Licence: <a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/LICENSE">CC0-1.0</a>.
-        <a href="https://labs.jgsystemsconsulting.com/licensing.html">Licence enquiries</a>.
-        Maintained by JG Systems Consulting Ltd.
-      </p>
-    </div>
-  </footer>
+<section id="magic-grid"><div class="wrap">
+  <div class="shead"><span class="label">&sect;03 &middot; Magic Grid &amp; Cameo / CATIA Magic</span><h2>Magic Grid &amp; Cameo / CATIA Magic</h2></div>
+  <p class="lead">The flagship. Magic Grid is the SysML modeling method developed at No Magic (now Dassault Syst&egrave;mes) and applied in Cameo Systems Modeler / CATIA Magic: a grid of problem/solution domains &times; structure/behaviour/requirements/parametrics that tells you <em>what to model next</em>. New here? Start with the MagicGrid Book of Knowledge, then open a real model from the Model Gallery. This is the deepest part of the list and the one no other awesome-list covers.</p>
+
+  <h3 style="margin-top:2rem">Methodology &amp; guides</h3>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://discover.3ds.com/magicgrid-book-of-knowledge">MagicGrid Book of Knowledge</a></h3><p>The definitive practitioner guide to the MagicGrid method, by Aleksandravi&#269;ien&#279; &amp; Morkevi&#269;ius. <code>SysML-general</code> <code>MagicGrid</code> <code>Cameo</code> <code>book</code> (2021).</p></div>
+    <div class="cell"><h3><a href="https://epubl.ktu.edu/object/elaba:31768092/31768092.pdf">MBSE Grid: A Simplified SysML-Based Approach for Modeling Complex Systems</a></h3><p>Open-access PDF of the foundational paper introducing the grid method that became MagicGrid. <code>SysML-general</code> <code>MagicGrid</code> <code>paper</code> (2017).</p></div>
+    <div class="cell"><h3><a href="https://incose.onlinelibrary.wiley.com/doi/full/10.1002/inst.12429">System Verification and Validation Using the MagicGrid Framework</a></h3><p>INCOSE INSIGHT article extending MagicGrid to cover V&amp;V workflows. <code>SysML-general</code> <code>MagicGrid</code> <code>paper</code> (2023).</p></div>
+    <div class="cell" style="grid-column:1/-1"><h3><a href="https://incose.onlinelibrary.wiley.com/doi/abs/10.1002/iis2.13284">Systems Architecture Meta-Model for the MagicGrid Framework</a></h3><p>Paper formalizing MagicGrid's underlying architecture meta-model. <code>SysML-general</code> <code>MagicGrid</code> <code>paper</code> (2024).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Tutorials</h3>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://docs.nomagic.com/spaces/CSM2022xR1/pages/106636564/Cameo+Systems+Modeler+Home+Page">Cameo Systems Modeler - Product Documentation</a></h3><p>Official vendor docs: projects, SysML diagramming, requirements, collaboration. <code>SysMLv1</code> <code>Cameo</code> <code>tutorial</code> (2022).</p></div>
+    <div class="cell"><h3><a href="https://docs.nomagic.com/spaces/CST2024x/pages/136730007/Tutorial">Cameo Simulation Toolkit - Tutorial</a></h3><p>Official step-by-step tutorial for executing and simulating SysML models in Cameo. <code>SysMLv1</code> <code>Cameo</code> <code>tutorial</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://www.engr.colostate.edu/se/wp-content/uploads/2026/01/CAMEO-TUTORIAL-SCRIPT.pdf">Colorado State University - Cameo Tutorial Script</a></h3><p>University-authored written walkthrough: new project, Systems Engineer role, SysML setup. <code>SysMLv1</code> <code>Cameo</code> <code>tutorial</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://cameomagic.com/free-resources/">CameoMagic - Free MBSE &amp; SysML Resources</a></h3><p>Practitioner blog and YouTube with hands-on Cameo tutorials (BDD, IBD, parametrics, state machines). <code>SysML-general</code> <code>Cameo</code> <code>tutorial</code> (2024).</p></div>
+    <div class="cell" style="grid-column:span 2"><h3><a href="https://vimeopro.com/webel/mbse">Webel MBSE/SysML Video Tutorials</a></h3><p>Large library of Cameo Simulation Toolkit and SysML v1 mini-tutorials. <code>SysMLv1</code> <code>Cameo</code> <code>video</code> (2023).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Courses &amp; learning paths</h3>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://www.3ds.com/edu/catia-magic-training/sysml-intensive-mbse-using-cameo-systems-modeler">SysML Intensive with MBSE Using Cameo Systems Modeler</a></h3><p>Official Dassault 5-day SysML lecture plus 2-day MBSE lab using Cameo. <code>SysML-general</code> <code>Cameo</code> <code>course</code> <code>paid</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://enterprise.trimech.com/training-course/intro-to-mbse-and-sysml-with-cameo/">Intro to MBSE and SysML with Cameo (TriMech)</a></h3><p>Beginner-friendly instructor-led Cameo and MBSE course with lecture, demo, and workshops. <code>SysMLv1</code> <code>Cameo</code> <code>course</code> <code>paid</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://trimech.com/intro-to-mbse-and-sysml-v2-training-course/">Intro to MBSE and SysML v2 with Cameo (TriMech)</a></h3><p>SysML v2 introductory course for newcomers, taught using Cameo. <code>SysMLv2</code> <code>Cameo</code> <code>course</code> <code>paid</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://ctme.caltech.edu/transitioning-models-to-sysml-v2-with-mbse.html">Transitioning Models to SysML v2 with MBSE (Caltech CTME)</a></h3><p>Three-day Caltech course on moving SysML v1 Cameo models to SysML v2. <code>SysMLv2</code> <code>Cameo</code> <code>course</code> <code>paid</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://webel.com.au/node/4399">SysML v2 Workshop on Cameo / CATIA Magic (Webel)</a></h3><p>Five-day Webel SysML v2 workshop run on Cameo/CATIA Magic with a Balls &amp; Boxes sample. <code>SysMLv2</code> <code>Cameo</code> <code>course</code> <code>paid</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://www.omg.org/sysml/INCOSE-OMGSysML-Tutorial-Final-090901.pdf">OMG/INCOSE SysML Tutorial (Friedenthal et al.)</a></h3><p>The canonical 175-slide SysML tutorial by the spec authors; free, foundational. <code>SysML-general</code> <code>course</code> (2009).</p></div>
+    <div class="cell"><h3><a href="https://www.jhuapl.edu/sites/default/files/2023-03/ModelingwithSysMLTutorial.pdf">Modeling with SysML Tutorial (Friedenthal &amp; Oster, JHU/APL)</a></h3><p>INCOSE tutorial deck on building SysML models, freely hosted by JHU/APL. <code>SysML-general</code> <code>course</code> (2023).</p></div>
+    <div class="cell"><h3><a href="https://ocw.mit.edu/courses/16-842-fundamentals-of-systems-engineering-fall-2015/">MIT OCW 16.842 - Fundamentals of Systems Engineering</a></h3><p>De Weck's open graduate SE course; Session 3 covers SysML/OPM. Free video and notes. <code>SysML-general</code> <code>course</code> (2015).</p></div>
+    <div class="cell"><h3><a href="https://nescacademy.nasa.gov/catalogs/systemseng">NASA NESC Academy - Systems Engineering Catalog</a></h3><p>NASA's public on-demand video library with multiple freely viewable MBSE lectures. <code>SysML-general</code> <code>video</code> (2024).</p></div>
+    <div class="cell" style="grid-column:1/-1"><h3><a href="https://www.youtube.com/@EclipseSysON">Eclipse SysON - Tutorials (YouTube)</a></h3><p>Free tutorial and demo videos for the open-source web-based SysML v2 modeler. <code>SysMLv2</code> <code>SysON</code> <code>video</code> (2025).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Books &amp; papers</h3>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://www.researchgate.net/publication/366507453_Analysis_of_the_Mainstream_MBSE_Methodologies_from_the_Modeling_Practice_View">Analysis of the Mainstream MBSE Methodologies from the Modeling Practice View</a></h3><p>Comparative paper evaluating MBSE methodologies including MagicGrid and OOSEM. <code>SysML-general</code> <code>MagicGrid</code> <code>paper</code> (2022).</p></div>
+    <div class="cell"><h3><a href="https://sebokwiki.org/wiki/Guide_to_the_Systems_Engineering_Body_of_Knowledge_%28SEBoK%29">SEBoK v2.14 (Guide to the Systems Engineering Body of Knowledge)</a></h3><p>Living SE body of knowledge wiki; current edition v2.14 released 2026-05. <code>SysML-general</code> <code>standard</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/Systems-Modeling/SysML-v2-Release/releases/tag/2026-08">SysML v2 Release 2026-08</a></h3><p>Dated living-train release of the SysML v2 specification, training materials, examples, and libraries. <code>SysMLv2</code> <code>spec</code> (2026).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Example models</h3>
+  <p class="lead">Real, openable models that use Cameo / MagicDraw. Cameo's <code>.mdzip</code> is a proprietary binary, so the open-web Cameo corpus is small; see the Model Gallery for the much larger SysML v2 textual corpus.</p>
+  <div class="grid g3">
+    <div class="cell" id="mbse4u-the-sysml-v2-book-examples"><h3><a href="https://github.com/MBSE4U/the-sysmlv2-book-examples">MBSE4U - The SysML v2 Book Examples</a></h3><p>Companion Cameo <code>.mdzip</code> models (incl. a Drone) for Weilkiens &amp; Muggeo's SysML v2 book. <code>SysMLv2</code> <code>Cameo</code> <code>has-model</code> <code>paper</code> (2026).</p></div>
+    <div class="cell" id="verse-opensut"><h3><a href="https://github.com/GaloisInc/VERSE-OpenSUT/tree/main/models/SysMLv1">GaloisInc - VERSE-OpenSUT</a></h3><p>Open System-Under-Test reference with Cameo SysML v1 <code>.mdzip</code> models (MPS, system overview). <code>SysMLv1</code> <code>Cameo</code> <code>has-model</code> <code>paper</code> (2025).</p></div>
+    <div class="cell" id="multiagent-warehouse"><h3><a href="https://github.com/autarchprinceps/Multiagent-Warehouse/blob/master/Documentation/maas-warehouse.mdzip">Multiagent Warehouse (MaaS)</a></h3><p>A MagicDraw <code>.mdzip</code> model of a multi-agent warehouse system. <code>SysMLv1</code> <code>CATIA-Magic</code> <code>has-model</code> <code>paper</code> (2017).</p></div>
+    <div class="cell" id="gfse-saf-ffds-cameo-model"><h3><a href="https://github.com/GfSE/SAF-Cameo-Profile/tree/main/SAF_Plugin/samples/SAF">GfSE SAF - Fire-Fighting Drone System (Cameo)</a></h3><p>Openable Cameo <code>.mdzip</code> reference model of a fire-fighting drone system, built with the System Architecture Framework. <code>SysMLv1</code> <code>Cameo</code> <code>has-model</code> <code>tool</code> (2026).</p></div>
+    <div class="cell" id="gtri-ingrid-rapid-modeling"><h3><a href="https://github.com/gtri/rapid-modeling-tools/tree/master/ingrid-quick-start">GTRI INGRID Rapid-Modeling Demo Models</a></h3><p>Cameo/MagicDraw <code>.mdzip</code> demo models shipped with GTRI's INGRID pattern-based rapid-modeling tooling. <code>SysMLv1</code> <code>CATIA-Magic</code> <code>has-model</code> <code>tool</code> (2023).</p></div>
+    <div class="cell" id="open-mbee-mdk-docgen-sample"><h3><a href="https://github.com/Open-MBEE/exec-cameo-mdk/tree/develop/src/main/dist/samples/MDK">Open-MBEE MDK DocGen Sample Model</a></h3><p>Cameo <code>.mdzip</code> sample model demonstrating the Model Development Kit's DocGen document generation. <code>SysMLv1</code> <code>Cameo</code> <code>has-model</code> <code>tool</code> (2024).</p></div>
+    <div class="cell" id="package-delivery-drone-cameo"><h3><a href="https://github.com/jmgogo/Package-Delivery-Drone/blob/main/model/Package%20Delivery%20Drone.mdzip">Package Delivery Drone (Cameo)</a></h3><p>Self-contained Cameo <code>.mdzip</code> SysML model of a package-delivery drone system architecture (Apache-2.0). <code>SysMLv1</code> <code>Cameo</code> <code>has-model</code> <code>paper</code> (2023).</p></div>
+    <div class="cell" id="eoss-cameo-model"><h3><a href="https://github.com/seakers/cameo-LLM-plugin/tree/main/cameo/examples">EOSS - Earth Observation Satellite System (Cameo)</a></h3><p>Cameo <code>.mdzip</code> model of an Earth-observation satellite system from the SEAK Lab. <code>SysMLv1</code> <code>Cameo</code> <code>has-model</code> <code>paper</code> (2023).</p></div>
+    <div class="cell" id="enola-mosa-cameo-model"><h3><a href="https://github.com/EnolaTechnologies/cusa26">MOSA Implementation (CUSA 2026, Cameo)</a></h3><p>Cameo <code>.mdzip</code> model of a Modular Open Systems Approach implementation, from a CATIA User Symposium talk. <code>SysMLv1</code> <code>Cameo</code> <code>has-model</code> <code>paper</code> (2026).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Tools, plugins &amp; automation</h3>
+  <p class="lead">Listed by merit, JGS products alongside alternatives (see Editorial neutrality in CONTRIBUTING).</p>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://github.com/Open-MBEE/MBSEPlugin">Open-MBEE MBSEPlugin</a></h3><p>Open-source MagicDraw/Cameo plugin (DocGen document generation, Cameo Simulation Toolkit integration). <code>SysMLv1</code> <code>Cameo</code> <code>plugin</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://github.com/ajhcs/cameo-mcp-bridge">cameo-mcp-bridge</a></h3><p>Independent MIT-licensed MCP server bridging AI assistants to Cameo/CATIA Magic for SysML/UML create and query. <code>SysMLv1</code> <code>Cameo</code> <code>mcp</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jgsystemsconsulting/jgs-magic-sysmlv1-mcp">jgs-magic-sysmlv1-mcp</a></h3><p>JG Systems SysML v1 MCP bridge (~115 tools) over a local link to CATIA Magic; FREE/PRO/ENTERPRISE. <code>SysMLv1</code> <code>CATIA-Magic</code> <code>mcp</code> <code>paid</code> (2026).</p></div>
+    <div class="cell" style="grid-column:1/-1"><h3><a href="https://github.com/jgsystemsconsulting/jgs-magic-sysmlv1-read-skills">jgs-magic-sysmlv1-read-skills</a></h3><p>Free read-only SysML v1 analysis skills for CATIA Magic (navigate, inspect, audit, report). <code>SysMLv1</code> <code>CATIA-Magic</code> <code>plugin</code> (2026).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Communities &amp; blogs</h3>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://mbse4u.com/">MBSE4U (Tim Weilkiens)</a></h3><p>Long-running practitioner blog and bookshop covering MBSE, SysML v1/v2, SYSMOD, FAS, and VAMOS. <code>SysML-general</code> <code>blog</code> (2025).</p></div>
+    <div class="cell" style="grid-column:span 2"><h3><a href="https://cameomagic.com/">CameoMagic</a></h3><p>Practitioner site focused on Cameo/MBSE tutorials, training, and certification prep. <code>SysML-general</code> <code>Cameo</code> <code>blog</code> (2024).</p></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <div class="shead"><span class="label">&sect;04 &middot; Model Gallery</span><h2>Model Gallery</h2></div>
+  <p class="lead">Openable models, fast path. The Cameo <code>.mdzip</code> corpus on the open web is small (9 entries above), so this gallery is dominated by <strong>SysML v2 textual (<code>.sysml</code>) models</strong>: abundant, high-quality, and openable in any SysML v2 tool (SysIDE, SysON, the Pilot Implementation). Cameo entries link back to Example models above.</p>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="#mbse4u-the-sysml-v2-book-examples">MBSE4U SysML v2 Book Examples</a></h3><p>Magic Grid &rsaquo; Example models. <code>Cameo</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="#verse-opensut">VERSE-OpenSUT</a></h3><p>Magic Grid &rsaquo; Example models. <code>Cameo</code> <code>has-model</code> (2025).</p></div>
+    <div class="cell"><h3><a href="#multiagent-warehouse">Multiagent Warehouse</a></h3><p>Magic Grid &rsaquo; Example models. <code>CATIA-Magic</code> <code>has-model</code> (2017).</p></div>
+    <div class="cell"><h3><a href="#gfse-saf-ffds-cameo-model">GfSE SAF Fire-Fighting Drone (Cameo)</a></h3><p>Magic Grid &rsaquo; Example models. <code>Cameo</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="#gtri-ingrid-rapid-modeling">GTRI INGRID Demo Models</a></h3><p>Magic Grid &rsaquo; Example models. <code>CATIA-Magic</code> <code>has-model</code> (2023).</p></div>
+    <div class="cell"><h3><a href="#open-mbee-mdk-docgen-sample">Open-MBEE MDK DocGen Sample</a></h3><p>Magic Grid &rsaquo; Example models. <code>Cameo</code> <code>has-model</code> (2024).</p></div>
+    <div class="cell"><h3><a href="#package-delivery-drone-cameo">Package Delivery Drone (Cameo)</a></h3><p>Magic Grid &rsaquo; Example models. <code>Cameo</code> <code>has-model</code> (2023).</p></div>
+    <div class="cell"><h3><a href="#eoss-cameo-model">EOSS Satellite System (Cameo)</a></h3><p>Magic Grid &rsaquo; Example models. <code>Cameo</code> <code>has-model</code> (2023).</p></div>
+    <div class="cell"><h3><a href="#enola-mosa-cameo-model">MOSA Implementation (Cameo)</a></h3><p>Magic Grid &rsaquo; Example models. <code>Cameo</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/Systems-Modeling/SysML-v2-Release/tree/master/sysml/src/examples">OMG SysML v2 Release examples</a></h3><p>300+ official <code>.sysml</code> example &amp; training models. <code>SysMLv2</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/GfSE/SysML-v2-Models">GfSE SysML v2 Models</a></h3><p>Curated, CI-validated collection (Drone, HVAC, Vehicle&hellip;). <code>SysMLv2</code> <code>has-model</code> (2025).</p></div>
+    <div class="cell"><h3><a href="https://github.com/airbus/apollo-11-sysml-v2">Airbus Apollo-11 SysML v2</a></h3><p>Apollo 11 reference model, full traceability. <code>SysMLv2</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/jhaws1982/sysmlv2-mbse-reference">jhaws1982 OOSEM Reference</a></h3><p>OOSEM reference model in SysML v2. <code>SysMLv2</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/sensmetry/advent-of-sysml-v2">sensmetry Advent of SysML v2</a></h3><p>44 bite-sized SysML v2 example models. <code>SysMLv2</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/elan8/sysml-v2-astronomy-reference">SysML v2 Astronomy Reference</a></h3><p>A worked astronomy-domain SysML v2 model. <code>SysMLv2</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/MBSE4U/dont-panic-batmobile">Don't Panic Batmobile</a></h3><p>Companion model for Weilkiens &amp; Muggeo's "Don't Panic". <code>SysMLv2</code> <code>has-model</code> (2025).</p></div>
+    <div class="cell"><h3><a href="https://github.com/elan8/sysml-robot-vacuum-cleaner">Robot Vacuum Cleaner (SysML v2)</a></h3><p>21-file autonomous-robot model: architecture, behavior, firmware, analysis. <code>SysMLv2</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/1cFE/fusion-tea">fusion-tea</a></h3><p>Fusion-energy model + units/costing libraries (36 <code>.sysml</code> files). <code>SysMLv2</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/sensmetry/detect">sensmetry DETECT</a></h3><p>Hazard-analysis (DEM&amp;S) tool modeled in SysML v2. <code>SysMLv2</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/DLR-FT/SysMLv2LibrarySTPA">DLR-FT STPA Library</a></h3><p>DLR System-Theoretic Process Analysis safety library + worked example. <code>SysMLv2</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/GfSE/SAF-SysMLV2">GfSE SAF-SysMLV2</a></h3><p>System Architecture Framework expressed in SysML v2 (33 files). <code>SysMLv2</code> <code>has-model</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/Open-MBEE/DesertKite.sysml">Open-MBEE DesertKite (OOSEM)</a></h3><p>Unusual real-world OOSEM domain model (archaeological desert kites). <code>SysMLv2</code> <code>has-model</code> (2025).</p></div>
+    <div class="cell" style="grid-column:span 2"><h3><a href="https://github.com/ziruili-tu-ilmenau/CMBSE">TU Ilmenau CMBSE</a></h3><p>Collaborative-MBSE research model: force-measurement / load-cell system. <code>SysMLv2</code> <code>has-model</code> (2025).</p></div>
+  </div>
+</div></section>
+
+<section id="ecosystem"><div class="wrap">
+  <div class="shead"><span class="label">&sect;05 &middot; Broader SysML / MBSE Context</span><h2>Broader SysML / MBSE Context</h2></div>
+  <p class="lead">Curated, not exhaustive: the wider ecosystem any MBSE practitioner runs into. The language (SysML v1, the stable incumbent; SysML v2, the textual successor now in release), the methods to apply it, the architecture frameworks to structure it, the tools to run it, and reusable libraries to build from. Capella and Arcadia-specific resources live in the family spoke <a href="https://github.com/jgsystemsconsulting/awesome-capella">awesome-capella</a>.</p>
+
+  <h3 style="margin-top:2rem">Specifications &amp; standards</h3>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://www.omg.org/spec/SysML/">OMG SysML Specification</a></h3><p>Canonical OMG SysML spec page; now defaults to v2.0 (2025), with v1.7 the final v1 release. <code>SysML-general</code> <code>spec</code> (2025).</p></div>
+    <div class="cell"><h3><a href="https://www.omg.org/spec/SysML/1.7/">OMG SysML v1.7</a></h3><p>The final SysML v1 release; the general-purpose v1 MBSE modeling language. <code>SysMLv1</code> <code>spec</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://github.com/Systems-Modeling/SysML-v2-Release">Systems-Modeling/SysML-v2-Release</a></h3><p>Start here for SysML v2: living release train (latest tag 2026-08) with spec, training, examples, libraries. <code>SysMLv2</code> <code>spec</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://www.wiley.com/en-us/INCOSE+Systems+Engineering+Handbook%3A+A+Guide+for+System+Life+Cycle+Processes+and+Activities%2C+5th+Edition-p-9781119814290">INCOSE Systems Engineering Handbook, 5th Edition</a></h3><p>INCOSE SE Handbook v5.0 (2023), Wiley 5th ed; practitioner reference for SE life-cycle processes aligned to ISO/IEC/IEEE 15288. <code>SysML-general</code> <code>standard</code> <code>paid</code> (2023).</p></div>
+    <div class="cell"><h3><a href="https://www.omg.org/spec/KerML/">OMG KerML Specification</a></h3><p>The Kernel Modeling Language spec, the formal semantic foundation underlying SysML v2. <code>SysMLv2</code> <code>spec</code> (2025).</p></div>
+    <div class="cell"><h3><a href="https://www.omg.org/spec/SystemsModelingAPI/">OMG Systems Modeling API &amp; Services</a></h3><p>OMG spec defining platform-independent REST/SOAP/Java APIs for KerML and SysML v2 models. <code>SysMLv2</code> <code>spec</code> (2025).</p></div>
+    <div class="cell"><h3><a href="https://www.omg.org/spec/SysML/2.0/">OMG SysML v2.0 Specification</a></h3><p>The dedicated landing page for the SysML v2.0 language release. <code>SysMLv2</code> <code>spec</code> (2025).</p></div>
+    <div class="cell" style="grid-column:span 2"><h3><a href="https://standards.nasa.gov/standard/NASA/NASA-HDBK-1009">NASA Systems Modeling Handbook (NASA-HDBK-1009)</a></h3><p>Official NASA tool-agnostic guidance on building and using system models. <code>SysML-general</code> <code>standard</code> (2022).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Methodology &amp; method references</h3>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://www.omg.org/sysml/MBSE_Methodology_Survey_RevB.pdf">Survey of MBSE Methodologies (Estefan, INCOSE/OMG)</a></h3><p>The standard comparative reference: OOSEM, Harmony-SE, RUP-SE, Vitech, JPL State Analysis, OPM side by side. <code>SysML-general</code> <code>paper</code> (2008).</p></div>
+    <div class="cell"><h3><a href="https://www.omgwiki.org/MBSE/doku.php?id=mbse:methodology">OMG MBSE Wiki - Methodology Directory</a></h3><p>Master index of MBSE methodologies (OOSEM, SYSMOD, Harmony, Arcadia, and more). <code>SysML-general</code> <code>blog</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://www.omgwiki.org/MBSE/doku.php?id=mbse:incoseoosem">OOSEM (OMG MBSE Wiki)</a></h3><p>Vendor-neutral reference for the Object-Oriented Systems Engineering Method. <code>SysML-general</code> <code>blog</code> (2023).</p></div>
+    <div class="cell"><h3><a href="https://mbse4u.com/sysmod/">SYSMOD (Tim Weilkiens)</a></h3><p>Canonical page for the SYSMOD method toolbox: roles, activities, products, and SysML integration. <code>SysML-general</code> <code>blog</code> (2022).</p></div>
+    <div class="cell"><h3><a href="https://jazz.net/library-content/wp-content/uploads/2020/11/Harmony-aMBSE-Deskbook-Version-1.pdf">Harmony aMBSE Deskbook (IBM)</a></h3><p>The full IBM Harmony agile-MBSE method deskbook, freely available. <code>SysMLv1</code> <code>Rhapsody</code> <code>book</code> (2020).</p></div>
+    <div class="cell"><h3><a href="https://fas-method.org/">FAS Method</a></h3><p>Official site for Functional Architectures for Systems (Lamm &amp; Weilkiens), with open publications and plugins. <code>SysML-general</code> <code>blog</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://mds.jpl.nasa.gov/public/sa/">JPL State Analysis</a></h3><p>NASA/JPL's primary state-based MBSE method for control-system and mission modeling. <code>SysML-general</code> <code>blog</code> (2023).</p></div>
+    <div class="cell"><h3><a href="https://esml.technion.ac.il/opm/overview/">Object-Process Methodology (Dori, Technion)</a></h3><p>Authoritative overview of OPM (ISO 19450), a self-contained graphical-plus-textual modeling method. <code>SysML-general</code> <code>blog</code> (2022).</p></div>
+    <div class="cell"><h3><a href="https://spesml.github.io/">SpesML - Open Methodology Docs (TUM/fortiss)</a></h3><p>Full open documentation of the SPES-based SpesML method: viewpoints, concepts, case studies, Cameo plugin. <code>SysML-general</code> <code>Cameo</code> <code>blog</code> (2024).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Architecture frameworks</h3>
+  <p class="lead">The defence/enterprise architecture frameworks SysML models get built against. UAF is the modern OMG framework: it supersedes UPDM/DoDAF/MODAF and runs natively in Cameo; start there unless a specific programme mandates DoDAF or NAF.</p>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://www.omg.org/spec/UAF">OMG UAF Specification</a></h3><p>The Unified Architecture Framework spec hub: Domain Metamodel (DMM) and the UAFML profile Cameo implements. <code>SysML-general</code> <code>spec</code> (2022).</p></div>
+    <div class="cell"><h3><a href="https://www.omg.org/uaf/">OMG UAF Program Page</a></h3><p>OMG's UAF overview and community page: concepts, videos, certification, and adoption guidance. <code>SysML-general</code> <code>blog</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://docs.nomagic.com/">UAF Plugin Documentation (CATIA Magic / No Magic)</a></h3><p>Official CATIA Magic / No Magic docs hub for Cameo/MagicDraw plugins, including UAF. <code>SysMLv1</code> <code>Cameo</code> <code>tutorial</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://www.omg.org/spec/UPDM/">OMG UPDM Specification</a></h3><p>The Unified Profile for DoDAF/MODAF, UAF's predecessor profile, still referenced by legacy programmes. <code>SysML-general</code> <code>spec</code> (2013).</p></div>
+    <div class="cell"><h3><a href="https://www.nato.int/en/about-us/organization/nato-structure/digital-policy-committee-dpc/nato-architecture-framework-version">NATO Architecture Framework v4</a></h3><p>Official NATO landing page for NAF v4.1, the current NATO architecture framework. <code>SysML-general</code> <code>standard</code> (2020).</p></div>
+    <div class="cell"><h3><a href="https://dodcio.defense.gov/library/dod-architecture-framework/">DoD Architecture Framework (DoDAF 2.02)</a></h3><p>Official US DoD CIO page for DoDAF 2.02, the US defence architecture framework. <code>SysML-general</code> <code>standard</code> (2010).</p></div>
+    <div class="cell" style="grid-column:1/-1"><h3><a href="https://www.gov.uk/guidance/mod-architecture-framework">MOD Architecture Framework (MODAF)</a></h3><p>Official UK gov.uk MODAF page; now withdrawn in favour of NAF/UAF but still widely referenced. <code>SysML-general</code> <code>standard</code> (2016).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">SysML v2 tooling</h3>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://github.com/Systems-Modeling/SysML-v2-Pilot-Implementation">SysML v2 Pilot Implementation</a></h3><p>OMG reference pilot: Xtext editors, PlantUML visualization, and a Jupyter kernel for SysML v2. <code>SysMLv2</code> <code>tool</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/eclipse-syson/syson">Eclipse SysON</a></h3><p>Open-source web-based SysML v2 modeler (graphical, form, tabular editors), by Obeo and CEA List. <code>SysMLv2</code> <code>SysON</code> <code>tool</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/sensmetry/sysml-2ls">SysIDE Editor (Sensmetry)</a></h3><p>VS Code extension for SysML v2: highlighting, autocompletion, and formatting. <code>SysMLv2</code> <code>other-tool</code> <code>plugin</code> (2025).</p></div>
+    <div class="cell" style="grid-column:1/-1"><h3><a href="https://github.com/sensmetry/sysand">Sysand (Sensmetry)</a></h3><p>Open-source package manager for SysML v2 and KerML model libraries. <code>SysMLv2</code> <code>other-tool</code> <code>tool</code> (2026).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Domain &amp; reusable libraries</h3>
+  <p class="lead">Building-block libraries and profiles you <strong>import</strong> into your own model (units, domain components, frameworks, standard profiles) rather than whole-system reference models.</p>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://github.com/Systems-Modeling/SysML-v2-Release/tree/master/sysml.library">SysML v2 Standard Library</a></h3><p>The normative KerML/SysML v2 standard libraries: ISQ quantities, SI units, geometry, analysis, domain libs. <code>SysMLv2</code> <code>tool</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/Systems-Modeling/SysML-v2-AADL-Release">SysML v2 Library for AADL</a></h3><p>Official SysML v2 rendering of AADL (base types, property sets, component categories) for avionics/embedded. <code>SysMLv2</code> <code>tool</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/MBSE4U/sysmod-sysmlv2">SYSMOD for SysML v2</a></h3><p>Tim Weilkiens' SYSMOD method as an importable SysML v2 language-extension library, with examples. <code>SysMLv2</code> <code>tool</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/elan8/sysml-domain-libraries">elan8 SysML v2 Domain Libraries</a></h3><p>Importable domain building-block libraries (robotics: actuation, control, autonomy, operations). <code>SysMLv2</code> <code>has-model</code> <code>tool</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/qudt/qudt-public-repo">QUDT - Quantities, Units, Dimensions &amp; Types</a></h3><p>RDF/OWL vocabulary of quantities and units widely reused for units handling in MBSE models. <code>SysML-general</code> <code>other-tool</code> <code>tool</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://github.com/opencaesar/metrology-vocabularies">openCAESAR Metrology Vocabularies</a></h3><p>ISO/IEC 80000 quantities-and-units plus JCGM VIM4 metrology, as importable OML libraries. <code>SysML-general</code> <code>other-tool</code> <code>tool</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/GfSE/SAF-Cameo-Profile">GfSE SAF Cameo Profile</a></h3><p>System Architecture Framework profile, UAF-tracing profile, and library packaged for Cameo. <code>SysMLv1</code> <code>Cameo</code> <code>plugin</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/tsherburne/scre-profile">SCRE Cameo Profiles</a></h3><p>Secure Cyber Resilient Engineering profiles for Cameo, built on RAAML and SACM (safety/assurance). <code>SysMLv1</code> <code>Cameo</code> <code>plugin</code> (2025).</p></div>
+    <div class="cell"><h3><a href="https://github.com/Adocus/UAF-for-Papyrus">UAF for Papyrus (Adocus)</a></h3><p>OMG Unified Architecture Framework profile plus a UAF Measurement Library for Eclipse Papyrus. <code>SysMLv1</code> <code>Papyrus</code> <code>plugin</code> (2022).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">Other MBSE tools</h3>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler">Cameo Systems Modeler / CATIA Magic</a></h3><p>Commercial cross-platform MBSE environment: SysML, UML, DoDAF/MODAF, requirements traceability. <code>SysMLv1</code> <code>Cameo</code> <code>tool</code> <code>paid</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://eclipse.dev/papyrus/">Eclipse Papyrus</a></h3><p>Industrial-grade open-source Eclipse modeling tool for UML with full SysML support. <code>SysMLv1</code> <code>Papyrus</code> <code>tool</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://www.ibm.com/products/engineering-rhapsody">IBM Engineering Systems Design Rhapsody</a></h3><p>Commercial MBSE tool: SysML plus the Harmony method, UAF/DoDAF, AUTOSAR, FMI co-simulation. <code>SysMLv1</code> <code>Rhapsody</code> <code>tool</code> <code>paid</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://github.com/gaphor/gaphor">Gaphor</a></h3><p>Lightweight open-source Python UML/SysML/RAAML modeler with a clean, readable OMG-standard metamodel. <code>SysML-general</code> <code>other-tool</code> <code>tool</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/ModelioOpenSource/Modelio">Modelio</a></h3><p>Open-source (GPL-3.0) enterprise modeling environment with a full SysML v1 diagram suite incl. parametrics. <code>SysMLv1</code> <code>other-tool</code> <code>tool</code> (2024).</p></div>
+    <div class="cell"><h3><a href="https://github.com/opencaesar/oml">openCAESAR / OML</a></h3><p>JPL-originated ontology-based modeling language and OWL toolchain for traceable MBSE, with worked examples. <code>SysML-general</code> <code>other-tool</code> <code>tool</code> (2025).</p></div>
+  </div>
+
+  <h3 style="margin-top:2rem">APIs &amp; automation</h3>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://github.com/Systems-Modeling/SysML-v2-API-Services">SysML v2 API Services</a></h3><p>Proof-of-concept REST implementation of the OMG Systems Modeling API &amp; Services spec. <code>SysMLv2</code> <code>tool</code> (2026).</p></div>
+    <div class="cell"><h3><a href="https://github.com/Systems-Modeling/SysML-v2-API-Python-Client">SysML v2 API Python Client</a></h3><p>Official Python client for the SysML v2 Systems Modeling API &amp; Services. <code>SysMLv2</code> <code>tool</code> (2021).</p></div>
+    <div class="cell"><h3><a href="https://github.com/Systems-Modeling/SysML-v2-API-Cookbook">SysML v2 API Cookbook</a></h3><p>Recipes and worked examples for using the SysML v2 API. <code>SysMLv2</code> <code>tool</code> (2025).</p></div>
+    <div class="cell" style="grid-column:1/-1"><h3><a href="https://github.com/Open-MBEE/flexo-mms-sysmlv2">Open-MBEE Flexo-MMS for SysML v2</a></h3><p>Git+RDF-backed Model Management System implementing the OMG SysML v2 REST/HTTP API ("Git for models"). <code>SysMLv2</code> <code>tool</code> (2026).</p></div>
+  </div>
+</div></section>
+
+<section id="external"><div class="wrap">
+  <div class="shead"><span class="label">&sect;06 &middot; External awesome lists</span><h2>External awesome lists</h2></div>
+  <p class="lead">Why this list exists, with evidence (gathered 2026-06): existing SysML/SE awesome-lists are either abandoned, narrow, or carry no Cameo / Magic Grid coverage. No actively maintained awesome-mbse with this breadth existed before this list. The <code>awesome-stpa</code> namespace was re-checked empty on 2026-09-17; remaining planned niches are re-checked on each create day.</p>
+  <div class="grid g3">
+    <div class="cell"><h3><a href="https://github.com/mycr0ft/awesome-sysml">mycr0ft/awesome-sysml</a></h3><p>Community SysML v2 tools and samples list; thin on Magic Grid and openable Cameo models. <code>SysMLv2</code> <code>external-list</code> (2025).</p></div>
+    <div class="cell"><h3><a href="https://github.com/kktse/awesome-systems-engineering">kktse/awesome-systems-engineering</a></h3><p>Broad systems-engineering links, untouched since 2021; no MBSE depth. <code>SE-general</code> <code>external-list</code> (2021).</p></div>
+    <div class="cell"><h3><a href="https://github.com/rolling-robot/awesome-systems-engineering">rolling-robot/awesome-systems-engineering</a></h3><p>Minimal systems-engineering collection, stagnant since 2024; no MBSE coverage. <code>SE-general</code> <code>external-list</code> (2024).</p></div>
+  </div>
+</div></section>
+
+<section id="contribute"><div class="wrap">
+  <div class="shead"><span class="label">&sect;07 &middot; Contribute</span><h2>Contribute</h2></div>
+  <p class="lead">Contributions welcome. The inclusion bar, entry format, and tag vocabulary live in CONTRIBUTING.md; suggest a resource via the issue form or open a pull request.</p>
+  <ul class="link-list">
+    <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/CONTRIBUTING.md">How to contribute</a></li>
+    <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/issues/new?template=suggest-resource.yml">Suggest a resource</a></li>
+    <li><a href="https://github.com/jgsystemsconsulting/awesome-mbse/issues/new?template=bug_report.yml">Report a bug or dead link</a></li>
+  </ul>
+</div></section>
+
+<section id="support"><div class="wrap">
+  <div class="shead"><span class="label">&sect;08 &middot; Support &amp; security</span><h2>Support &amp; security</h2></div>
+  <p class="lead">Questions or a problem with a linked resource? Open an issue using the suggest-a-resource form above. To report a malicious or compromised link privately, email <a href="mailto:support@jgsystemsconsulting.com">support@jgsystemsconsulting.com</a>; see <a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/SECURITY.md">SECURITY.md</a>.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="tblock">
+    <div><span class="label">Product</span><b>awesome-mbse</b></div>
+    <div><span class="label">Rev</span><b>1.1.0</b></div>
+    <div><span class="label">Licence</span><b>CC0-1.0</b></div>
+    <div><span class="label">Repository</span><b>jgsystemsconsulting/awesome-mbse</b></div>
+    <div><span class="label">Engine</span><b>jgs-site-template</b></div>
+    <div><span class="label">Owner</span><b>JG Systems Consulting Ltd</b></div>
+  </div>
+  <p class="foot-note">Licence: <a href="https://github.com/jgsystemsconsulting/awesome-mbse/blob/main/LICENSE">CC0-1.0</a>. <a href="https://labs.jgsystemsconsulting.com/licensing.html">Licence enquiries</a>. Maintained by JG Systems Consulting Ltd.</p>
+</div></footer>
+
 </body>
 </html>
