@@ -45,14 +45,12 @@ This repo is the hub of a family of lists; the registry and family rules live in
 | [awesome-digital-engineering](https://github.com/jgsystemsconsulting/awesome-digital-engineering)           | Digital thread and digital engineering practice                       | Live             | Public spoke                |
 | [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa)                                         | STAMP/STPA and hazard analysis                                        | Live             | Public spoke                |
 | [awesome-enterprise-architect](https://github.com/jgsystemsconsulting/awesome-enterprise-architect)         | Sparx/enterprise architecture tooling index                           | Live             | Public spoke                |
-| [awesome-sparx-ea](https://github.com/jgsystemsconsulting/awesome-sparx-ea)                                 | Sparx Systems Enterprise Architect resources                          | In development   | Public spoke (early)        |
 | [awesome-mbse-community](https://github.com/jgsystemsconsulting/awesome-mbse-community)                     | People and organizations behind free and open SE/MBSE knowledge       | Live             | Public spoke                |
 
-Gaps, snapshot 2026-09-22 (not a permanent census): requirements-engineering niche body
+Gaps, snapshot 2026-09-28 (not a permanent census): requirements-engineering niche body
 copy lives in the public spoke awesome-requirements-engineering (hub keeps the family
 pointer only; see the List family table above); awesome-magic-grid is a GitHub rename
-redirect to this hub, not a separate repository; awesome-sparx-ea is early and may still
-need full awesome-list packaging.
+redirect to this hub, not a separate repository.
 
 ## Magic Grid & Cameo / CATIA Magic
 

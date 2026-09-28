@@ -62,7 +62,6 @@ The default state of every family repo is private until it is explicitly release
 | [awesome-stpa](https://github.com/jgsystemsconsulting/awesome-stpa) | STAMP / STPA and hazard analysis; functional safety methods | Live | public |
 | [awesome-magicgrid-mbse](https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse) | MagicGrid method materials and MBSE practice | Live | public |
 | [awesome-enterprise-architect](https://github.com/jgsystemsconsulting/awesome-enterprise-architect) | Sparx/enterprise architecture tooling index | Live | public |
-| [awesome-sparx-ea](https://github.com/jgsystemsconsulting/awesome-sparx-ea) | Sparx Systems Enterprise Architect resources | In development | public |
 | [awesome-mbse-community](https://github.com/jgsystemsconsulting/awesome-mbse-community) | People and organizations behind free and open SE/MBSE knowledge | Live | public |
 
 Status is only `Live` | `In development` | `Planned`. Visibility is only `public` |
@@ -114,7 +113,6 @@ found` | `TODO re-check`.
 | awesome-mbse-community | 2026-09-22 (create-day re-check: empty) | empty | Live as jgsystemsconsulting/awesome-mbse-community |
 | awesome-magicgrid-mbse | 2026-09-22 (registry backfill re-check) | empty | None; repo public |
 | awesome-enterprise-architect | 2026-09-22 (registry backfill re-check) | empty | None; repo public |
-| awesome-sparx-ea | 2026-09-22 (registry backfill re-check) | empty | None; repo public |
 
 ## Shared standard
 
