@@ -40,7 +40,7 @@ The default state of every family repo is private until it is explicitly release
   unlocked this).
 - The `sindresorhus/awesome` submission is therefore unlocked. The release procedure
   (spoke public, hub public, then sindresorhus) lives in
-  [docs/runbooks/family-public-release.md](docs/runbooks/family-public-release.md).
+  [internal/runbooks/family-public-release.md](internal/runbooks/family-public-release.md).
 - Sweep badges, CI, and cadence are unchanged by privacy.
 - **Status versus Visibility:** Status is content maturity (`Live` / `In development` /
   `Planned`). Visibility is who can open the repo (`public` / `private` / `local only` /
