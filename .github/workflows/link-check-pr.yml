@@ -9,6 +9,7 @@ on:
     paths:
       - "README.md"
       - "docs/index.html"
+      - "FAMILY.md"
       - ".lycheeignore"
       - ".github/workflows/link-check-pr.yml"
 
@@ -45,6 +46,7 @@ jobs:
             --timeout 40
             README.md
             docs/index.html
+            FAMILY.md
           fail: true
           token: ${{ secrets.GITHUB_TOKEN }}
 

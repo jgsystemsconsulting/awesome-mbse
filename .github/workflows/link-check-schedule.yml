@@ -32,6 +32,7 @@ jobs:
             --timeout 40
             README.md
             docs/index.html
+            FAMILY.md
           fail: false
           output: ./lychee/out.md
           token: ${{ secrets.GITHUB_TOKEN }}
