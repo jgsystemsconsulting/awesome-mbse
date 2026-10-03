@@ -12,7 +12,7 @@ fails: list[str] = []
 REQUIRED = [
     "LICENSE", "NOTICE", "README.md", "CHANGELOG.md",
     "RELEASE-INFO.txt", "SECURITY.md", ".gitignore",
-    "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "docs/DISTRIBUTION.md",
+    "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "internal/DISTRIBUTION.md",
     "docs/index.html", "scripts/check_release.py",
     "DESIGN.md", "DESIGN_BRIEF.md",
     "COPYRIGHT", "CITATION.cff",
@@ -83,7 +83,7 @@ for path in pathlib.Path("scripts").glob("*.py"):
     if "SPDX-License-Identifier: CC0-1.0" not in head:
         fails.append(f"SPDX missing: {path}")
 
-# --- landing truth gate: landing chips and section index vs sources ---
+# --- landing truth gate: landing chips, README contents, and site nav vs sources ---
 
 
 def read_source(path):
@@ -139,14 +139,29 @@ CURATED_SECTIONS = (
     "External awesome lists",
 )
 
-# Section-index order matches the README Contents product anchors (six links).
+# Section-index order matches the README Contents product anchors (eight links).
 SECTION_INDEX = (
     "List family",
     "Magic Grid & Cameo / CATIA Magic",
     "Model Gallery",
     "Broader SysML / MBSE Context",
     "External awesome lists",
+    "Install",
+    "Usage",
     "Support & security",
+)
+
+# Landing site nav (light template, b1e6c54) is the per-section navigation
+# surface; it must list every landing section anchor, in document order.
+LANDING_NAV = (
+    "status",
+    "family",
+    "magic-grid",
+    "gallery",
+    "ecosystem",
+    "external",
+    "contribute",
+    "support",
 )
 
 ENTRY_RX = re.compile(r"^- \[[^\]]+\]\(https?://[^)\s]+\)\s+-\s+.+\(\d{4}\)\.?$")
@@ -224,29 +239,23 @@ if readme is not None:
         elif hits > 1:
             fails.append(f"section-index heading duplicated in README ({hits}x): {title}")
 
+    # Contents bullets must list SECTION_INDEX in order with valid GitHub slugs;
+    # catches a stale or short Contents list (the silent six-vs-eight drift).
+    toc = re.findall(r"(?m)^- \[([^\]]+)\]\(#([^)]+)\)\s*$", readme)
+    if toc != [(t, github_slug(t)) for t in SECTION_INDEX]:
+        fails.append(f"README Contents bullets != SECTION_INDEX: {toc}")
+
 if html is not None:
-    blocks = re.findall(r'<ul class="section-index">(.*?)</ul>', html, re.DOTALL)
-    if len(blocks) != 1:
-        fails.append(f"landing section-index list missing or ambiguous: {len(blocks)} found")
+    nav_blocks = re.findall(r'<nav class="site"[^>]*>(.*?)</nav>', html, re.DOTALL)
+    if len(nav_blocks) != 1:
+        fails.append(f"landing site nav missing or ambiguous: {len(nav_blocks)} found")
     else:
-        lis = re.findall(r"<li\b[^>]*>.*?</li>", blocks[0], re.DOTALL)
-        expected_n = len(SECTION_INDEX)
-        if len(lis) != expected_n:
-            fails.append(f"section-index li count {len(lis)} != {expected_n}")
-        else:
-            fragments = []
-            for li in lis:
-                hrefs = re.findall(r'href="[^"#]*#([^"]+)"', li)
-                if len(hrefs) != 1:
-                    fails.append(f"section-index li href missing or ambiguous: {li[:60]}")
-                    fragments = None
-                    break
-                fragments.append(hrefs[0])
-            if fragments is not None:
-                expected = [github_slug(t) for t in SECTION_INDEX]
-                for got, want in zip(fragments, expected):
-                    if got != want:
-                        fails.append(f"section-index fragment mismatch: {got} != {want}")
+        nav_frags = re.findall(r'href="#([^"]+)"', nav_blocks[0])
+        if nav_frags != list(LANDING_NAV):
+            fails.append(f"landing site-nav anchors != expected: {nav_frags}")
+    section_ids = re.findall(r'<section id="([^"]+)"', html)
+    if section_ids != list(LANDING_NAV):
+        fails.append(f"landing section ids != expected: {section_ids}")
 
 if scanned < 1:
     fails.append("SCAN_GLOBS matched zero files")
