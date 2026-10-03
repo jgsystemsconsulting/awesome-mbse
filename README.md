@@ -35,7 +35,7 @@ This repo is the hub of a family of lists; the registry and family rules live in
 
 | List                                                                                                        | Scope                                                                 | Status           | Where the niche lives today |
 | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------------- | --------------------------- |
-| awesome-mbse                                                                                                | Hub for cross-cutting MBSE methods, tools, models, Magic Grid / Cameo | Live             | This repo                   |
+| [awesome-mbse](https://github.com/jgsystemsconsulting/awesome-mbse)                                         | Hub for cross-cutting MBSE methods, tools, models, Magic Grid / Cameo | Live             | This repo                   |
 | [awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2)                                 | SysML v2 language: specs, parsers, editors, APIs, examples            | Live             | Public spoke                |
 | [awesome-magicgrid-mbse](https://github.com/jgsystemsconsulting/awesome-magicgrid-mbse)                     | MagicGrid method materials and MBSE practice                          | Live             | Public spoke                |
 | awesome-magic-grid (redirect)                                                                               | Former hub name; Magic Grid body stays here                           | Redirect         | 301 to awesome-mbse         |
