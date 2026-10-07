@@ -292,13 +292,3 @@ Gallery section points at models you can open today. To cite the list, use
 Questions or a problem with a linked resource? Open an issue using the suggest-a-resource
 form (linked in the Contributing section above). To report a malicious or compromised link
 privately, email **support@jgsystemsconsulting.com** - see [SECURITY.md](SECURITY.md).
-
----
-
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-Copyright (c) 2026 JG Systems Consulting Ltd. To the extent possible under law, the
-maintainers have waived all copyright and related or neighboring rights to this work -
-released under CC0 1.0 Universal. See [LICENSE](LICENSE). No purchase or licence key is
-needed to use this list; for commercial questions, see
-[labs.jgsystemsconsulting.com/licensing.html](https://labs.jgsystemsconsulting.com/licensing.html).
