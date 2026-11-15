@@ -223,6 +223,7 @@ there unless a specific programme mandates DoDAF or NAF.
 - [Eclipse SysON](https://github.com/eclipse-syson/syson) - Open-source web-based SysML v2 modeler (graphical, form, tabular editors), by Obeo and CEA List `SysMLv2` `SysON` `tool` (2026).
 - [SysIDE Editor (Sensmetry)](https://github.com/sensmetry/sysml-2ls) - VS Code extension for SysML v2: highlighting, autocompletion, and formatting `SysMLv2` `other-tool` `plugin` (2025).
 - [Sysand (Sensmetry)](https://github.com/sensmetry/sysand) - Open-source package manager for SysML v2 and KerML model libraries `SysMLv2` `other-tool` `tool` (2026).
+- [ortho](https://github.com/ola-coding/ortho) - CLI and VS Code extension that renders six architectural views of a SysML v2 text model as SVG `SysMLv2` `other-tool` `tool` (2026).
 
 ### Domain & reusable libraries
 
